@@ -19,6 +19,27 @@ class HomeModel extends \App\Models\BaseModel
 		return $result;
 	}
 
+	public function get_all_golru_by_instansi($id_instansi)
+	{
+		$sql = 'SELECT golru,COUNT(golru) AS jum_golru FROM tbl_pegawai WHERE SHA1(id_instansi)="'.$id_instansi.'" GROUP BY golru';
+		$result = $this->db->query($sql)->getResult();
+		return $result;
+	}
+
+	public function get_jenkel_by_instansi($id_instansi)
+	{
+		$sql = 'SELECT IF (tp.jk ="L","Laki-Laki","Perempuan") AS gender, COUNT(tp.jk) AS jum_gender FROM tbl_pegawai tp WHERE SHA1(tp.id_instansi)="'.$id_instansi.'" GROUP BY tp.jk DESC';
+		$result = $this->db->query($sql)->getResult();
+		return $result;
+	}
+
+
+	public function get_jenjab_by_instansi($id_instansi)
+	{
+		$sql = 'SELECT tp.jenis_jabatan AS jj, COUNT(tp.jenis_jabatan) AS jum_jj FROM tbl_pegawai tp WHERE SHA1(tp.id_instansi)="'.$id_instansi.'" GROUP BY tp.jenis_jabatan';
+		$result = $this->db->query($sql)->getResult();
+		return $result;
+	}
 
 	
 }
