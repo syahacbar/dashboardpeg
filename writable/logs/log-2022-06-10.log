@@ -1,0 +1,11 @@
+CRITICAL - 2022-06-10 21:44:06 --> trim(): Argument #1 ($string) must be of type string, array given
+#0 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Validation\Validation.php(279): trim(Array)
+#1 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Validation\Validation.php(157): CodeIgniter\Validation\Validation->processRules('id_role', 'Role', Array, Array, Array)
+#2 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\Builtin\User.php(249): CodeIgniter\Validation\Validation->run()
+#3 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\Builtin\User.php(181): App\Controllers\Builtin\User->validateForm()
+#4 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\Builtin\User.php(158): App\Controllers\Builtin\User->saveData()
+#5 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(832): App\Controllers\Builtin\User->edit()
+#6 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Builtin\User))
+#7 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\index.php(47): CodeIgniter\CodeIgniter->run()
+#9 {main}

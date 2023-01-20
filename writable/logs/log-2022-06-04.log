@@ -1,0 +1,347 @@
+CRITICAL - 2022-06-04 05:18:59 --> Undefined variable $query
+#0 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\Builtin\User.php(111): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'D:\\xampp-8.1.2\\...', 111)
+#1 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(832): App\Controllers\Builtin\User->getDataDT()
+#2 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Builtin\User))
+#3 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\index.php(47): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-04 05:19:17 --> Undefined variable $query
+#0 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\Builtin\User.php(111): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'D:\\xampp-8.1.2\\...', 111)
+#1 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(832): App\Controllers\Builtin\User->getDataDT()
+#2 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Builtin\User))
+#3 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\index.php(47): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-04 05:19:23 --> Undefined variable $query
+#0 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\Builtin\User.php(111): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'D:\\xampp-8.1.2\\...', 111)
+#1 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(832): App\Controllers\Builtin\User->getDataDT()
+#2 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Builtin\User))
+#3 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\index.php(47): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-04 05:20:07 --> Unknown column 'judul_role' in 'where clause'
+#0 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Models\Builtin\UserModel.php(42): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...')
+#4 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\Builtin\User.php(64): App\Models\Builtin\UserModel->getListUsers(Array, ' WHERE 1 = 1  A...')
+#5 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(832): App\Controllers\Builtin\User->getDataDT()
+#6 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Builtin\User))
+#7 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\index.php(47): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-04 05:20:12 --> Unknown column 'judul_role' in 'where clause'
+#0 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Models\Builtin\UserModel.php(42): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...')
+#4 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\Builtin\User.php(64): App\Models\Builtin\UserModel->getListUsers(Array, ' WHERE 1 = 1  A...')
+#5 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(832): App\Controllers\Builtin\User->getDataDT()
+#6 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Builtin\User))
+#7 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\index.php(47): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-04 05:30:59 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AS jml FROM user 
+				LEFT JOIN user_role USING(id_user) 
+				LEFT JOIN rol...' at line 1
+#0 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT * AS jml...', 0)
+#1 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * AS jml...')
+#2 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * AS jml...')
+#3 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Models\Builtin\UserModel.php(44): CodeIgniter\Database\BaseConnection->query('SELECT * AS jml...')
+#4 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\Builtin\User.php(64): App\Models\Builtin\UserModel->getListUsers(Array, ' WHERE 1 = 1  A...')
+#5 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(832): App\Controllers\Builtin\User->getDataDT()
+#6 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Builtin\User))
+#7 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\index.php(47): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-04 05:31:24 --> Undefined array key "jml"
+#0 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Models\Builtin\UserModel.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'D:\\xampp-8.1.2\\...', 45)
+#1 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\Builtin\User.php(64): App\Models\Builtin\UserModel->getListUsers(Array, ' WHERE 1 = 1  A...')
+#2 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(832): App\Controllers\Builtin\User->getDataDT()
+#3 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Builtin\User))
+#4 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\index.php(47): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-06-04 05:34:57 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 6
+#0 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Models\Builtin\UserModel.php(46): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...')
+#4 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\Builtin\User.php(64): App\Models\Builtin\UserModel->getListUsers(Array, ' WHERE 1 = 1  A...')
+#5 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(832): App\Controllers\Builtin\User->getDataDT()
+#6 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Builtin\User))
+#7 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\index.php(47): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-04 10:08:46 --> Undefined variable $menu_role
+#0 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Views\themes\modern\builtin\menu-role-data.php(90): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'D:\\xampp-8.1.2\\...', 90)
+#1 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\View\View.php(210): include('D:\\xampp-8.1.2\\...')
+#2 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Common.php(1089): CodeIgniter\View\View->render('themes/modern/b...', Array, true)
+#4 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\BaseController.php(240): view('themes/modern/b...', Array)
+#5 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\Builtin\Menu_role.php(36): App\Controllers\BaseController->view('builtin/menu-ro...', Array)
+#6 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(832): App\Controllers\Builtin\Menu_role->index()
+#7 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Builtin\Menu_role))
+#8 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\index.php(47): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-06-04 10:09:35 --> Unknown column 'ignore_role' in 'order clause'
+#0 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT * FROM m...', 0)
+#1 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM m...')
+#2 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM m...')
+#3 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Models\Builtin\MenuRoleModel.php(181): CodeIgniter\Database\BaseConnection->query('SELECT * FROM m...')
+#4 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\Builtin\Menu_role.php(99): App\Models\Builtin\MenuRoleModel->getListData(' WHERE 1 = 1 ')
+#5 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(832): App\Controllers\Builtin\Menu_role->getDataDT()
+#6 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Builtin\Menu_role))
+#7 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\index.php(47): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-04 10:09:46 --> Unknown column 'ignore_role' in 'order clause'
+#0 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT * FROM m...', 0)
+#1 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM m...')
+#2 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM m...')
+#3 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Models\Builtin\MenuRoleModel.php(181): CodeIgniter\Database\BaseConnection->query('SELECT * FROM m...')
+#4 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\Builtin\Menu_role.php(99): App\Models\Builtin\MenuRoleModel->getListData(' WHERE 1 = 1 ')
+#5 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(832): App\Controllers\Builtin\Menu_role->getDataDT()
+#6 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Builtin\Menu_role))
+#7 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\index.php(47): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-04 10:10:32 --> Undefined variable $role
+#0 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\Builtin\Menu_role.php(120): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'D:\\xampp-8.1.2\\...', 120)
+#1 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(832): App\Controllers\Builtin\Menu_role->getDataDT()
+#2 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Builtin\Menu_role))
+#3 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\index.php(47): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-04 10:12:30 --> Undefined array key "judul_role"
+#0 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\Builtin\Menu_role.php(120): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'D:\\xampp-8.1.2\\...', 120)
+#1 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(832): App\Controllers\Builtin\Menu_role->getDataDT()
+#2 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Builtin\Menu_role))
+#3 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\index.php(47): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-04 10:13:39 --> Cannot access offset of type string on string
+#0 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(832): App\Controllers\Builtin\Menu_role->getDataDT()
+#1 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Builtin\Menu_role))
+#2 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\index.php(47): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-06-04 10:24:19 --> Undefined property: stdClass::$jml
+#0 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Models\DataTablesAjaxModel.php(158): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'D:\\xampp-8.1.2\\...', 158)
+#1 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\Data_tables_ajax.php(126): App\Models\DataTablesAjaxModel->getListData(' WHERE 1 = 1 ')
+#2 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(832): App\Controllers\Data_tables_ajax->getDataDT()
+#3 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data_tables_ajax))
+#4 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\index.php(47): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-06-04 10:24:26 --> Undefined property: stdClass::$jml
+#0 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Models\DataTablesAjaxModel.php(158): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'D:\\xampp-8.1.2\\...', 158)
+#1 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\Data_tables_ajax.php(126): App\Models\DataTablesAjaxModel->getListData(' WHERE 1 = 1 ')
+#2 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(832): App\Controllers\Data_tables_ajax->getDataDT()
+#3 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data_tables_ajax))
+#4 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\index.php(47): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-06-04 10:24:49 --> Undefined array key "jml"
+#0 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Models\DataTablesAjaxModel.php(158): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'D:\\xampp-8.1.2\\...', 158)
+#1 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\Data_tables_ajax.php(126): App\Models\DataTablesAjaxModel->getListData(' WHERE 1 = 1 ')
+#2 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(832): App\Controllers\Data_tables_ajax->getDataDT()
+#3 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data_tables_ajax))
+#4 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\index.php(47): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-06-04 10:53:05 --> syntax error, unexpected token ";", expecting ")"
+#0 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Common.php(1089): CodeIgniter\View\View->render('themes/modern/b...', Array, true)
+#2 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\Builtin\Menu_role.php(62): view('themes/modern/b...', Array)
+#3 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(832): App\Controllers\Builtin\Menu_role->checkbox()
+#4 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Builtin\Menu_role))
+#5 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\index.php(47): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-06-04 10:54:53 --> syntax error, unexpected token "=>"
+#0 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Common.php(1089): CodeIgniter\View\View->render('themes/modern/b...', Array, true)
+#2 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\Builtin\Menu_role.php(62): view('themes/modern/b...', Array)
+#3 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(832): App\Controllers\Builtin\Menu_role->checkbox()
+#4 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Builtin\Menu_role))
+#5 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\index.php(47): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-06-04 10:55:19 --> in_array(): Argument #2 ($haystack) must be of type array, string given
+#0 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Views\themes\modern\builtin\menu-role-form-edit.php(13): in_array('3', '')
+#1 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\View\View.php(210): include('D:\\xampp-8.1.2\\...')
+#2 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Common.php(1089): CodeIgniter\View\View->render('themes/modern/b...', Array, true)
+#4 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\Builtin\Menu_role.php(62): view('themes/modern/b...', Array)
+#5 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(832): App\Controllers\Builtin\Menu_role->checkbox()
+#6 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Builtin\Menu_role))
+#7 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\index.php(47): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-04 11:18:52 --> Undefined variable $exp
+#0 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Models\Builtin\MenuRoleModel.php(89): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'D:\\xampp-8.1.2\\...', 89)
+#1 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\Builtin\Menu_role.php(76): App\Models\Builtin\MenuRoleModel->saveData()
+#2 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(832): App\Controllers\Builtin\Menu_role->edit()
+#3 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Builtin\Menu_role))
+#4 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\index.php(47): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-06-04 12:41:08 --> Undefined variable $role
+#0 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Views\themes\modern\builtin\menu-role-form-edit.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'D:\\xampp-8.1.2\\...', 12)
+#1 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\View\View.php(210): include('D:\\xampp-8.1.2\\...')
+#2 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Common.php(1089): CodeIgniter\View\View->render('themes/modern/b...', Array, true)
+#4 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\Builtin\Menu_role.php(56): view('themes/modern/b...', Array)
+#5 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(832): App\Controllers\Builtin\Menu_role->checkbox()
+#6 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Builtin\Menu_role))
+#7 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\index.php(47): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-04 12:41:21 --> Undefined variable $role
+#0 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Views\themes\modern\builtin\menu-role-form-edit.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'D:\\xampp-8.1.2\\...', 12)
+#1 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\View\View.php(210): include('D:\\xampp-8.1.2\\...')
+#2 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Common.php(1089): CodeIgniter\View\View->render('themes/modern/b...', Array, true)
+#4 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\Builtin\Menu_role.php(56): view('themes/modern/b...', Array)
+#5 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(832): App\Controllers\Builtin\Menu_role->checkbox()
+#6 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Builtin\Menu_role))
+#7 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\index.php(47): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-04 12:48:49 --> You must set the database table to be used with your query.
+#0 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Model.php(722): CodeIgniter\Model->builder()
+#2 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\Builtin\User_role.php(112): CodeIgniter\Model->__call('getAllMenuRole', Array)
+#3 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(832): App\Controllers\Builtin\User_role->getDataDT()
+#4 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Builtin\User_role))
+#5 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\index.php(47): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-06-04 12:48:56 --> You must set the database table to be used with your query.
+#0 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Model.php(722): CodeIgniter\Model->builder()
+#2 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\Builtin\User_role.php(112): CodeIgniter\Model->__call('getAllMenuRole', Array)
+#3 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(832): App\Controllers\Builtin\User_role->getDataDT()
+#4 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Builtin\User_role))
+#5 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\index.php(47): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-06-04 14:03:20 --> Undefined variable $role
+#0 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Views\themes\modern\builtin\user-role-form-edit.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'D:\\xampp-8.1.2\\...', 18)
+#1 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\View\View.php(210): include('D:\\xampp-8.1.2\\...')
+#2 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Common.php(1089): CodeIgniter\View\View->render('themes/modern/b...', Array, true)
+#4 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\Builtin\User_role.php(57): view('themes/modern/b...', Array)
+#5 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(832): App\Controllers\Builtin\User_role->checkbox()
+#6 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Builtin\User_role))
+#7 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\index.php(47): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-04 14:09:52 --> Declaration of App\Models\Builtin\ModuleRoleModel::getModuleRole() must be compatible with App\Models\BaseModel::getModuleRole($id_module)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-06-04 14:21:14 --> Invalid file: themes/modern/builtin/module-role-data.php
+#0 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('themes/modern/b...')
+#1 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Common.php(1089): CodeIgniter\View\View->render('themes/modern/b...', Array, true)
+#2 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\BaseController.php(240): view('themes/modern/b...', Array)
+#3 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\Builtin\Module_role.php(57): App\Controllers\BaseController->view('builtin/module-...', Array)
+#4 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(832): App\Controllers\Builtin\Module_role->index()
+#5 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Builtin\Module_role))
+#6 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-06-04 16:31:23 --> Undefined array key "id_role"
+#0 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Models\Builtin\MenuRoleModel.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'D:\\xampp-8.1.2\\...', 53)
+#1 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\Builtin\Menu_role.php(69): App\Models\Builtin\MenuRoleModel->saveData()
+#2 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(832): App\Controllers\Builtin\Menu_role->edit()
+#3 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Builtin\Menu_role))
+#4 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\index.php(47): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-06-04 17:07:05 --> Undefined variable $start
+#0 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Models\FormAjaxModel.php(165): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'D:\\xampp-8.1.2\\...', 165)
+#1 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\Form_ajax.php(145): App\Models\FormAjaxModel->getListData(' WHERE 1 = 1 ')
+#2 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(832): App\Controllers\Form_ajax->getDataDT()
+#3 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Form_ajax))
+#4 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\index.php(47): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-06-04 17:07:19 --> Undefined variable $start
+#0 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Models\FormAjaxModel.php(165): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'D:\\xampp-8.1.2\\...', 165)
+#1 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\Form_ajax.php(145): App\Models\FormAjaxModel->getListData(' WHERE 1 = 1 ')
+#2 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(832): App\Controllers\Form_ajax->getDataDT()
+#3 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Form_ajax))
+#4 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\index.php(47): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-06-04 17:22:55 --> Unknown column 'nama_menu' in 'order clause'
+#0 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT * FROM m...', 0)
+#1 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM m...')
+#2 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM m...')
+#3 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Models\Builtin\ModuleRoleModel.php(123): CodeIgniter\Database\BaseConnection->query('SELECT * FROM m...')
+#4 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\Builtin\Module_role.php(133): App\Models\Builtin\ModuleRoleModel->getListData(' WHERE 1 = 1 ')
+#5 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(832): App\Controllers\Builtin\Module_role->getDataDT()
+#6 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Builtin\Module_role))
+#7 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\index.php(47): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-04 17:23:39 --> Undefined array key "id_menu"
+#0 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\Builtin\Module_role.php(141): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'D:\\xampp-8.1.2\\...', 141)
+#1 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(832): App\Controllers\Builtin\Module_role->getDataDT()
+#2 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Builtin\Module_role))
+#3 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\index.php(47): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-04 17:26:45 --> Unknown column 'nama_module' in 'field list'
+#0 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT module_r...', 0)
+#1 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT module_r...')
+#2 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT module_r...')
+#3 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Models\Builtin\ModuleRoleModel.php(33): CodeIgniter\Database\BaseConnection->query('SELECT module_r...')
+#4 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\Builtin\Module_role.php(33): App\Models\Builtin\ModuleRoleModel->getAllModuleRole()
+#5 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(809): App\Controllers\Builtin\Module_role->__construct()
+#6 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#7 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\index.php(47): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-04 17:30:39 --> Undefined constant "App\Controllers\Builtin\BASE_URL"
+#0 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(832): App\Controllers\Builtin\Module_role->getDataDT()
+#1 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Builtin\Module_role))
+#2 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\index.php(47): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-06-04 17:31:08 --> Undefined variable $config
+#0 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\Builtin\Module_role.php(163): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'D:\\xampp-8.1.2\\...', 163)
+#1 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(832): App\Controllers\Builtin\Module_role->getDataDT()
+#2 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Builtin\Module_role))
+#3 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\index.php(47): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-04 18:24:58 --> Undefined variable $data
+#0 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\Builtin\Module_role.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'D:\\xampp-8.1.2\\...', 43)
+#1 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(832): App\Controllers\Builtin\Module_role->index()
+#2 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Builtin\Module_role))
+#3 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\index.php(47): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-04 18:32:10 --> Call to undefined method App\Controllers\Builtin\Module_role::validateForm()
+#0 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(832): App\Controllers\Builtin\Module_role->edit()
+#1 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Builtin\Module_role))
+#2 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\index.php(47): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-06-04 17:05:35 --> syntax error, unexpected token ";", expecting "]"
+#0 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('builtin/module')
+#1 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(726): CodeIgniter\Router\Router->handle('builtin/module')
+#2 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\index.php(47): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-04 17:05:51 --> syntax error, unexpected variable "$val"
+#0 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('builtin/module')
+#1 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(726): CodeIgniter\Router\Router->handle('builtin/module')
+#2 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\index.php(47): CodeIgniter\CodeIgniter->run()
+#5 {main}

@@ -1,0 +1,42 @@
+CRITICAL - 2022-06-12 20:20:39 --> Undefined array key "total"
+#0 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\Dashboard.php(79): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'D:\\xampp-8.1.2\\...', 79)
+#1 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(832): App\Controllers\Dashboard->ajaxGetItemTerjual()
+#2 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\index.php(47): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-12 20:20:46 --> Undefined array key "total"
+#0 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\Dashboard.php(79): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'D:\\xampp-8.1.2\\...', 79)
+#1 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(832): App\Controllers\Dashboard->ajaxGetItemTerjual()
+#2 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\index.php(47): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-12 20:21:01 --> Undefined array key "total"
+#0 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\Dashboard.php(80): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'D:\\xampp-8.1.2\\...', 80)
+#1 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(832): App\Controllers\Dashboard->ajaxGetItemTerjual()
+#2 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\index.php(47): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-12 08:27:48 --> syntax error, unexpected token "=>", expecting ")"
+#0 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('dashboard')
+#1 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(726): CodeIgniter\Router\Router->handle('dashboard')
+#2 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\index.php(47): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-12 20:36:51 --> Undefined array key "nama"
+#0 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\Dashboard.php(98): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'D:\\xampp-8.1.2\\...', 98)
+#1 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(832): App\Controllers\Dashboard->ajaxGetKategoriTerjual()
+#2 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\index.php(47): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-12 20:36:56 --> Undefined array key "nama"
+#0 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\Dashboard.php(98): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'D:\\xampp-8.1.2\\...', 98)
+#1 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(832): App\Controllers\Dashboard->ajaxGetKategoriTerjual()
+#2 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\index.php(47): CodeIgniter\CodeIgniter->run()
+#5 {main}

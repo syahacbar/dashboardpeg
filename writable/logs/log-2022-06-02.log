@@ -1,0 +1,22 @@
+CRITICAL - 2022-06-02 21:27:18 --> Undefined array key "id_role"
+#0 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\Builtin\Setting_app.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'D:\\xampp-8.1.2\\...', 43)
+#1 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(832): App\Controllers\Builtin\Setting_app->index()
+#2 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Builtin\Setting_app))
+#3 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\index.php(47): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-02 09:31:10 --> syntax error, unexpected token "if"
+#0 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('builtin/setting...')
+#1 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(726): CodeIgniter\Router\Router->handle('builtin/setting...')
+#2 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\index.php(47): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-02 21:31:21 --> Undefined array key "update_all"
+#0 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\BaseController.php(320): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'D:\\xampp-8.1.2\\...', 320)
+#1 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\Builtin\Setting_app.php(43): App\Controllers\BaseController->cekHakAkses('update_all')
+#2 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(832): App\Controllers\Builtin\Setting_app->index()
+#3 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Builtin\Setting_app))
+#4 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\index.php(47): CodeIgniter\CodeIgniter->run()
+#6 {main}

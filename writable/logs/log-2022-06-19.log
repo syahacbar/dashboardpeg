@@ -1,0 +1,568 @@
+CRITICAL - 2022-06-19 05:15:33 --> Undefined array key "nama_pelanggan"
+#0 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\Dashboard.php(114): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'D:\\xampp-8.1.2\\...', 114)
+#1 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(832): App\Controllers\Dashboard->ajaxGetItemTerjual()
+#2 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\index.php(47): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-19 05:26:33 --> Undefined array key "nama_pelanggan"
+#0 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\Dashboard.php(114): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'D:\\xampp-8.1.2\\...', 114)
+#1 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(832): App\Controllers\Dashboard->ajaxGetItemTerjual()
+#2 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\index.php(47): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-19 10:45:36 --> Undefined property: Config\App::$apiURL
+#0 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Views\themes\modern\builtin\login.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'D:\\xampp-8.1.2\\...', 5)
+#1 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\View\View.php(210): include('D:\\xampp-8.1.2\\...')
+#2 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Common.php(1089): CodeIgniter\View\View->render('themes/modern/b...', Array, true)
+#4 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\Login.php(46): view('themes/modern/b...', Array)
+#5 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(832): App\Controllers\Login->index()
+#6 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#7 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\index.php(47): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-19 10:47:04 --> Undefined variable $settingAplikasi
+#0 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Views\themes\modern\builtin\login.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'D:\\xampp-8.1.2\\...', 5)
+#1 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\View\View.php(210): include('D:\\xampp-8.1.2\\...')
+#2 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Common.php(1089): CodeIgniter\View\View->render('themes/modern/b...', Array, true)
+#4 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\Login.php(46): view('themes/modern/b...', Array)
+#5 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(832): App\Controllers\Login->index()
+#6 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#7 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\index.php(47): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-19 10:49:33 --> Attempt to assign property "background_logo" on null
+#0 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\BaseController.php(76): App\Models\BaseModel->getSettingAplikasi()
+#1 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\Login.php(19): App\Controllers\BaseController->__construct()
+#2 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(809): App\Controllers\Login->__construct()
+#3 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#4 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\index.php(47): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-06-19 10:51:23 --> Undefined property: Config\App::$apiURL
+#0 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Views\themes\modern\register\layout.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'D:\\xampp-8.1.2\\...', 6)
+#1 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\View\View.php(210): include('D:\\xampp-8.1.2\\...')
+#2 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\View\View.php(226): CodeIgniter\View\View->render('themes/modern/r...', Array, true)
+#4 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Common.php(1089): CodeIgniter\View\View->render('themes/modern/b...', Array, true)
+#5 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\Login.php(46): view('themes/modern/b...', Array)
+#6 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(832): App\Controllers\Login->index()
+#7 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\index.php(47): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-06-19 10:51:57 --> Undefined variable $settingWeb
+#0 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Views\themes\modern\register\layout.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'D:\\xampp-8.1.2\\...', 41)
+#1 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\View\View.php(210): include('D:\\xampp-8.1.2\\...')
+#2 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\View\View.php(226): CodeIgniter\View\View->render('themes/modern/r...', Array, true)
+#4 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Common.php(1089): CodeIgniter\View\View->render('themes/modern/b...', Array, true)
+#5 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\Login.php(46): view('themes/modern/b...', Array)
+#6 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(832): App\Controllers\Login->index()
+#7 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\index.php(47): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-06-19 11:32:34 --> Undefined variable $settingWeb
+#0 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Views\themes\modern\header.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'D:\\xampp-8.1.2\\...', 12)
+#1 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\View\View.php(210): include('D:\\xampp-8.1.2\\...')
+#2 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Common.php(1089): CodeIgniter\View\View->render('themes/modern/h...', Array, true)
+#4 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\BaseController.php(239): view('themes/modern/h...', Array)
+#5 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\Builtin\User.php(56): App\Controllers\BaseController->view('builtin/user/re...', Array)
+#6 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(832): App\Controllers\Builtin\User->index()
+#7 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Builtin\User))
+#8 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\index.php(47): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-06-19 11:33:32 --> Undefined variable $settingWeb
+#0 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Views\themes\modern\footer.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'D:\\xampp-8.1.2\\...', 8)
+#1 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\View\View.php(210): include('D:\\xampp-8.1.2\\...')
+#2 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Common.php(1089): CodeIgniter\View\View->render('themes/modern/f...', Array, true)
+#4 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\BaseController.php(241): view('themes/modern/f...')
+#5 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\Builtin\User.php(56): App\Controllers\BaseController->view('builtin/user/re...', Array)
+#6 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(832): App\Controllers\Builtin\User->index()
+#7 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Builtin\User))
+#8 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\index.php(47): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-06-19 11:35:13 --> Undefined array key "id_role"
+#0 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\Builtin\Setting_layout.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'D:\\xampp-8.1.2\\...', 36)
+#1 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(832): App\Controllers\Builtin\Setting_layout->index()
+#2 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Builtin\Setting_layout))
+#3 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\index.php(47): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-19 11:35:24 --> Undefined array key "id_role"
+#0 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\Builtin\Setting_layout.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'D:\\xampp-8.1.2\\...', 36)
+#1 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(832): App\Controllers\Builtin\Setting_layout->index()
+#2 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Builtin\Setting_layout))
+#3 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\index.php(47): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-19 11:36:38 --> Undefined property: App\Controllers\Builtin\Setting_layout::$listAction
+#0 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\Builtin\Setting_layout.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'D:\\xampp-8.1.2\\...', 36)
+#1 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(832): App\Controllers\Builtin\Setting_layout->index()
+#2 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Builtin\Setting_layout))
+#3 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\index.php(47): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-19 11:37:18 --> Undefined array key "id_role"
+#0 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Models\Builtin\SettingLayoutModel.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'D:\\xampp-8.1.2\\...', 35)
+#1 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\Builtin\Setting_layout.php(39): App\Models\Builtin\SettingLayoutModel->saveData(Array)
+#2 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(832): App\Controllers\Builtin\Setting_layout->index()
+#3 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Builtin\Setting_layout))
+#4 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\index.php(47): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-06-19 11:38:50 --> Undefined array key "id_role"
+#0 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\Builtin\Setting_registrasi.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'D:\\xampp-8.1.2\\...', 35)
+#1 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(832): App\Controllers\Builtin\Setting_registrasi->index()
+#2 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Builtin\Setting_registrasi))
+#3 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\index.php(47): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-19 12:19:04 --> Undefined variable $nama_module
+#0 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\BaseController.php(135): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'D:\\xampp-8.1.2\\...', 135)
+#1 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\BaseController.php(48): App\Controllers\BaseController->checkModuleStatus(Array)
+#2 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\Apexcharts.php(15): App\Controllers\BaseController->__construct()
+#3 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(809): App\Controllers\Apexcharts->__construct()
+#4 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#5 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\index.php(47): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-06-19 00:22:47 --> syntax error, unexpected token ";"
+#0 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\xampp-8.1.2\\...')
+#1 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\Apexcharts.php(12): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Router\Router.php(518): include_once('D:\\xampp-8.1.2\\...')
+#4 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('apexcharts')
+#5 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(726): CodeIgniter\Router\Router->handle('apexcharts')
+#6 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#7 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\index.php(47): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-19 00:23:15 --> Unclosed '[' does not match ')'
+#0 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\xampp-8.1.2\\...')
+#1 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\Apexcharts.php(12): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Router\Router.php(518): include_once('D:\\xampp-8.1.2\\...')
+#4 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('apexcharts')
+#5 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(726): CodeIgniter\Router\Router->handle('apexcharts')
+#6 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#7 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\index.php(47): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-19 12:23:25 --> Undefined variable $current_module
+#0 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Views\themes\modern\header.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'D:\\xampp-8.1.2\\...', 12)
+#1 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\View\View.php(210): include('D:\\xampp-8.1.2\\...')
+#2 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Common.php(1089): CodeIgniter\View\View->render('themes/modern/h...', Array, true)
+#4 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\BaseController.php(244): view('themes/modern/h...', Array)
+#5 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\BaseController.php(384): App\Controllers\BaseController->view('error.php', Array)
+#6 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\BaseController.php(138): App\Controllers\BaseController->printError(Array)
+#7 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\BaseController.php(48): App\Controllers\BaseController->checkModuleStatus(Array)
+#8 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\Apexcharts.php(15): App\Controllers\BaseController->__construct()
+#9 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(809): App\Controllers\Apexcharts->__construct()
+#10 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#11 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\index.php(47): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-06-19 12:25:17 --> Undefined constant "App\Controllers\this"
+#0 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\BaseController.php(122): App\Controllers\BaseController->checkModuleStatus(Array)
+#1 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\Apexcharts.php(15): App\Controllers\BaseController->__construct()
+#2 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(809): App\Controllers\Apexcharts->__construct()
+#3 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#4 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\index.php(47): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-06-19 13:59:54 --> Undefined variable $jenis_kelamin
+#0 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Views\themes\modern\penghadap-form.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'D:\\xampp-8.1.2\\...', 36)
+#1 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\View\View.php(210): include('D:\\xampp-8.1.2\\...')
+#2 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Common.php(1089): CodeIgniter\View\View->render('themes/modern/p...', Array, true)
+#4 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\BaseController.php(247): view('themes/modern/p...', Array)
+#5 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\Input_dinamis.php(142): App\Controllers\BaseController->view('penghadap-form....', Array)
+#6 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(832): App\Controllers\Input_dinamis->edit()
+#7 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Input_dinamis))
+#8 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\index.php(47): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-06-19 14:04:59 --> trim(): Passing null to parameter #1 ($string) of type string is deprecated
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'trim(): Passing...', 'D:\\xampp-8.1.2\\...', 279)
+#1 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Validation\Validation.php(279): trim(NULL)
+#2 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Validation\Validation.php(157): CodeIgniter\Validation\Validation->processRules('nama_penghadap[...', 'Nama Penghadap', NULL, Array, Array)
+#3 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\Input_dinamis.php(171): CodeIgniter\Validation\Validation->run()
+#4 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\Input_dinamis.php(101): App\Controllers\Input_dinamis->validateForm()
+#5 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(832): App\Controllers\Input_dinamis->edit()
+#6 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Input_dinamis))
+#7 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\index.php(47): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-19 14:08:05 --> Invalid file: themes/modern/register/header.php
+#0 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('themes/modern/r...')
+#1 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Common.php(1089): CodeIgniter\View\View->render('themes/modern/r...', Array, true)
+#2 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\BaseController.php(243): view('themes/modern/r...', Array)
+#3 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\Register.php(73): App\Controllers\BaseController->view(Array, Array)
+#4 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(832): App\Controllers\Register->index()
+#5 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#6 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-06-19 14:09:40 --> Invalid file: themes/modern/register/header.php
+#0 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('themes/modern/r...')
+#1 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Common.php(1089): CodeIgniter\View\View->render('themes/modern/r...', Array, true)
+#2 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\BaseController.php(243): view('themes/modern/r...', Array)
+#3 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\Register.php(73): App\Controllers\BaseController->view(Array, Array)
+#4 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(832): App\Controllers\Register->index()
+#5 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#6 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-06-19 14:10:53 --> Undefined variable $settingWeb
+#0 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Views\themes\modern\register\form.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'D:\\xampp-8.1.2\\...', 5)
+#1 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\View\View.php(210): include('D:\\xampp-8.1.2\\...')
+#2 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Common.php(1089): CodeIgniter\View\View->render('themes/modern/r...', Array, true)
+#4 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\Register.php(75): view('themes/modern/r...', Array)
+#5 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(832): App\Controllers\Register->index()
+#6 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#7 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\index.php(47): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-19 14:15:57 --> Unknown column 'id_role' in 'field list'
+#0 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `us...', 0)
+#1 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Models\RegisterModel.php(115): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\Register.php(59): App\Models\RegisterModel->insertUser()
+#6 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(832): App\Controllers\Register->index()
+#7 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#8 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\index.php(47): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-06-19 14:37:48 --> Unknown column 'pram' in 'where clause'
+#0 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT * FROM s...', 0)
+#1 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM s...')
+#2 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM s...')
+#3 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Models\RegisterModel.php(127): CodeIgniter\Database\BaseConnection->query('SELECT * FROM s...')
+#4 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\Register.php(59): App\Models\RegisterModel->insertUser()
+#5 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(832): App\Controllers\Register->index()
+#6 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#7 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\index.php(47): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-19 14:47:35 --> Invalid file: themes/modern/register/header.php
+#0 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('themes/modern/r...')
+#1 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Common.php(1089): CodeIgniter\View\View->render('themes/modern/r...', Array, true)
+#2 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\BaseController.php(243): view('themes/modern/r...', Array)
+#3 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\Recovery.php(72): App\Controllers\BaseController->view(Array, Array)
+#4 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(832): App\Controllers\Recovery->index()
+#5 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Recovery))
+#6 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-06-19 14:48:00 --> Invalid file: themes/modern/register/header.php
+#0 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('themes/modern/r...')
+#1 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Common.php(1089): CodeIgniter\View\View->render('themes/modern/r...', Array, true)
+#2 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\BaseController.php(243): view('themes/modern/r...', Array)
+#3 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\Recovery.php(72): App\Controllers\BaseController->view(Array, Array)
+#4 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(832): App\Controllers\Recovery->index()
+#5 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Recovery))
+#6 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-06-19 14:55:33 --> Invalid file: themes/modern/register/header.php
+#0 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('themes/modern/r...')
+#1 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Common.php(1089): CodeIgniter\View\View->render('themes/modern/r...', Array, true)
+#2 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\BaseController.php(243): view('themes/modern/r...', Array)
+#3 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\Recovery.php(72): App\Controllers\BaseController->view(Array, Array)
+#4 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(832): App\Controllers\Recovery->index()
+#5 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Recovery))
+#6 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-06-19 15:58:16 --> Undefined variable $settingWeb
+#0 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Views\themes\modern\register\form-recovery.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'D:\\xampp-8.1.2\\...', 5)
+#1 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\View\View.php(210): include('D:\\xampp-8.1.2\\...')
+#2 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Common.php(1089): CodeIgniter\View\View->render('themes/modern/r...', Array, true)
+#4 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\Recovery.php(74): view('themes/modern/r...', Array)
+#5 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(832): App\Controllers\Recovery->index()
+#6 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Recovery))
+#7 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\index.php(47): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-19 16:00:03 --> Invalid file: themes/modern/register/header.php
+#0 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('themes/modern/r...')
+#1 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Common.php(1089): CodeIgniter\View\View->render('themes/modern/r...', Array, true)
+#2 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\BaseController.php(243): view('themes/modern/r...', Array)
+#3 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\Recovery.php(158): App\Controllers\BaseController->view(Array, Array)
+#4 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(832): App\Controllers\Recovery->reset()
+#5 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Recovery))
+#6 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-06-19 16:01:05 --> Undefined variable $settingWeb
+#0 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Views\themes\modern\register\form-reset-password.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'D:\\xampp-8.1.2\\...', 5)
+#1 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\View\View.php(210): include('D:\\xampp-8.1.2\\...')
+#2 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Common.php(1089): CodeIgniter\View\View->render('themes/modern/r...', Array, true)
+#4 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\Recovery.php(155): view('themes/modern/r...', Array)
+#5 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(832): App\Controllers\Recovery->reset()
+#6 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Recovery))
+#7 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\index.php(47): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-19 16:03:05 --> Cannot delete or update a parent row: a foreign key constraint fails (`admin_template_rbac1`.`user_login_activity`, CONSTRAINT `user_login_activity_user` FOREIGN KEY (`id_user`) REFERENCES `user` (`id_user`) ON DELETE NO ACTION ON UPDATE CASCADE)
+#0 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Database\MySQLi\Connection.php(292): mysqli->query('DELETE FROM `us...', 0)
+#1 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `us...')
+#2 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `us...')
+#3 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Database\BaseBuilder.php(2225): CodeIgniter\Database\BaseConnection->query('DELETE FROM `us...', Array, false)
+#4 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Models\Builtin\UserModel.php(194): CodeIgniter\Database\BaseBuilder->delete(Array)
+#5 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\Builtin\User.php(47): App\Models\Builtin\UserModel->deleteUser()
+#6 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(832): App\Controllers\Builtin\User->index()
+#7 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Builtin\User))
+#8 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\index.php(47): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-06-19 16:06:01 --> Invalid file: themes/modern/register/header.php
+#0 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('themes/modern/r...')
+#1 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Common.php(1089): CodeIgniter\View\View->render('themes/modern/r...', Array, true)
+#2 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\BaseController.php(243): view('themes/modern/r...', Array)
+#3 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\Register.php(190): App\Controllers\BaseController->view(Array, Array)
+#4 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(832): App\Controllers\Register->resendlink()
+#5 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#6 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-06-19 16:07:14 --> Undefined variable $settingWeb
+#0 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Views\themes\modern\register\form-resendlink.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'D:\\xampp-8.1.2\\...', 5)
+#1 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\View\View.php(210): include('D:\\xampp-8.1.2\\...')
+#2 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Common.php(1089): CodeIgniter\View\View->render('themes/modern/r...', Array, true)
+#4 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\Register.php(185): view('themes/modern/r...', Array)
+#5 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(832): App\Controllers\Register->resendlink()
+#6 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#7 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\index.php(47): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-19 16:13:57 --> Duplicate entry 'nologin' for key 'module_nama'
+#0 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `mo...', 0)
+#1 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `mo...')
+#2 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `mo...')
+#3 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `mo...', Array, false)
+#4 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Models\Builtin\ModuleModel.php(70): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\Builtin\Module.php(117): App\Models\Builtin\ModuleModel->saveData()
+#6 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\Builtin\Module.php(73): App\Controllers\Builtin\Module->saveData()
+#7 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(832): App\Controllers\Builtin\Module->add()
+#8 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Builtin\Module))
+#9 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\index.php(47): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-06-19 06:25:17 --> Non-abstract method App\Controllers\Tanpalogin::edit() must contain body
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-06-19 18:25:55 --> Trying to access array offset on value of type null
+#0 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\BaseController.php(93): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'D:\\xampp-8.1.2\\...', 93)
+#1 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\Tanpalogin.php(8): App\Controllers\BaseController->__construct()
+#2 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(809): App\Controllers\Tanpalogin->__construct()
+#3 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#4 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\index.php(47): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-06-19 18:28:39 --> Trying to access array offset on value of type null
+#0 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\BaseController.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'D:\\xampp-8.1.2\\...', 52)
+#1 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\Tanpalogin.php(8): App\Controllers\BaseController->__construct()
+#2 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(809): App\Controllers\Tanpalogin->__construct()
+#3 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#4 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\index.php(47): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-06-19 18:35:03 --> Class "App\Models\TanpaLoginModel" not found
+#0 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(809): App\Controllers\Tanpalogin->__construct()
+#1 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#2 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\index.php(47): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-06-19 18:46:31 --> Trying to access array offset on value of type null
+#0 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\BaseController.php(366): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'D:\\xampp-8.1.2\\...', 366)
+#1 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\Tanpalogin.php(14): App\Controllers\BaseController->whereOwn()
+#2 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(832): App\Controllers\Tanpalogin->index()
+#3 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tanpalogin))
+#4 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\index.php(47): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-06-19 18:47:12 --> Undefined array key "result"
+#0 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\Tanpalogin.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'D:\\xampp-8.1.2\\...', 15)
+#1 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(832): App\Controllers\Tanpalogin->index()
+#2 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tanpalogin))
+#3 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\index.php(47): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-19 18:47:22 --> Undefined variable $result
+#0 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Views\themes\modern\produk-result.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'D:\\xampp-8.1.2\\...', 18)
+#1 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\View\View.php(210): include('D:\\xampp-8.1.2\\...')
+#2 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Common.php(1089): CodeIgniter\View\View->render('themes/modern/p...', Array, true)
+#4 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\BaseController.php(237): view('themes/modern/p...', Array)
+#5 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\Tanpalogin.php(21): App\Controllers\BaseController->view('produk-result.p...', Array)
+#6 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(832): App\Controllers\Tanpalogin->index()
+#7 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tanpalogin))
+#8 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\index.php(47): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-06-19 18:47:58 --> Invalid file: tanpalogin.php
+#0 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('tanpalogin.php')
+#1 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Common.php(1089): CodeIgniter\View\View->render('tanpalogin.php', Array, true)
+#2 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\Tanpalogin.php(21): view('tanpalogin.php', Array)
+#3 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(832): App\Controllers\Tanpalogin->index()
+#4 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tanpalogin))
+#5 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\index.php(47): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-06-19 18:50:59 --> Undefined property: App\Controllers\Login::$methodName
+#0 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\BaseController.php(253): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'D:\\xampp-8.1.2\\...', 253)
+#1 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\BaseController.php(104): App\Controllers\BaseController->loginRestricted()
+#2 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\Login.php(19): App\Controllers\BaseController->__construct()
+#3 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(809): App\Controllers\Login->__construct()
+#4 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#5 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\index.php(47): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-06-19 18:53:31 --> Undefined variable $config
+#0 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\Tanpalogin.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'D:\\xampp-8.1.2\\...', 19)
+#1 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(832): App\Controllers\Tanpalogin->index()
+#2 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tanpalogin))
+#3 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\index.php(47): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-19 18:54:07 --> Call to undefined method App\Controllers\Tanpalogin::addStyles()
+#0 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(832): App\Controllers\Tanpalogin->index()
+#1 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tanpalogin))
+#2 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\index.php(47): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-06-19 18:54:15 --> Call to undefined method App\Controllers\Tanpalogin::addStyles()
+#0 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(832): App\Controllers\Tanpalogin->index()
+#1 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tanpalogin))
+#2 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\index.php(47): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-06-19 19:16:17 --> Undefined property: App\Controllers\Login::$methodName
+#0 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\BaseController.php(253): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'D:\\xampp-8.1.2\\...', 253)
+#1 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\BaseController.php(104): App\Controllers\BaseController->loginRestricted()
+#2 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\Login.php(19): App\Controllers\BaseController->__construct()
+#3 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(809): App\Controllers\Login->__construct()
+#4 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#5 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\index.php(47): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-06-19 19:18:07 --> Cannot use object of type Config\App as array
+#0 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\View\View.php(210): include()
+#1 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Common.php(1089): CodeIgniter\View\View->render('themes/modern/t...', Array, true)
+#3 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\Tanpalogin.php(23): view('themes/modern/t...', Array)
+#4 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(832): App\Controllers\Tanpalogin->index()
+#5 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tanpalogin))
+#6 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-06-19 19:37:04 --> Undefined array key 0
+#0 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Helpers\html_helper.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'D:\\xampp-8.1.2\\...', 34)
+#1 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Views\themes\modern\artikel-form.php(64): options(Array, Array, Array)
+#2 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\View\View.php(210): include('D:\\xampp-8.1.2\\...')
+#3 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#4 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Common.php(1089): CodeIgniter\View\View->render('themes/modern/a...', Array, true)
+#5 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\BaseController.php(247): view('themes/modern/a...', Array)
+#6 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\Artikel.php(101): App\Controllers\BaseController->view('artikel-form.ph...', Array)
+#7 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(832): App\Controllers\Artikel->add()
+#8 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Artikel))
+#9 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\index.php(47): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-06-19 19:37:29 --> Undefined array key 0
+#0 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Helpers\html_helper.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'D:\\xampp-8.1.2\\...', 34)
+#1 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Views\themes\modern\artikel-form.php(64): options(Array, Array, Array)
+#2 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\View\View.php(210): include('D:\\xampp-8.1.2\\...')
+#3 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#4 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Common.php(1089): CodeIgniter\View\View->render('themes/modern/a...', Array, true)
+#5 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\BaseController.php(247): view('themes/modern/a...', Array)
+#6 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\Artikel.php(101): App\Controllers\BaseController->view('artikel-form.ph...', Array)
+#7 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(832): App\Controllers\Artikel->add()
+#8 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Artikel))
+#9 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\index.php(47): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-06-19 19:51:27 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?' at line 1
+#0 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT * FROM a...', 0)
+#1 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM a...')
+#2 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM a...')
+#3 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Models\TanpaLoginModel.php(12): CodeIgniter\Database\BaseConnection->query('SELECT * FROM a...')
+#4 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\Tanpalogin.php(14): App\Models\TanpaLoginModel->getArtikelBySlug('tanpalogin')
+#5 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(832): App\Controllers\Tanpalogin->index()
+#6 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tanpalogin))
+#7 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\index.php(47): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-19 19:51:46 --> Array to string conversion
+#0 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Views\themes\modern\tanpalogin.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string...', 'D:\\xampp-8.1.2\\...', 55)
+#1 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\View\View.php(210): include('D:\\xampp-8.1.2\\...')
+#2 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Common.php(1089): CodeIgniter\View\View->render('themes/modern/t...', Array, true)
+#4 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\Tanpalogin.php(15): view('themes/modern/t...', Array)
+#5 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(832): App\Controllers\Tanpalogin->index()
+#6 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tanpalogin))
+#7 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\index.php(47): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-19 19:52:51 --> Undefined array key "color_scheme"
+#0 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Views\themes\modern\header.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'D:\\xampp-8.1.2\\...', 27)
+#1 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\View\View.php(210): include('D:\\xampp-8.1.2\\...')
+#2 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Common.php(1089): CodeIgniter\View\View->render('themes/modern/h...', Array, true)
+#4 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\BaseController.php(246): view('themes/modern/h...', Array)
+#5 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\Apexcharts.php(51): App\Controllers\BaseController->view('apexcharts.php', Array)
+#6 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(832): App\Controllers\Apexcharts->index()
+#7 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apexcharts))
+#8 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\index.php(47): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-06-19 19:53:35 --> Undefined array key "font_family"
+#0 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Views\themes\modern\tanpalogin.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'D:\\xampp-8.1.2\\...', 14)
+#1 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\View\View.php(210): include('D:\\xampp-8.1.2\\...')
+#2 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Common.php(1089): CodeIgniter\View\View->render('themes/modern/t...', Array, true)
+#4 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\Tanpalogin.php(15): view('themes/modern/t...', Array)
+#5 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(832): App\Controllers\Tanpalogin->index()
+#6 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tanpalogin))
+#7 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\index.php(47): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-19 20:02:51 --> Undefined array key "font_family"
+#0 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Views\themes\modern\tanpalogin.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'D:\\xampp-8.1.2\\...', 14)
+#1 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\View\View.php(210): include('D:\\xampp-8.1.2\\...')
+#2 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Common.php(1089): CodeIgniter\View\View->render('themes/modern/t...', Array, true)
+#4 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\Tanpalogin.php(15): view('themes/modern/t...', Array)
+#5 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(832): App\Controllers\Tanpalogin->index()
+#6 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tanpalogin))
+#7 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\index.php(47): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-19 20:03:48 --> Undefined array key "font_family"
+#0 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Views\themes\modern\tanpalogin.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'D:\\xampp-8.1.2\\...', 14)
+#1 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\View\View.php(210): include('D:\\xampp-8.1.2\\...')
+#2 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Common.php(1089): CodeIgniter\View\View->render('themes/modern/t...', Array, true)
+#4 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\Tanpalogin.php(15): view('themes/modern/t...', Array)
+#5 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(832): App\Controllers\Tanpalogin->index()
+#6 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tanpalogin))
+#7 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\index.php(47): CodeIgniter\CodeIgniter->run()
+#9 {main}

@@ -1,0 +1,242 @@
+CRITICAL - 2022-06-14 20:24:57 --> You must set the database table to be used with your query.
+#0 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Model.php(722): CodeIgniter\Model->builder()
+#2 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\Dashboard.php(43): CodeIgniter\Model->__call('getItemTerjualD...', Array)
+#3 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(832): App\Controllers\Dashboard->index()
+#4 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#5 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\index.php(47): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-06-14 20:31:16 --> Undefined variable $tahun
+#0 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Models\DashboardModel.php(124): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'D:\\xampp-8.1.2\\...', 124)
+#1 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\Dashboard.php(129): App\Models\DashboardModel->countAllData(' WHERE 1 = 1 ')
+#2 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(832): App\Controllers\Dashboard->getDataDT()
+#3 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#4 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\index.php(47): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-06-14 20:31:26 --> Undefined variable $tahun
+#0 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Models\DashboardModel.php(124): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'D:\\xampp-8.1.2\\...', 124)
+#1 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\Dashboard.php(129): App\Models\DashboardModel->countAllData(' WHERE 1 = 1 ')
+#2 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(832): App\Controllers\Dashboard->getDataDT()
+#3 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#4 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\index.php(47): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-06-14 20:33:12 --> Undefined variable $tahun
+#0 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Models\DashboardModel.php(124): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'D:\\xampp-8.1.2\\...', 124)
+#1 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\Dashboard.php(129): App\Models\DashboardModel->countAllData(' WHERE 1 = 1 ')
+#2 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(832): App\Controllers\Dashboard->getDataDT()
+#3 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#4 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\index.php(47): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-06-14 20:33:57 --> Unknown column 'tgl_trx' in 'where clause'
+#0 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Models\DashboardModel.php(160): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...')
+#4 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\Dashboard.php(133): App\Models\DashboardModel->getListData('2022')
+#5 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(832): App\Controllers\Dashboard->getDataDT()
+#6 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#7 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\index.php(47): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-14 20:40:45 --> Unknown column 'nama' in 'where clause'
+#0 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Models\DashboardModel.php(167): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...')
+#4 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\Dashboard.php(133): App\Models\DashboardModel->getListData('2022')
+#5 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(832): App\Controllers\Dashboard->getDataDT()
+#6 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#7 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\index.php(47): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-14 20:40:46 --> Unknown column 'nama' in 'where clause'
+#0 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Models\DashboardModel.php(167): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...')
+#4 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\Dashboard.php(133): App\Models\DashboardModel->getListData('2022')
+#5 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(832): App\Controllers\Dashboard->getDataDT()
+#6 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#7 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\index.php(47): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-14 20:41:09 --> Unknown column 'nama' in 'where clause'
+#0 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Models\DashboardModel.php(167): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...')
+#4 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\Dashboard.php(133): App\Models\DashboardModel->getListData('2022')
+#5 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(832): App\Controllers\Dashboard->getDataDT()
+#6 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#7 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\index.php(47): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-14 20:42:17 --> Duplicate column name 'no_invoice'
+#0 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Models\DashboardModel.php(169): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...')
+#4 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\Dashboard.php(133): App\Models\DashboardModel->getListData('2022')
+#5 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(832): App\Controllers\Dashboard->getDataDT()
+#6 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#7 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\index.php(47): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-14 20:42:39 --> Duplicate column name 'no_invoice'
+#0 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Models\DashboardModel.php(169): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...')
+#4 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\Dashboard.php(133): App\Models\DashboardModel->getListData('2022')
+#5 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(832): App\Controllers\Dashboard->getDataDT()
+#6 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#7 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\index.php(47): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-14 20:44:11 --> Duplicate column name 'no_invoice'
+#0 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(id...', 0)
+#1 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(id...')
+#2 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(id...')
+#3 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Models\DashboardModel.php(169): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(id...')
+#4 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\Dashboard.php(133): App\Models\DashboardModel->getListData('2022')
+#5 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(832): App\Controllers\Dashboard->getDataDT()
+#6 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#7 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\index.php(47): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-14 20:45:57 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ']) AS jml_data 
+				FROM (
+					SELECT id_produk, nama, harga_satuan, COUNT...' at line 1
+#0 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*]...', 0)
+#1 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*]...')
+#2 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*]...')
+#3 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Models\DashboardModel.php(171): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*]...')
+#4 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\Dashboard.php(133): App\Models\DashboardModel->getListData('2022')
+#5 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(832): App\Controllers\Dashboard->getDataDT()
+#6 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#7 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\index.php(47): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-14 20:46:27 --> Unknown column 'jml_terjual' in 'where clause'
+#0 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Models\DashboardModel.php(171): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...')
+#4 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\Dashboard.php(133): App\Models\DashboardModel->getListData('2022')
+#5 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(832): App\Controllers\Dashboard->getDataDT()
+#6 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#7 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\index.php(47): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-14 20:46:29 --> Unknown column 'jml_terjual' in 'where clause'
+#0 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Models\DashboardModel.php(171): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...')
+#4 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\Dashboard.php(133): App\Models\DashboardModel->getListData('2022')
+#5 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(832): App\Controllers\Dashboard->getDataDT()
+#6 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#7 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\index.php(47): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-14 20:46:34 --> Unknown column 'jml_terjual' in 'where clause'
+#0 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Models\DashboardModel.php(171): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...')
+#4 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\Dashboard.php(133): App\Models\DashboardModel->getListData('2022')
+#5 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(832): App\Controllers\Dashboard->getDataDT()
+#6 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#7 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\index.php(47): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-14 20:47:23 --> Unknown column 'tgl_trx' in 'where clause'
+#0 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Models\DashboardModel.php(172): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...')
+#4 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\Dashboard.php(133): App\Models\DashboardModel->getListData('2022')
+#5 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(832): App\Controllers\Dashboard->getDataDT()
+#6 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#7 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\index.php(47): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-14 20:48:41 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND (nama LIKE "%m%" OR harga_satuan LIKE "%m%" OR jml_terjual LIKE "%m%" OR ...' at line 11
+#0 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Models\DashboardModel.php(172): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...')
+#4 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\Dashboard.php(133): App\Models\DashboardModel->getListData('2022')
+#5 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(832): App\Controllers\Dashboard->getDataDT()
+#6 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#7 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\index.php(47): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-14 20:49:04 --> Unknown column 'kontribusi' in 'where clause'
+#0 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Models\DashboardModel.php(172): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...')
+#4 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\Dashboard.php(133): App\Models\DashboardModel->getListData('2022')
+#5 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(832): App\Controllers\Dashboard->getDataDT()
+#6 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#7 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\index.php(47): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-14 20:50:52 --> Unknown column 'jml_terjual' in 'where clause'
+#0 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT tabel.*,...', 0)
+#1 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT tabel.*,...')
+#2 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT tabel.*,...')
+#3 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Models\DashboardModel.php(194): CodeIgniter\Database\BaseConnection->query('SELECT tabel.*,...')
+#4 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\Dashboard.php(133): App\Models\DashboardModel->getListData('2022')
+#5 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(832): App\Controllers\Dashboard->getDataDT()
+#6 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#7 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\index.php(47): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-14 20:50:54 --> Unknown column 'jml_terjual' in 'where clause'
+#0 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT tabel.*,...', 0)
+#1 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT tabel.*,...')
+#2 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT tabel.*,...')
+#3 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Models\DashboardModel.php(194): CodeIgniter\Database\BaseConnection->query('SELECT tabel.*,...')
+#4 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\Dashboard.php(133): App\Models\DashboardModel->getListData('2022')
+#5 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(832): App\Controllers\Dashboard->getDataDT()
+#6 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#7 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\index.php(47): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-14 20:52:23 --> Unknown column 'jml_terjual' in 'where clause'
+#0 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT tabel.*,...', 0)
+#1 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT tabel.*,...')
+#2 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT tabel.*,...')
+#3 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Models\DashboardModel.php(194): CodeIgniter\Database\BaseConnection->query('SELECT tabel.*,...')
+#4 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\Dashboard.php(133): App\Models\DashboardModel->getListData('2022')
+#5 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(832): App\Controllers\Dashboard->getDataDT()
+#6 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#7 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\index.php(47): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-14 20:54:13 --> Unknown column 'kontribusi' in 'where clause'
+#0 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT tabel.*,...', 0)
+#1 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT tabel.*,...')
+#2 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT tabel.*,...')
+#3 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Models\DashboardModel.php(193): CodeIgniter\Database\BaseConnection->query('SELECT tabel.*,...')
+#4 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\Dashboard.php(133): App\Models\DashboardModel->getListData('2022')
+#5 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(832): App\Controllers\Dashboard->getDataDT()
+#6 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#7 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\index.php(47): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-14 21:16:09 --> syntax error, unexpected token "exit", expecting "," or ";"
+#0 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\xampp-8.1.2\\...')
+#1 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Dash...')
+#2 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\app\Controllers\Dashboard.php(16): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Dash...')
+#3 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(809): App\Controllers\Dashboard->__construct()
+#4 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#5 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xampp-8.1.2\htdocs\ci4\admin_template_rbac1\index.php(47): CodeIgniter\CodeIgniter->run()
+#7 {main}
