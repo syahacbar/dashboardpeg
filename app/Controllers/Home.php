@@ -17,8 +17,11 @@ class Home extends BaseController
 
 	public function detail($id_instansi)
 	{	
-		$instansi = $this->model->get_data_by_instansi($id_instansi);
-		$this->data['instansi'] = $instansi;
+		$this->data['instansi'] = $this->model->get_data_by_instansi($id_instansi);
+		$this->data['golru'] = $this->model->get_all_golru_by_instansi($id_instansi);
+		$this->data['gender'] = $this->model->get_jenkel_by_instansi($id_instansi);
+		$this->data['jenjab'] = $this->model->get_jenjab_by_instansi($id_instansi);
+
 		return view('themes/modern/detail_instansi.php', $this->data);
 	}
 }
