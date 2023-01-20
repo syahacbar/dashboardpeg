@@ -13,6 +13,12 @@ class HomeModel extends \App\Models\BaseModel
 		return $result;
 	}
 
+	public function get_data_by_instansi($id_instansi) {
+		$sql = 'SELECT * FROM tbl_instansi ti WHERE SHA1(ti.id_instansi)="'.$id_instansi.'"';
+		$result = $this->db->query($sql)->getRow();
+		return $result;
+	}
+
 
 	
 }
