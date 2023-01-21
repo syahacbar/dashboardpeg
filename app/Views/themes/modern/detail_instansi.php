@@ -47,15 +47,16 @@
 		background: #5a43a0;
 	}
 
-	footer * {
+	footer *,
+	header * {
 		color: #fff;
 	}
 
-	footer li a {
+	footer li a, header li a {
 		color: #fff !important;
 	}
 
-	footer li a:hover {
+	footer li a:hover, header li a:hover {
 		color: orange !important;
 	}
 
@@ -151,8 +152,18 @@
 	    background: #f1f7ff;
 	}
 
+	.highcharts-title {
+	    color: rgb(51, 51, 51);
+	    font-size: 18px;
+	    fill: rgb(51, 51, 51);
+	}
+
 	input[type="number"] {
 	    min-width: 50px;
+	}
+
+	* {
+		font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, Helvetica, sans-serif;
 	}
 
 </style>
@@ -211,9 +222,9 @@
 										foreach ($golru AS $gr): 
 									?>
 										<tr>
-											<td><?php echo $no++; ?></td>
-											<td><?php echo $gr->golru; ?></td>
-											<td><?php echo $gr->jum_golru; ?></td>
+											<td style="text-align: center;"><?php echo $no++; ?></td>
+											<td style="text-align: center;"><?php echo $gr->golru; ?></td>
+											<td style="text-align: center;"><?php echo $gr->jum_golru; ?></td>
 										</tr>
 									<?php endforeach ?>
 								</tbody>
@@ -259,9 +270,9 @@
 										foreach ($gender AS $jk): 
 									?>
 										<tr>
-											<td><?php echo $no++; ?></td>
+											<td style="text-align: center;"><?php echo $no++; ?></td>
 											<td><?php echo $jk->gender; ?></td>
-											<td><?php echo $jk->jum_gender; ?></td>
+											<td style="text-align: center;"><?php echo $jk->jum_gender; ?></td>
 										</tr>
 									<?php endforeach ?>
 								</tbody>
@@ -309,9 +320,9 @@
 										foreach ($jenjab AS $jj): 
 									?>
 										<tr>
-											<td><?php echo $no++; ?></td>
-											<td><?php echo $jj->jj; ?></td>
-											<td><?php echo $jj->jum_jj; ?></td>
+											<td style="text-align: center;"><?php echo $no++; ?></td>
+											<td><?php echo ucwords(strtolower($jj->jj)); ?></td>
+											<td style="text-align: center;"><?php echo $jj->jum_jj; ?></td>
 										</tr>
 									<?php endforeach ?>
 								</tbody>
@@ -385,7 +396,7 @@
 		    },
 		    tooltip: {
 		        headerFormat: '<b>{point.key}</b><br>',
-		        pointFormat: 'Cars sold: {point.y}'
+		        pointFormat: 'Jumlah Pegawai: {point.y}'
 		    },
 		    title: {
 		        text: 'Jumlah Pegawai berdasarkan Golongan/Ruang',
@@ -444,7 +455,7 @@
 		    },
 		    series: [{
 		        type: 'pie',
-		        name: 'Share',
+		        name: 'Jumlah',
 		        data: [<?php foreach($gender AS $jk){ echo "['".$jk->gender."',".$jk->jum_gender."],"; }?>
 		        ]
 		    }]
@@ -490,8 +501,8 @@
 		    },
 		    series: [{
 		        type: 'pie',
-		        name: 'Share',
-		        data: [<?php foreach($jenjab AS $jj){ echo "['".$jj->jj."',".$jj->jum_jj."],"; }?>
+		        name: 'Jumlah',
+		        data: [<?php foreach($jenjab AS $jj){ echo "['".ucwords(strtolower($jj->jj))."',".$jj->jum_jj."],"; }?>
 		        ]
 		    }]
 		});
