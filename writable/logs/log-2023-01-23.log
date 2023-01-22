@@ -1,0 +1,179 @@
+CRITICAL - 2023-01-23 00:30:29 --> Class 'App\Controllers\DataTablesAjaxModel' not found
+#0 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(809): App\Controllers\Kenaikanpangkat->__construct()
+#1 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#2 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\xampp7\htdocs\dashboardpeg\index.php(47): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2023-01-23 00:31:03 --> Class 'App\Controllers\DataTablesAjaxModel' not found
+#0 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(809): App\Controllers\Kenaikanpangkat->__construct()
+#1 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#2 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\xampp7\htdocs\dashboardpeg\index.php(47): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2023-01-23 00:37:05 --> Class 'App\Controllers\DataTablesAjaxModel' not found
+#0 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(809): App\Controllers\Kenaikanpangkat->__construct()
+#1 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#2 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\xampp7\htdocs\dashboardpeg\index.php(47): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2023-01-23 00:41:17 --> Unknown column 'nip' in 'order clause'
+#0 D:\xampp7\htdocs\dashboardpeg\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT * FROM m...', 0)
+#1 D:\xampp7\htdocs\dashboardpeg\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM m...')
+#2 D:\xampp7\htdocs\dashboardpeg\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM m...')
+#3 D:\xampp7\htdocs\dashboardpeg\app\Models\DataTablesAjaxModel.php(159): CodeIgniter\Database\BaseConnection->query('SELECT * FROM m...')
+#4 D:\xampp7\htdocs\dashboardpeg\app\Controllers\Kenaikanpangkat.php(52): App\Models\DataTablesAjaxModel->getListData(' WHERE 1 = 1 ')
+#5 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(832): App\Controllers\Kenaikanpangkat->getDataDT()
+#6 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kenaikanpangkat))
+#7 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp7\htdocs\dashboardpeg\index.php(47): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-23 00:43:00 --> Unknown column 'nip' in 'order clause'
+#0 D:\xampp7\htdocs\dashboardpeg\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT * FROM m...', 0)
+#1 D:\xampp7\htdocs\dashboardpeg\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM m...')
+#2 D:\xampp7\htdocs\dashboardpeg\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM m...')
+#3 D:\xampp7\htdocs\dashboardpeg\app\Models\DataTablesAjaxModel.php(159): CodeIgniter\Database\BaseConnection->query('SELECT * FROM m...')
+#4 D:\xampp7\htdocs\dashboardpeg\app\Controllers\Kenaikanpangkat.php(52): App\Models\DataTablesAjaxModel->getListData(' WHERE 1 = 1 ')
+#5 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(832): App\Controllers\Kenaikanpangkat->getDataDT()
+#6 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kenaikanpangkat))
+#7 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp7\htdocs\dashboardpeg\index.php(47): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-23 00:44:56 --> Unknown column 'nip' in 'order clause'
+#0 D:\xampp7\htdocs\dashboardpeg\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT * FROM m...', 0)
+#1 D:\xampp7\htdocs\dashboardpeg\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM m...')
+#2 D:\xampp7\htdocs\dashboardpeg\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM m...')
+#3 D:\xampp7\htdocs\dashboardpeg\app\Models\DataTablesAjaxModel.php(159): CodeIgniter\Database\BaseConnection->query('SELECT * FROM m...')
+#4 D:\xampp7\htdocs\dashboardpeg\app\Controllers\Kenaikanpangkat.php(52): App\Models\DataTablesAjaxModel->getListData(' WHERE 1 = 1 ')
+#5 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(832): App\Controllers\Kenaikanpangkat->getDataDT()
+#6 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kenaikanpangkat))
+#7 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp7\htdocs\dashboardpeg\index.php(47): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-23 00:46:25 --> Unknown column 'nip' in 'order clause'
+#0 D:\xampp7\htdocs\dashboardpeg\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT * FROM m...', 0)
+#1 D:\xampp7\htdocs\dashboardpeg\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM m...')
+#2 D:\xampp7\htdocs\dashboardpeg\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM m...')
+#3 D:\xampp7\htdocs\dashboardpeg\app\Models\DataTablesAjaxModel.php(159): CodeIgniter\Database\BaseConnection->query('SELECT * FROM m...')
+#4 D:\xampp7\htdocs\dashboardpeg\app\Controllers\Kenaikanpangkat.php(52): App\Models\DataTablesAjaxModel->getListData(' WHERE 1 = 1 ')
+#5 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(832): App\Controllers\Kenaikanpangkat->getDataDT()
+#6 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kenaikanpangkat))
+#7 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp7\htdocs\dashboardpeg\index.php(47): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-23 00:47:25 --> Unknown column 'nip' in 'order clause'
+#0 D:\xampp7\htdocs\dashboardpeg\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT * FROM m...', 0)
+#1 D:\xampp7\htdocs\dashboardpeg\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM m...')
+#2 D:\xampp7\htdocs\dashboardpeg\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM m...')
+#3 D:\xampp7\htdocs\dashboardpeg\app\Models\DataTablesAjaxModel.php(159): CodeIgniter\Database\BaseConnection->query('SELECT * FROM m...')
+#4 D:\xampp7\htdocs\dashboardpeg\app\Controllers\Kenaikanpangkat.php(52): App\Models\DataTablesAjaxModel->getListData(' WHERE 1 = 1 ')
+#5 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(832): App\Controllers\Kenaikanpangkat->getDataDT()
+#6 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kenaikanpangkat))
+#7 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp7\htdocs\dashboardpeg\index.php(47): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-23 00:54:16 --> Unknown column 'nip' in 'order clause'
+#0 D:\xampp7\htdocs\dashboardpeg\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT * FROM m...', 0)
+#1 D:\xampp7\htdocs\dashboardpeg\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM m...')
+#2 D:\xampp7\htdocs\dashboardpeg\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM m...')
+#3 D:\xampp7\htdocs\dashboardpeg\app\Models\DataTablesAjaxModel.php(159): CodeIgniter\Database\BaseConnection->query('SELECT * FROM m...')
+#4 D:\xampp7\htdocs\dashboardpeg\app\Controllers\Kenaikanpangkat.php(52): App\Models\DataTablesAjaxModel->getListData(' WHERE 1 = 1 ')
+#5 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(832): App\Controllers\Kenaikanpangkat->getDataDT()
+#6 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kenaikanpangkat))
+#7 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp7\htdocs\dashboardpeg\index.php(47): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-23 00:54:24 --> Unknown column 'nip' in 'order clause'
+#0 D:\xampp7\htdocs\dashboardpeg\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT * FROM m...', 0)
+#1 D:\xampp7\htdocs\dashboardpeg\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM m...')
+#2 D:\xampp7\htdocs\dashboardpeg\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM m...')
+#3 D:\xampp7\htdocs\dashboardpeg\app\Models\DataTablesAjaxModel.php(159): CodeIgniter\Database\BaseConnection->query('SELECT * FROM m...')
+#4 D:\xampp7\htdocs\dashboardpeg\app\Controllers\Kenaikanpangkat.php(52): App\Models\DataTablesAjaxModel->getListData(' WHERE 1 = 1 ')
+#5 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(832): App\Controllers\Kenaikanpangkat->getDataDT()
+#6 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kenaikanpangkat))
+#7 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp7\htdocs\dashboardpeg\index.php(47): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-23 00:54:48 --> Unknown column 'nip' in 'order clause'
+#0 D:\xampp7\htdocs\dashboardpeg\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT * FROM m...', 0)
+#1 D:\xampp7\htdocs\dashboardpeg\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM m...')
+#2 D:\xampp7\htdocs\dashboardpeg\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM m...')
+#3 D:\xampp7\htdocs\dashboardpeg\app\Models\DataTablesAjaxModel.php(159): CodeIgniter\Database\BaseConnection->query('SELECT * FROM m...')
+#4 D:\xampp7\htdocs\dashboardpeg\app\Controllers\Kenaikanpangkat.php(52): App\Models\DataTablesAjaxModel->getListData(' WHERE 1 = 1 ')
+#5 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(832): App\Controllers\Kenaikanpangkat->getDataDT()
+#6 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kenaikanpangkat))
+#7 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp7\htdocs\dashboardpeg\index.php(47): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-23 00:55:48 --> Unknown column 'nip' in 'order clause'
+#0 D:\xampp7\htdocs\dashboardpeg\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT * FROM m...', 0)
+#1 D:\xampp7\htdocs\dashboardpeg\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM m...')
+#2 D:\xampp7\htdocs\dashboardpeg\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM m...')
+#3 D:\xampp7\htdocs\dashboardpeg\app\Models\DataTablesAjaxModel.php(159): CodeIgniter\Database\BaseConnection->query('SELECT * FROM m...')
+#4 D:\xampp7\htdocs\dashboardpeg\app\Controllers\Kenaikanpangkat.php(52): App\Models\DataTablesAjaxModel->getListData(' WHERE 1 = 1 ')
+#5 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(832): App\Controllers\Kenaikanpangkat->getDataDT()
+#6 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kenaikanpangkat))
+#7 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp7\htdocs\dashboardpeg\index.php(47): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-23 00:57:12 --> Unknown column 'nip' in 'order clause'
+#0 D:\xampp7\htdocs\dashboardpeg\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT * FROM m...', 0)
+#1 D:\xampp7\htdocs\dashboardpeg\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM m...')
+#2 D:\xampp7\htdocs\dashboardpeg\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM m...')
+#3 D:\xampp7\htdocs\dashboardpeg\app\Models\DataTablesAjaxModel.php(159): CodeIgniter\Database\BaseConnection->query('SELECT * FROM m...')
+#4 D:\xampp7\htdocs\dashboardpeg\app\Controllers\Kenaikanpangkat.php(52): App\Models\DataTablesAjaxModel->getListData(' WHERE 1 = 1 ')
+#5 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(832): App\Controllers\Kenaikanpangkat->getDataDT()
+#6 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kenaikanpangkat))
+#7 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp7\htdocs\dashboardpeg\index.php(47): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-23 00:59:21 --> Unknown column 'nip' in 'order clause'
+#0 D:\xampp7\htdocs\dashboardpeg\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT * FROM m...', 0)
+#1 D:\xampp7\htdocs\dashboardpeg\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM m...')
+#2 D:\xampp7\htdocs\dashboardpeg\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM m...')
+#3 D:\xampp7\htdocs\dashboardpeg\app\Models\DataTablesAjaxModel.php(159): CodeIgniter\Database\BaseConnection->query('SELECT * FROM m...')
+#4 D:\xampp7\htdocs\dashboardpeg\app\Controllers\Kenaikanpangkat.php(52): App\Models\DataTablesAjaxModel->getListData(' WHERE 1 = 1 ')
+#5 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(832): App\Controllers\Kenaikanpangkat->getDataDT()
+#6 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kenaikanpangkat))
+#7 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp7\htdocs\dashboardpeg\index.php(47): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-23 01:00:14 --> Unknown column 'nip' in 'order clause'
+#0 D:\xampp7\htdocs\dashboardpeg\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT * FROM m...', 0)
+#1 D:\xampp7\htdocs\dashboardpeg\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM m...')
+#2 D:\xampp7\htdocs\dashboardpeg\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM m...')
+#3 D:\xampp7\htdocs\dashboardpeg\app\Models\DataTablesAjaxModel.php(159): CodeIgniter\Database\BaseConnection->query('SELECT * FROM m...')
+#4 D:\xampp7\htdocs\dashboardpeg\app\Controllers\Kenaikanpangkat.php(52): App\Models\DataTablesAjaxModel->getListData(' WHERE 1 = 1 ')
+#5 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(832): App\Controllers\Kenaikanpangkat->getDataDT()
+#6 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kenaikanpangkat))
+#7 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp7\htdocs\dashboardpeg\index.php(47): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-23 01:00:51 --> Unknown column 'nip' in 'order clause'
+#0 D:\xampp7\htdocs\dashboardpeg\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT * FROM m...', 0)
+#1 D:\xampp7\htdocs\dashboardpeg\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM m...')
+#2 D:\xampp7\htdocs\dashboardpeg\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM m...')
+#3 D:\xampp7\htdocs\dashboardpeg\app\Models\DataTablesAjaxModel.php(159): CodeIgniter\Database\BaseConnection->query('SELECT * FROM m...')
+#4 D:\xampp7\htdocs\dashboardpeg\app\Controllers\Kenaikanpangkat.php(52): App\Models\DataTablesAjaxModel->getListData(' WHERE 1 = 1 ')
+#5 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(832): App\Controllers\Kenaikanpangkat->getDataDT()
+#6 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kenaikanpangkat))
+#7 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp7\htdocs\dashboardpeg\index.php(47): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-23 01:02:07 --> Unknown column 'nip' in 'order clause'
+#0 D:\xampp7\htdocs\dashboardpeg\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT * FROM m...', 0)
+#1 D:\xampp7\htdocs\dashboardpeg\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM m...')
+#2 D:\xampp7\htdocs\dashboardpeg\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM m...')
+#3 D:\xampp7\htdocs\dashboardpeg\app\Models\DataTablesAjaxModel.php(159): CodeIgniter\Database\BaseConnection->query('SELECT * FROM m...')
+#4 D:\xampp7\htdocs\dashboardpeg\app\Controllers\Kenaikanpangkat.php(52): App\Models\DataTablesAjaxModel->getListData(' WHERE 1 = 1 ')
+#5 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(832): App\Controllers\Kenaikanpangkat->getDataDT()
+#6 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kenaikanpangkat))
+#7 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp7\htdocs\dashboardpeg\index.php(47): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-23 01:02:29 --> Undefined index: tempat_lahir
+#0 D:\xampp7\htdocs\dashboardpeg\app\Controllers\Kenaikanpangkat.php(67): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\xampp7\\htdoc...', 67, Array)
+#1 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(832): App\Controllers\Kenaikanpangkat->getDataDT()
+#2 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kenaikanpangkat))
+#3 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp7\htdocs\dashboardpeg\index.php(47): CodeIgniter\CodeIgniter->run()
+#5 {main}

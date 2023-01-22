@@ -46,4 +46,5 @@ jQuery(document).ready(function () {
 	}
 	
 	const table =  $('#table-result').DataTable( settings );
+	const table2 =  $('#tbl-struktural-ivab').DataTable( settings );
 });

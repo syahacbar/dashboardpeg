@@ -1,5 +1,5 @@
 <?php
-namespace App\Controllers;
+namespace App\Controllers; 
 use App\Models\KenaikanPangkatModel;
 
 class Kenaikanpangkat extends BaseController
@@ -9,7 +9,7 @@ class Kenaikanpangkat extends BaseController
 		
 		parent::__construct();
 		
-		$this->model = new DataTablesAjaxModel;	
+		$this->model = new KenaikanPangkatModel;	
 		$this->data['site_title'] = 'Image Upload';
 		
 		$this->addJs ( $this->config->baseURL . 'public/vendors/bootstrap-datepicker/js/bootstrap-datepicker.js' );
@@ -25,18 +25,18 @@ class Kenaikanpangkat extends BaseController
 		$this->cekHakAkses('read_data');
 		
 		$data = $this->data;
-		if (!empty($_POST['delete'])) 
-		{
-			$this->cekHakAkses('delete_data', 'mahasiswa');
+		// if (!empty($_POST['delete'])) 
+		// {
+		// 	$this->cekHakAkses('delete_data', 'tbl_kenaikanpangkat');
 			
-			$result = $this->model->deleteData();
-			// $result = true;
-			if ($result) {
-				$data['msg'] = ['status' => 'ok', 'message' => 'Data Mahasiswa berhasil dihapus'];
-			} else {
-				$data['msg'] = ['status' => 'error', 'message' => 'Data Mahasiswa gagal dihapus'];
-			}
-		}
+		// 	$result = $this->model->deleteData();
+		// 	// $result = true;
+		// 	if ($result) {
+		// 		$data['msg'] = ['status' => 'ok', 'message' => 'Data Mahasiswa berhasil dihapus'];
+		// 	} else {
+		// 		$data['msg'] = ['status' => 'error', 'message' => 'Data Mahasiswa gagal dihapus'];
+		// 	}
+		// }
 		$this->view('kenaikanpangkat.php', $data);
 	}
 
@@ -57,20 +57,20 @@ class Kenaikanpangkat extends BaseController
 		foreach ($query['data'] as $key => &$val) 
 		{
 			$image = 'noimage.png';
-			if ($val['foto']) {
-				if (file_exists('public/images/foto/' . $val['foto'])) {
-					$image = $val['foto'];
-				}
-			}
+			// if ($val['foto']) {
+			// 	if (file_exists('public/images/foto/' . $val['foto'])) {
+			// 		$image = $val['foto'];
+			// 	}
+			// }
 			
-			$val['ignore_search_foto'] = '<div class="list-foto"><img src="'. $this->config->baseURL.'public/images/foto/' . $image . '"/></div>';
-			$val['tgl_lahir'] = $val['tempat_lahir'] . ', '. format_tanggal($val['tgl_lahir']);
+			// $val['ignore_search_foto'] = '<div class="list-foto"><img src="'. $this->config->baseURL.'public/images/foto/' . $image . '"/></div>';
+			// $val['tgl_lahir'] = $val['tempat_lahir'] . ', '. format_tanggal($val['tgl_lahir']);
 			
 			$val['ignore_search_urut'] = $no;
 			$val['ignore_search_action'] = btn_action([
-									'edit' => ['url' => $this->config->baseURL . $this->currentModule['nama_module'] . '/edit?id='. $val['id_mahasiswa']]
+									'edit' => ['url' => $this->config->baseURL . $this->currentModule['nama_module'] . '/edit?id='. $val['id']]
 								, 'delete' => ['url' => ''
-												, 'id' =>  $val['id_mahasiswa']
+												, 'id' =>  $val['id']
 												, 'delete-title' => 'Hapus data mahasiswa: <strong>'.$val['nama'].'</strong> ?'
 											]
 							]);

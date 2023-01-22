@@ -1,20 +1,19 @@
 <?php
 helper('html');?>
+
 <div class="card">
   <div class="card-header">
 <ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item" role="presentation">
-    <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Home</button>
+    <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#tab-struktural-ivab" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">IV/a - IV/b</button>
   </li>
   <li class="nav-item" role="presentation">
-    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Profile</button>
-  </li>
-  <li class="nav-item" role="presentation">
-    <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Contact</button>
+    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#tab-struktural-iiid" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">III/d ke bawah</button>
   </li>
 </ul>
 <div class="tab-content" id="myTabContent">
-  <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+  <br>
+  <div class="tab-pane fade show active" id="tab-struktural-ivab" role="tabpanel" aria-labelledby="tab-struktural-ivab" tabindex="0">
     <div class="row">
      <div class="card">
       <div class="card-header">
@@ -32,13 +31,13 @@ helper('html');?>
               'ignore_search_urut' => 'No',
               'nama' => 'Nama',
               'nip' => 'NIP',
-              'golru' => 'Golongan/Ruang',
+              'pangkat' => 'Golongan/Ruang',
               'jabatan' => 'Jabatan',
               'jenis_jabatan' => 'Jenis Jabatan',
               'prosedur' => 'Prosedur Kenaikan Pangkat',
               'status' => 'Status',
               'alasan' => 'Alasan',
-              'ignore_search_action' => 'Action'
+              // 'ignore_search_action' => 'Action'
 
             ];
         
@@ -55,7 +54,7 @@ helper('html');?>
         
         ?>
         
-        <table id="table-result" class="table display table-striped table-bordered table-hover" style="width:100%">
+        <table id="tbl-struktural-ivab" class="table display table-striped table-bordered table-hover" style="width:100%">
         <thead>
           <tr>
             <?=$th?>
@@ -80,9 +79,8 @@ helper('html');?>
     </div>
 
   </div>
-  <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">...</div>
-  <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">...</div>
-  <div class="tab-pane fade" id="disabled-tab-pane" role="tabpanel" aria-labelledby="disabled-tab" tabindex="0">...</div>
+  <div class="tab-pane fade" id="tab-struktural-iiid" role="tabpanel" aria-labelledby="tab-struktural-iiid" tabindex="0">...</div>
+
 </div>
   </div>
 
@@ -90,3 +88,4 @@ helper('html');?>
     
   </div>
 </div>
+
