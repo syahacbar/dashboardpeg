@@ -73,8 +73,8 @@ class BaseController extends Controller
 		$this->data['request'] = $this->request;
 		$this->data['isloggedin'] = $this->isLoggedIn;
 		$this->data['session'] = $this->session;
-		$this->data['site_title'] = 'Admin Template Codeigniter 4';
-		$this->data['site_desc'] = 'Admin Template Codeigniter 4 lengkap dengan berbagai fitur untuk memudahkan pengembangan aplikasi';
+		$this->data['site_title'] = 'Dashboard Kepegawaian';
+		$this->data['site_desc'] = 'Dashboard Kepegawaian';
 		$this->data['settingAplikasi'] = $this->model->getSettingAplikasi();
 		$this->data['user'] = [];
 		$this->data['auth'] = $this->auth;

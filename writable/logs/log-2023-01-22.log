@@ -1,0 +1,24 @@
+CRITICAL - 2023-01-22 11:30:50 --> Class 'App\Controllers\DataTablesAjaxModel' not found
+#0 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(809): App\Controllers\Kenaikanpangkat->__construct()
+#1 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#2 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\xampp7\htdocs\dashboardpeg\index.php(47): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2023-01-22 11:42:29 --> Undefined variable: settingWeb
+#0 D:\xampp7\htdocs\dashboardpeg\app\Views\themes\modern\builtin\login-page.php(29): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp7\\htdoc...', 29, Array)
+#1 D:\xampp7\htdocs\dashboardpeg\system\View\View.php(210): include('D:\\xampp7\\htdoc...')
+#2 D:\xampp7\htdocs\dashboardpeg\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xampp7\htdocs\dashboardpeg\system\Common.php(1089): CodeIgniter\View\View->render('themes/modern/b...', Array, true)
+#4 D:\xampp7\htdocs\dashboardpeg\app\Controllers\Login.php(41): view('themes/modern/b...', Array)
+#5 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(832): App\Controllers\Login->index()
+#6 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#7 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp7\htdocs\dashboardpeg\index.php(47): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-22 12:19:56 --> Undefined index: module_role
+#0 D:\xampp7\htdocs\dashboardpeg\app\Controllers\Login.php(28): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\xampp7\\htdoc...', 28, Array)
+#1 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(832): App\Controllers\Login->index()
+#2 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp7\htdocs\dashboardpeg\index.php(47): CodeIgniter\CodeIgniter->run()
+#5 {main}

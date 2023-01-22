@@ -1,11 +1,4 @@
 <?php
-/**
-*	App Name	: Admin Template Dashboard Codeigniter 4	
-*	Developed by: Agus Prawoto Hadi
-*	Website		: https://jagowebdev.com
-*	Year		: 2020-2022
-*/
-
 namespace App\Controllers;
 use App\Models\Builtin\LoginModel;
 use \Config\App;
@@ -31,8 +24,9 @@ class Login extends \App\Controllers\BaseController
 		if ($this->request->getPost('password')) {
 			
 			$this->login();
-			if ($this->session->get('logged_in')) {
-				return redirect()->to($this->config->baseURL);
+			if ($this->session->get('logged_in')) { 
+				// return redirect()->to($this->config->baseURL);
+				return redirect()->to('login');
 			}
 		}
 		
@@ -45,7 +39,7 @@ class Login extends \App\Controllers\BaseController
 		$this->data['style'] = ' style="max-width:375px"';
 		return view('themes/modern/builtin/login', $this->data);
 		
-		// echo view('themes/modern/builtin/login-page', $this->data);
+		// return view('themes/modern/builtin/login-page', $this->data);
 	}
 	
 	private function login()

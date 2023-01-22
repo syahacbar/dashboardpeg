@@ -187,7 +187,7 @@
 							<i class="menu-icon fas fa-home"></i>Home </a>
 					</li>
 					<li class="menu">
-						<a class="depth-0" href="<?=$config->baseURL?>"><i class="menu-icon fas fa-sign-in-alt"></i>Admin</a>
+						<a class="depth-0" href="<?=$config->baseURL?>login"><i class="menu-icon fas fa-sign-in-alt"></i>Login</a>
 					</li>
 				</ul>
 			</nav>
@@ -395,8 +395,8 @@
 		        }
 		    },
 		    tooltip: {
-		        headerFormat: '<b>{point.key}</b><br>',
-		        pointFormat: 'Jumlah Pegawai: {point.y}'
+		        headerFormat: '<b>Gol/Ruang : {point.key}</b><br>',
+		        pointFormat: 'Jumlah: {point.y}'
 		    },
 		    title: {
 		        text: 'Jumlah Pegawai berdasarkan Golongan/Ruang',

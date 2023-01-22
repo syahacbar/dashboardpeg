@@ -1,11 +1,4 @@
 <?php 
-/**
-*	App Name	: Admin Template Dashboard Codeigniter 4
-*	Developed by: Agus Prawoto Hadi
-*	Website		: www.jagowebdev.com
-*	Year		: 2020-2022
-*/
-
 if (empty($_SESSION['user'])) {
 	$content = 'Layout halaman ini memerlukan login';
 	include ('app/Views/themes/modern/header-error.php');

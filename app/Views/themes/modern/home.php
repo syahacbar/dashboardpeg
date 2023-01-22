@@ -34,15 +34,15 @@
 		background: #5a43a0;
 	}
 
-	footer * {
+	footer *,header * {
 		color: #fff;
 	}
 
-	footer li a {
+	footer li a, header li a {
 		color: #fff !important;
 	}
 
-	footer li a:hover {
+	footer li a:hover, header li a:hover {
 		color: orange !important;
 	}
 </style>
@@ -66,7 +66,7 @@
 							<i class="menu-icon fas fa-home"></i>Home </a>
 					</li>
 					<li class="menu">
-						<a class="depth-0" href="<?=$config->baseURL?>"><i class="menu-icon fas fa-sign-in-alt"></i>Admin</a>
+						<a class="depth-0" href="<?=$config->baseURL?>login"><i class="menu-icon fas fa-sign-in-alt"></i>Login</a>
 					</li>
 				</ul>
 			</nav>
