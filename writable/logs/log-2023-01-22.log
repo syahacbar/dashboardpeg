@@ -22,3 +22,9 @@ CRITICAL - 2023-01-22 12:19:56 --> Undefined index: module_role
 #3 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #4 D:\xampp7\htdocs\dashboardpeg\index.php(47): CodeIgniter\CodeIgniter->run()
 #5 {main}
+CRITICAL - 2023-01-22 19:31:28 --> The framework needs the following extension(s) installed and loaded: intl.
+#0 F:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(219): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+#1 F:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(177): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+#2 F:\xampp7\htdocs\dashboardpeg\system\bootstrap.php(146): CodeIgniter\CodeIgniter->initialize()
+#3 F:\xampp7\htdocs\dashboardpeg\index.php(38): require('F:\\xampp7\\htdoc...')
+#4 {main}
