@@ -412,6 +412,10 @@
 		    },
 		    series: [{
 		        data: [<?php foreach ($golru AS $gr){ echo $gr->jum_golru.","; }?>],
+		        dataLabels: {  
+		        	enabled: true, 
+		        	// pointFormat: '{point.percentage:.1f}%'  
+		        },
 		        colorByPoint: true
 		    }]
 		});

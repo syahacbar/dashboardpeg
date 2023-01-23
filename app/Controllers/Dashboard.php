@@ -8,6 +8,7 @@
 
 namespace App\Controllers;
 use App\Models\DashboardModel;
+use App\Models\HomeModel;
 
 class Dashboard extends BaseController
 {
@@ -55,6 +56,9 @@ class Dashboard extends BaseController
 		$this->data['item_terjual'] = $this->model->getItemTerjual( $tahun );
 		$this->data['kategori_terjual'] = $this->model->getKategoriTerjual( $tahun );        
 		$this->data['pelanggan_terbesar'] = $this->model->getPembelianPelangganTerbesar( $tahun );
+
+		// $this->data['golru'] = $this->model->get_all_golru_by_instansi($id_instansi);
+		// $this->data['jenjab'] = $this->model->get_jenjab_by_instansi($id_instansi);
 		
 		$item_terbaru = $this->model->getItemTerbaru();
 		foreach ($item_terbaru as &$val) {

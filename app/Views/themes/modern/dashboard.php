@@ -11,12 +11,12 @@
 				<div class="card-body card-stats">
 					<div class="description">
 						<h5 class="card-title h4"><?=format_number($total_item_terjual['jml'])?></h5>
-						<p class="card-text">Total Item Terjual</p>
+						<p class="card-text">Jumlah Pegawai Struktural</p>
 						
 					</div>
 					<div class="icon bg-warning-light">
 						<!-- <i class="fas fa-clipboard-list"></i> -->
-						<i class="material-icons">local_shipping</i>
+						<i class="material-icons">group</i>
 					</div>
 				</div>
 				<div class="card-footer">
@@ -25,12 +25,12 @@
 							<?php
 								$class = $total_item_terjual['growth'] > 0 ? 'fa-arrow-up' : 'fa-arrow-down';
 							?>
-							<i class="fas <?=$class?>"></i>
+							<!-- <i class="fas <?=$class?>"></i> -->
 						</div>
-						<p><?=round($total_item_terjual['growth'])?>%</p>
+						<!-- <p><?=round($total_item_terjual['growth'])?>%</p> -->
 					</div>
 					<div class="card-footer-right">
-						<p><?=max($list_tahun)?></p>
+						<!-- <p><?=max($list_tahun)?></p> -->
 					</div>
 				</div>
 			</div>
@@ -40,11 +40,11 @@
 				<div class="card-body card-stats">
 					<div class="description">
 						<h5 class="card-title"><?=format_number($total_jumlah_transaksi['jml'])?></h5>
-						<p class="card-text">Total Transaksi</p>
+						<p class="card-text">Jumlah Pegawai Fungsional Umum</p>
 					</div>
 					<div class="icon">
 						<!-- <i class="fas fa-shopping-cart"></i>-->
-						<i class="material-icons">local_mall</i>
+						<i class="material-icons">group</i>
 					</div>
 				</div>
 				<div class="card-footer">
@@ -53,12 +53,12 @@
 							<?php
 								$class = $total_jumlah_transaksi['growth'] > 0 ? 'fa-arrow-up' : 'fa-arrow-down';
 							?>
-							<i class="fas <?=$class?>"></i>
+							<!-- <i class="fas <?=$class?>"></i> -->
 						</div>
-						<p><?=round($total_jumlah_transaksi['growth'])?>%</p>
+						<!-- <p><?=round($total_jumlah_transaksi['growth'])?>%</p> -->
 					</div>
 					<div class="card-footer-right">
-						<p><?=max($list_tahun)?></p>
+						<!-- <p><?=max($list_tahun)?></p> -->
 					</div>
 				</div>
 			</div>
@@ -68,11 +68,11 @@
 				<div class="card-body card-stats">
 					<div class="description">
 						<h5 class="card-title"><?=format_number($total_nilai_penjualan['jml'])?></h5>
-						<p class="card-text">Total Income</p>
+						<p class="card-text">Jumlah Pegawai Fungsional Tertentu</p>
 					</div>
 					<div class="icon">
 						<!-- <i class="fas fa-money-bill-wave"></i> -->
-						<i class="material-icons">payments</i>
+						<i class="material-icons">group</i>
 					</div>
 				</div>
 				<div class="card-footer">
@@ -81,12 +81,12 @@
 							<?php
 								$class = $total_jumlah_transaksi['growth'] > 0 ? 'fa-arrow-up' : 'fa-arrow-down';
 							?>
-							<i class="fas <?=$class?>"></i>
+							<!-- <i class="fas <?=$class?>"></i> -->
 						</div>
-						<p><?=round($total_nilai_penjualan['growth'])?>%</p>
+						<!-- <p><?=round($total_nilai_penjualan['growth'])?>%</p> -->
 					</div>
 					<div class="card-footer-right">
-						<p><?=max($list_tahun)?></p>
+						<!-- <p><?=max($list_tahun)?></p> -->
 					</div>
 				</div>
 			</div>
@@ -96,11 +96,11 @@
 				<div class="card-body card-stats">
 					<div class="description">
 						<h5 class="card-title"><?=format_number($total_pelanggan_aktif['jml'])?></h5>
-						<p class="card-text">Total Pelanggan Aktif</p>
+						<p class="card-text">Total Pengajuan KP</p>
 					</div>
 					<div class="icon">
 						<!-- <i class="fas fa-money-bill-wave"></i> -->
-						<i class="material-icons">person</i>
+						<i class="material-icons">group</i>
 					</div>
 				</div>
 				<div class="card-footer">
@@ -109,12 +109,12 @@
 							<?php
 								$class = $total_jumlah_transaksi['growth'] > 0 ? 'fa-arrow-up' : 'fa-arrow-down';
 							?>
-							<i class="fas <?=$class?>"></i>
+							<!-- <i class="fas <?=$class?>"></i> -->
 						</div>
-						<p><?=round($total_pelanggan_aktif['growth'])?>%</p>
+						<!-- <p><?=round($total_pelanggan_aktif['growth'])?>%</p> -->
 					</div>
 					<div class="card-footer-right">
-						<p><?=max($list_tahun)?></p>
+						<!-- <p><?=max($list_tahun)?></p> -->
 					</div>
 				</div>
 			</div>
