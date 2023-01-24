@@ -1,0 +1,86 @@
+CRITICAL - 2023-01-25 00:33:01 --> move_uploaded_file(F:\xampp7\htdocs\dashboardpeg\public/tmp/Format Data Transaksi.xlsx): failed to open stream: No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'move_uploaded_f...', 'F:\\xampp7\\htdoc...', 119, Array)
+#1 F:\xampp7\htdocs\dashboardpeg\app\Helpers\upload_file_helper.php(119): move_uploaded_file('F:\\xampp7\\tmp\\p...', 'F:\\xampp7\\htdoc...')
+#2 F:\xampp7\htdocs\dashboardpeg\app\Models\UploadExcelModel.php(27): upload_file('F:\\xampp7\\htdoc...', Array)
+#3 F:\xampp7\htdocs\dashboardpeg\app\Controllers\Uploadexcel.php(43): App\Models\UploadExcelModel->uploadExcel()
+#4 F:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(832): App\Controllers\Uploadexcel->index()
+#5 F:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Uploadexcel))
+#6 F:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 F:\xampp7\htdocs\dashboardpeg\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-01-25 00:35:25 --> move_uploaded_file(F:\xampp7\htdocs\dashboardpeg\public/tmp/Format Data Transaksi.xlsx): failed to open stream: No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'move_uploaded_f...', 'F:\\xampp7\\htdoc...', 119, Array)
+#1 F:\xampp7\htdocs\dashboardpeg\app\Helpers\upload_file_helper.php(119): move_uploaded_file('F:\\xampp7\\tmp\\p...', 'F:\\xampp7\\htdoc...')
+#2 F:\xampp7\htdocs\dashboardpeg\app\Models\UploadExcelModel.php(27): upload_file('F:\\xampp7\\htdoc...', Array)
+#3 F:\xampp7\htdocs\dashboardpeg\app\Controllers\Uploadexcel.php(43): App\Models\UploadExcelModel->uploadExcel()
+#4 F:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(832): App\Controllers\Uploadexcel->index()
+#5 F:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Uploadexcel))
+#6 F:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 F:\xampp7\htdocs\dashboardpeg\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-01-25 00:40:32 --> move_uploaded_file(F:\xampp7\htdocs\dashboardpeg\public/tmp/Format Data Mahasiswa (1).xlsx): failed to open stream: No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'move_uploaded_f...', 'F:\\xampp7\\htdoc...', 119, Array)
+#1 F:\xampp7\htdocs\dashboardpeg\app\Helpers\upload_file_helper.php(119): move_uploaded_file('F:\\xampp7\\tmp\\p...', 'F:\\xampp7\\htdoc...')
+#2 F:\xampp7\htdocs\dashboardpeg\app\Models\UploadExcelModel.php(27): upload_file('F:\\xampp7\\htdoc...', Array)
+#3 F:\xampp7\htdocs\dashboardpeg\app\Controllers\Uploadexcel.php(43): App\Models\UploadExcelModel->uploadExcel()
+#4 F:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(832): App\Controllers\Uploadexcel->index()
+#5 F:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Uploadexcel))
+#6 F:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 F:\xampp7\htdocs\dashboardpeg\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-01-25 01:07:29 --> Undefined variable: instansi
+#0 F:\xampp7\htdocs\dashboardpeg\app\Views\themes\modern\impordata.php(20): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'F:\\xampp7\\htdoc...', 20, Array)
+#1 F:\xampp7\htdocs\dashboardpeg\system\View\View.php(210): include('F:\\xampp7\\htdoc...')
+#2 F:\xampp7\htdocs\dashboardpeg\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 F:\xampp7\htdocs\dashboardpeg\system\Common.php(1089): CodeIgniter\View\View->render('themes/modern/i...', Array, true)
+#4 F:\xampp7\htdocs\dashboardpeg\app\Controllers\BaseController.php(247): view('themes/modern/i...', Array)
+#5 F:\xampp7\htdocs\dashboardpeg\app\Controllers\Impordata.php(50): App\Controllers\BaseController->view('impordata.php', Array)
+#6 F:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(832): App\Controllers\Impordata->index()
+#7 F:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Impordata))
+#8 F:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 F:\xampp7\htdocs\dashboardpeg\index.php(47): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-01-25 01:18:14 --> You must set the database table to be used with your query.
+#0 F:\xampp7\htdocs\dashboardpeg\app\Models\ImpordataModel.php(67): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 F:\xampp7\htdocs\dashboardpeg\app\Controllers\Impordata.php(41): App\Models\ImpordataModel->uploadExcel()
+#2 F:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(832): App\Controllers\Impordata->index()
+#3 F:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Impordata))
+#4 F:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 F:\xampp7\htdocs\dashboardpeg\index.php(47): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2023-01-25 02:02:46 --> You must set the database table to be used with your query.
+#0 F:\xampp7\htdocs\dashboardpeg\app\Models\ImpordataModel.php(67): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 F:\xampp7\htdocs\dashboardpeg\app\Controllers\Impordata.php(41): App\Models\ImpordataModel->uploadExcel()
+#2 F:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(832): App\Controllers\Impordata->index()
+#3 F:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Impordata))
+#4 F:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 F:\xampp7\htdocs\dashboardpeg\index.php(47): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2023-01-25 02:09:28 --> You must set the database table to be used with your query.
+#0 F:\xampp7\htdocs\dashboardpeg\app\Models\ImpordataModel.php(67): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 F:\xampp7\htdocs\dashboardpeg\app\Controllers\Impordata.php(41): App\Models\ImpordataModel->uploadExcel()
+#2 F:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(832): App\Controllers\Impordata->index()
+#3 F:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Impordata))
+#4 F:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 F:\xampp7\htdocs\dashboardpeg\index.php(47): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2023-01-25 02:10:05 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '`jabatan`, `nama`, `nip`, `no`, `pangkat`, `prosedur kenaikan` `pangkat`, `st...' at line 1
+#0 F:\xampp7\htdocs\dashboardpeg\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `tb...', 0)
+#1 F:\xampp7\htdocs\dashboardpeg\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 F:\xampp7\htdocs\dashboardpeg\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 F:\xampp7\htdocs\dashboardpeg\system\Database\BaseBuilder.php(1648): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', NULL, false)
+#4 F:\xampp7\htdocs\dashboardpeg\app\Models\ImpordataModel.php(67): CodeIgniter\Database\BaseBuilder->insertBatch(Array)
+#5 F:\xampp7\htdocs\dashboardpeg\app\Controllers\Impordata.php(41): App\Models\ImpordataModel->uploadExcel()
+#6 F:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(832): App\Controllers\Impordata->index()
+#7 F:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Impordata))
+#8 F:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 F:\xampp7\htdocs\dashboardpeg\index.php(47): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-01-25 02:19:57 --> You must set the database table to be used with your query.
+#0 F:\xampp7\htdocs\dashboardpeg\app\Models\ImpordataModel.php(67): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 F:\xampp7\htdocs\dashboardpeg\app\Controllers\Impordata.php(41): App\Models\ImpordataModel->uploadExcel()
+#2 F:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(832): App\Controllers\Impordata->index()
+#3 F:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Impordata))
+#4 F:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 F:\xampp7\htdocs\dashboardpeg\index.php(47): CodeIgniter\CodeIgniter->run()
+#6 {main}

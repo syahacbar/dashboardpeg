@@ -1,6 +1,6 @@
 jQuery(document).ready(function() {
     console.log(tabel);
-    $('#nama-tabel').change(function() {
+    $('#tabel-impordata').change(function() {
         $this = $(this);
 
         $a = $this.parents('form').eq(0).find('a');
