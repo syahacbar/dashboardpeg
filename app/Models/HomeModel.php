@@ -41,5 +41,11 @@ class HomeModel extends \App\Models\BaseModel
 		return $result;
 	}
 
+	public function get_usulankp_by_instansi($id_instansi)
+	{
+		$sql = 'SELECT tkp.status, COUNT(tkp.status) AS jum_ukp FROM tbl_kenaikanpangkat tkp WHERE SHA1(tkp.id_instansi)="'.$id_instansi.'" GROUP BY tkp.status';
+		$result = $this->db->query($sql)->getResult();
+		return $result;
+	}
 	
 }

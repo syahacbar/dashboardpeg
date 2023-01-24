@@ -1,0 +1,130 @@
+CRITICAL - 2023-01-24 03:44:03 --> Undefined variable: totalTime
+#0 D:\xampp7\htdocs\dashboardpeg\system\Debug\Toolbar\Views\toolbar.tpl.php(40): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp7\\htdoc...', 40, Array)
+#1 D:\xampp7\htdocs\dashboardpeg\system\Debug\Toolbar.php(501): include('D:\\xampp7\\htdoc...')
+#2 D:\xampp7\htdocs\dashboardpeg\system\Debug\Toolbar.php(464): CodeIgniter\Debug\Toolbar->format(Array, 'html')
+#3 D:\xampp7\htdocs\dashboardpeg\app\Config\Events.php(50): CodeIgniter\Debug\Toolbar->respond()
+#4 D:\xampp7\htdocs\dashboardpeg\system\Events\Events.php(149): CodeIgniter\Events\Events::Config\{closure}()
+#5 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(308): CodeIgniter\Events\Events::trigger('pre_system')
+#6 D:\xampp7\htdocs\dashboardpeg\index.php(47): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-01-24 12:07:24 --> Argument 2 passed to view() must be of the type array, bool given, called in D:\xampp7\htdocs\dashboardpeg\app\Controllers\BaseController.php on line 246
+#0 D:\xampp7\htdocs\dashboardpeg\app\Controllers\BaseController.php(246): view('themes/modern/h...', false)
+#1 D:\xampp7\htdocs\dashboardpeg\app\Controllers\Dashboard2.php(30): App\Controllers\BaseController->view('dashboard2.php')
+#2 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(832): App\Controllers\Dashboard2->index()
+#3 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard2))
+#4 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp7\htdocs\dashboardpeg\index.php(47): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2023-01-24 12:07:42 --> Undefined variable: message
+#0 D:\xampp7\htdocs\dashboardpeg\app\Views\themes\modern\dashboard2.php(4): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp7\\htdoc...', 4, Array)
+#1 D:\xampp7\htdocs\dashboardpeg\system\View\View.php(210): include('D:\\xampp7\\htdoc...')
+#2 D:\xampp7\htdocs\dashboardpeg\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xampp7\htdocs\dashboardpeg\system\Common.php(1089): CodeIgniter\View\View->render('themes/modern/d...', Array, true)
+#4 D:\xampp7\htdocs\dashboardpeg\app\Controllers\BaseController.php(247): view('themes/modern/d...', Array)
+#5 D:\xampp7\htdocs\dashboardpeg\app\Controllers\Dashboard2.php(30): App\Controllers\BaseController->view('dashboard2.php', Array)
+#6 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(832): App\Controllers\Dashboard2->index()
+#7 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard2))
+#8 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp7\htdocs\dashboardpeg\index.php(47): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-01-24 12:09:50 --> Undefined variable: id_instansi
+#0 D:\xampp7\htdocs\dashboardpeg\app\Controllers\Dashboard2.php(29): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp7\\htdoc...', 29, Array)
+#1 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(832): App\Controllers\Dashboard2->index()
+#2 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard2))
+#3 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp7\htdocs\dashboardpeg\index.php(47): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-01-24 12:11:07 --> Undefined variable: user
+#0 D:\xampp7\htdocs\dashboardpeg\app\Controllers\Dashboard2.php(29): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp7\\htdoc...', 29, Array)
+#1 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(832): App\Controllers\Dashboard2->index()
+#2 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard2))
+#3 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp7\htdocs\dashboardpeg\index.php(47): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-01-24 12:11:31 --> You must set the database table to be used with your query.
+#0 D:\xampp7\htdocs\dashboardpeg\system\Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 D:\xampp7\htdocs\dashboardpeg\system\Model.php(722): CodeIgniter\Model->builder()
+#2 D:\xampp7\htdocs\dashboardpeg\app\Controllers\Dashboard2.php(31): CodeIgniter\Model->__call('get_data_by_ins...', Array)
+#3 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(832): App\Controllers\Dashboard2->index()
+#4 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard2))
+#5 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xampp7\htdocs\dashboardpeg\index.php(47): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-01-24 12:20:40 --> Undefined variable: userdata
+#0 D:\xampp7\htdocs\dashboardpeg\app\Views\themes\modern\dashboard2.php(61): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp7\\htdoc...', 61, Array)
+#1 D:\xampp7\htdocs\dashboardpeg\system\View\View.php(210): include('D:\\xampp7\\htdoc...')
+#2 D:\xampp7\htdocs\dashboardpeg\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xampp7\htdocs\dashboardpeg\system\Common.php(1089): CodeIgniter\View\View->render('themes/modern/d...', Array, true)
+#4 D:\xampp7\htdocs\dashboardpeg\app\Controllers\BaseController.php(247): view('themes/modern/d...', Array)
+#5 D:\xampp7\htdocs\dashboardpeg\app\Controllers\Dashboard2.php(34): App\Controllers\BaseController->view('dashboard2.php', Array)
+#6 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(832): App\Controllers\Dashboard2->index()
+#7 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard2))
+#8 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp7\htdocs\dashboardpeg\index.php(47): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-01-24 12:40:47 --> Undefined property: App\Controllers\Dashboard2::$db
+#0 D:\xampp7\htdocs\dashboardpeg\app\Controllers\Dashboard2.php(38): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'D:\\xampp7\\htdoc...', 38, Array)
+#1 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(832): App\Controllers\Dashboard2->index()
+#2 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard2))
+#3 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp7\htdocs\dashboardpeg\index.php(47): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-01-24 12:43:53 --> Undefined variable: id_instansi
+#0 D:\xampp7\htdocs\dashboardpeg\app\Views\themes\modern\dashboard2.php(19): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp7\\htdoc...', 19, Array)
+#1 D:\xampp7\htdocs\dashboardpeg\system\View\View.php(210): include('D:\\xampp7\\htdoc...')
+#2 D:\xampp7\htdocs\dashboardpeg\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xampp7\htdocs\dashboardpeg\system\Common.php(1089): CodeIgniter\View\View->render('themes/modern/d...', Array, true)
+#4 D:\xampp7\htdocs\dashboardpeg\app\Controllers\BaseController.php(247): view('themes/modern/d...', Array)
+#5 D:\xampp7\htdocs\dashboardpeg\app\Controllers\Dashboard2.php(43): App\Controllers\BaseController->view('dashboard2.php', Array)
+#6 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(832): App\Controllers\Dashboard2->index()
+#7 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard2))
+#8 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp7\htdocs\dashboardpeg\index.php(47): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-01-24 21:23:58 --> Undefined property: stdClass::$jum_jj
+#0 D:\xampp7\htdocs\dashboardpeg\app\Views\themes\modern\dashboard2.php(127): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'D:\\xampp7\\htdoc...', 127, Array)
+#1 D:\xampp7\htdocs\dashboardpeg\system\View\View.php(210): include('D:\\xampp7\\htdoc...')
+#2 D:\xampp7\htdocs\dashboardpeg\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xampp7\htdocs\dashboardpeg\system\Common.php(1089): CodeIgniter\View\View->render('themes/modern/d...', Array, true)
+#4 D:\xampp7\htdocs\dashboardpeg\app\Controllers\BaseController.php(247): view('themes/modern/d...', Array)
+#5 D:\xampp7\htdocs\dashboardpeg\app\Controllers\Dashboard2.php(43): App\Controllers\BaseController->view('dashboard2.php', Array)
+#6 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(832): App\Controllers\Dashboard2->index()
+#7 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard2))
+#8 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp7\htdocs\dashboardpeg\index.php(47): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-01-24 21:32:22 --> Unknown column 'tp.id_instansi' in 'where clause'
+#0 D:\xampp7\htdocs\dashboardpeg\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT tkp.stat...', 0)
+#1 D:\xampp7\htdocs\dashboardpeg\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT tkp.stat...')
+#2 D:\xampp7\htdocs\dashboardpeg\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT tkp.stat...')
+#3 D:\xampp7\htdocs\dashboardpeg\app\Models\HomeModel.php(47): CodeIgniter\Database\BaseConnection->query('SELECT tkp.stat...')
+#4 D:\xampp7\htdocs\dashboardpeg\app\Controllers\Dashboard2.php(43): App\Models\HomeModel->get_usulankp_by_instansi('77de68daecd823b...')
+#5 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(832): App\Controllers\Dashboard2->index()
+#6 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard2))
+#7 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp7\htdocs\dashboardpeg\index.php(47): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-24 21:32:40 --> Undefined property: stdClass::$status
+#0 D:\xampp7\htdocs\dashboardpeg\app\Views\themes\modern\dashboard2.php(172): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'D:\\xampp7\\htdoc...', 172, Array)
+#1 D:\xampp7\htdocs\dashboardpeg\system\View\View.php(210): include('D:\\xampp7\\htdoc...')
+#2 D:\xampp7\htdocs\dashboardpeg\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xampp7\htdocs\dashboardpeg\system\Common.php(1089): CodeIgniter\View\View->render('themes/modern/d...', Array, true)
+#4 D:\xampp7\htdocs\dashboardpeg\app\Controllers\BaseController.php(247): view('themes/modern/d...', Array)
+#5 D:\xampp7\htdocs\dashboardpeg\app\Controllers\Dashboard2.php(44): App\Controllers\BaseController->view('dashboard2.php', Array)
+#6 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(832): App\Controllers\Dashboard2->index()
+#7 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard2))
+#8 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp7\htdocs\dashboardpeg\index.php(47): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-01-24 21:33:11 --> Undefined property: stdClass::$status
+#0 D:\xampp7\htdocs\dashboardpeg\app\Views\themes\modern\dashboard2.php(172): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'D:\\xampp7\\htdoc...', 172, Array)
+#1 D:\xampp7\htdocs\dashboardpeg\system\View\View.php(210): include('D:\\xampp7\\htdoc...')
+#2 D:\xampp7\htdocs\dashboardpeg\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xampp7\htdocs\dashboardpeg\system\Common.php(1089): CodeIgniter\View\View->render('themes/modern/d...', Array, true)
+#4 D:\xampp7\htdocs\dashboardpeg\app\Controllers\BaseController.php(247): view('themes/modern/d...', Array)
+#5 D:\xampp7\htdocs\dashboardpeg\app\Controllers\Dashboard2.php(44): App\Controllers\BaseController->view('dashboard2.php', Array)
+#6 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(832): App\Controllers\Dashboard2->index()
+#7 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard2))
+#8 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp7\htdocs\dashboardpeg\index.php(47): CodeIgniter\CodeIgniter->run()
+#10 {main}

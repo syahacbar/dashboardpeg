@@ -35,13 +35,13 @@
 	<script type="text/javascript" src="https://code.highcharts.com/modules/exporting.js"></script>
 	<script type="text/javascript" src="https://code.highcharts.com/modules/export-data.js"></script>
 	<script type="text/javascript" src="https://code.highcharts.com/modules/accessibility.js"></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.bundle.min.js'></script>
 
 	<!-- datatables -->
 	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.1/css/jquery.dataTables.min.css">
 <script type="text/javascript" src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.min.js"></script>
 
 	
-	<script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.bundle.min.js'></script>
 <style type="text/css">
 	header, footer {
 		background: #5a43a0;
@@ -365,13 +365,11 @@
 	</div><!-- site-container -->
 
 
-	<script>
-	// Highcharts.setOptions({
-	// 	colors: ['#50B432', '#ED561B', '#DDDF00', '#24CBE5', '#64E572', '#FF9655', '#FFF263', '#6AF9C4']
-	// });
+<script>
 
 	var chart1;
 	var chart2;
+	var chart3;
 	
 		// chart golru
 		chart1 = new Highcharts.Chart({
@@ -468,7 +466,7 @@
 
 		//graph jenjis jabatan
 	
-		chart2 = new Highcharts.Chart({
+		chart3 = new Highcharts.Chart({
 		    chart: {
 		    	renderTo: 'graph-jenjab',
 		        type: 'pie',
@@ -524,13 +522,8 @@
 		    chart.redraw(false);
 		}));
 
-		showValues();
-
-
-		   
-	</script>
-
-
+		showValues();	   
+</script>
 	<script>
 		$(document).ready( function () {
 		    $('.mytables').DataTable({

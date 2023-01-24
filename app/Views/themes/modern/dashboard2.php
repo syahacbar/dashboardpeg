@@ -1,0 +1,408 @@
+<?php helper('html')?>
+
+<div class="card-body dashboard">
+	<?php
+	// if ($message['status'] == 'error') {
+	// 	show_message($message);
+	// }
+	?>
+	
+	<div class="row">
+		<div class="col-12 col-md-12 col-lg-12 col-xl-4 mb-4">
+			<div class="card">
+				<div class="card-header">
+					<div class="card-header-start">
+						<h6 class="card-title">Jumlah Pegawai Berdasarkan Golongan/Ruang</h6>
+					</div>
+				</div>
+				<div class="card-body">
+					<div style="overflow: auto">
+						<table class="table table-striped table-bordered table-hover mytables">
+							<thead>
+							<tr>
+								<th width="20px">No.</th>
+								<th>Golongan/Ruang</th>
+								<th>Jumlah</th>
+							</tr>
+							</thead>
+							<tbody>
+								<?php 	
+									$no = 1;
+									foreach ($golru AS $gr): 
+								?>
+									<tr>
+										<td style="text-align: center;"><?php echo $no++; ?></td>
+										<td style="text-align: center;"><?php echo $gr->golru; ?></td>
+										<td style="text-align: center;"><?php echo $gr->jum_golru; ?></td>
+									</tr>
+								<?php endforeach ?>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-12 col-md-12 col-lg-12 col-xl-8 mb-4">
+			<div class="card" style="height:100%">
+				<div class="card-body" style="display:flex">
+					<figure class="highcharts-figure" style="min-width:500px;margin:top;width:100%;">
+					    <div id="graph-golru"></div>
+					</figure>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-12 col-md-12 col-lg-12 col-xl-4 mb-4">
+			<div class="card">
+				<div class="card-header">
+					<div class="card-header-start">
+						<h6 class="card-title">Jumlah Pegawai Berdasarkan Jenis Kelamin</h6>
+					</div>
+				</div>
+				<div class="card-body">
+					<div style="overflow: auto">
+						<table class="table table-striped table-bordered table-hover mytables">
+							<thead>
+							<tr>
+								<th width="20px">No.</th>
+								<th>Jenis Kelamin</th>
+								<th>Jumlah</th>
+							</tr>
+							</thead>
+							<tbody>
+								<?php 	
+										$no = 1;
+										foreach ($gender AS $jk): 
+									?>
+										<tr>
+											<td style="text-align: center;"><?php echo $no++; ?></td>
+											<td><?php echo $jk->gender; ?></td>
+											<td style="text-align: center;"><?php echo $jk->jum_gender; ?></td>
+										</tr>
+									<?php endforeach ?>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-12 col-md-12 col-lg-12 col-xl-8 mb-4">
+			<div class="card" style="height:100%">
+				<div class="card-body" style="display:flex">
+					<figure class="highcharts-figure" style="min-width:500px;margin:top;width:100%;">
+					    <div id="graph-gender"></div>
+					</figure>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-12 col-md-12 col-lg-12 col-xl-4 mb-4">
+			<div class="card">
+				<div class="card-header">
+					<div class="card-header-start">
+						<h6 class="card-title">Jumlah Pegawai Berdasarkan Jenis Jabatan</h6>
+					</div>
+				</div>
+				<div class="card-body">
+					<div style="overflow: auto">
+						<table class="table table-striped table-bordered table-hover mytables">
+							<thead>
+							<tr>
+								<th width="20px">No.</th>
+								<th>Jenis Jabatan</th>
+								<th>Jumlah</th>
+							</tr>
+							</thead>
+							<tbody>
+								<?php 	
+										$no = 1;
+										foreach ($jenjab AS $jj): 
+									?>
+										<tr>
+											<td style="text-align: center;"><?php echo $no++; ?></td>
+											<td><?php echo ucwords(strtolower($jj->jj)); ?></td>
+											<td style="text-align: center;"><?php echo $jj->jum_jj; ?></td>
+										</tr>
+									<?php endforeach ?>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-12 col-md-12 col-lg-12 col-xl-8 mb-4">
+			<div class="card" style="height:100%">
+				<div class="card-body" style="display:flex">
+					<figure class="highcharts-figure" style="min-width:500px;margin:top;width:100%;">
+					    <div id="graph-jenjab"></div>
+					</figure>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-12 col-md-12 col-lg-12 col-xl-4 mb-4">
+			<div class="card">
+				<div class="card-header">
+					<div class="card-header-start">
+						<h6 class="card-title">Status Pengusulan Kenaikan Pangkat</h6>
+					</div>
+				</div>
+				<div class="card-body">
+					<div style="overflow: auto">
+						<table class="table table-striped table-bordered table-hover mytables">
+							<thead>
+							<tr>
+								<th width="20px">No.</th>
+								<th>Status</th>
+								<th>Jumlah</th>
+							</tr>
+							</thead>
+							<tbody>
+								<?php 	
+										$no = 1;
+										foreach ($usulankp AS $ukp): 
+									?>
+										<tr>
+											<td style="text-align: center;"><?php echo $no++; ?></td>
+											<td><?php echo $ukp->status; ?></td>
+											<td style="text-align: center;"><?php echo $ukp->jum_ukp; ?></td>
+										</tr>
+									<?php endforeach ?>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-12 col-md-12 col-lg-12 col-xl-8 mb-4">
+			<div class="card" style="height:100%">
+				<div class="card-body" style="display:flex">
+					<figure class="highcharts-figure" style="min-width:500px;margin:top;width:100%;">
+					    <div id="graph-usulankp"></div>
+					</figure>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+	<script>
+		$(document).ready( function () {
+		    $('.mytables').DataTable({
+		    	"lengthChange": false,
+		    	"searching": false
+		    });
+
+		} );
+	</script>
+
+<script>
+
+	var chart1;
+	var chart2;
+	var chart3;
+	var chart4;
+	
+		// chart golru
+		chart1 = new Highcharts.Chart({
+		    chart: {
+		        renderTo: 'graph-golru',
+		        type: 'column',
+		        height: (9 / 16 * 100) + '%',
+		        options3d: {
+		            enabled: true,
+		            alpha: 15,
+		            beta: 15,
+		            depth: 50,
+		            viewDistance: 25
+		        }
+		    },
+		    xAxis: {
+		        categories: [<?php foreach ($golru AS $gr){ echo "'".$gr->golru."',"; }?>]
+		    },
+		    yAxis: {
+		        title: {
+		            enabled: false
+		        }
+		    },
+		    tooltip: {
+		        headerFormat: '<b>Gol/Ruang : {point.key}</b><br>',
+		        pointFormat: 'Jumlah: {point.y}'
+		    },
+		    title: {
+		        text: 'Jumlah Pegawai berdasarkan Golongan/Ruang',
+		        align: 'left'
+		    },
+		    legend: {
+		        enabled: false
+		    },
+		    plotOptions: {
+		        column: {
+		            depth: 25
+		        }
+		    },
+		    series: [{
+		        data: [<?php foreach ($golru AS $gr){ echo $gr->jum_golru.","; }?>],
+		        dataLabels: {  
+		        	enabled: true, 
+		        },
+		        colorByPoint: true
+		    }]
+		});
+
+		//graph gender
+	
+		chart2 = new Highcharts.Chart({
+		    chart: {
+		    	renderTo: 'graph-gender',
+		        type: 'pie',
+		        options3d: {
+		            enabled: true,
+		            alpha: 45,
+		            beta: 0
+		        }
+		    },
+
+
+		    title: {
+		        text: 'Jumlah Pegawai berdasarkan Jenis Kelamin',
+		        align: 'left'
+		    },
+		    accessibility: {
+		        point: {
+		            valueSuffix: '%'
+		        }
+		    },
+		    tooltip: {
+		        pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+		    },
+		    plotOptions: {
+		        pie: {
+		            allowPointSelect: true,
+		            cursor: 'pointer',
+		            depth: 35,
+		            dataLabels: {
+		                enabled: true,
+		                format: '{point.name}'
+		            }
+		        }
+		    },
+		    series: [{
+		        type: 'pie',
+		        name: 'Jumlah',
+		        data: [<?php foreach($gender AS $jk){ echo "['".$jk->gender."',".$jk->jum_gender."],"; }?>
+		        ]
+		    }]
+		});
+
+
+		//graph jenis jabatan
+	
+		chart3 = new Highcharts.Chart({
+		    chart: {
+		    	renderTo: 'graph-jenjab',
+		        type: 'pie',
+		        options3d: {
+		            enabled: true,
+		            alpha: 45,
+		            beta: 0
+		        }
+		    },
+
+
+		    title: {
+		        text: 'Jumlah Pegawai berdasarkan Jenis Jabatan',
+		        align: 'left'
+		    },
+		    accessibility: {
+		        point: {
+		            valueSuffix: '%'
+		        }
+		    },
+		    tooltip: {
+		        pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+		    },
+		    plotOptions: {
+		        pie: {
+		            allowPointSelect: true,
+		            cursor: 'pointer',
+		            depth: 35,
+		            dataLabels: {
+		                enabled: true,
+		                format: '{point.name}'
+		            }
+		        }
+		    },
+		    series: [{
+		        type: 'pie',
+		        name: 'Jumlah',
+		        data: [<?php foreach($jenjab AS $jj){ echo "['".ucwords(strtolower($jj->jj))."',".$jj->jum_jj."],"; }?>
+		        ]
+		    }]
+		});
+
+		//graph status usulan KP
+	
+		chart4 = new Highcharts.Chart({
+		    chart: {
+		    	renderTo: 'graph-usulankp',
+		        type: 'pie',
+		        options3d: {
+		            enabled: true,
+		            alpha: 45,
+		            beta: 0
+		        }
+		    },
+
+
+		    title: {
+		        text: 'Status Usulan Kenaikan Pangkat',
+		        align: 'left'
+		    },
+		    accessibility: {
+		        point: {
+		            valueSuffix: '%'
+		        }
+		    },
+		    tooltip: {
+		        pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+		    },
+		    plotOptions: {
+		        pie: {
+		            allowPointSelect: true,
+		            cursor: 'pointer',
+		            depth: 35,
+		            dataLabels: {
+		                enabled: true,
+		                format: '{point.name}'
+		            }
+		        }
+		    },
+		    series: [{
+		        type: 'pie',
+		        name: 'Jumlah',
+		        data: [<?php foreach($usulankp AS $ukp){ echo "['".$ukp->status."',".$ukp->jum_ukp."],"; }?>
+		        ]
+		    }]
+		});
+
+		function showValues() {
+		    document.getElementById('alpha-value').innerHTML = chart.options.chart.options3d.alpha;
+		    document.getElementById('beta-value').innerHTML = chart.options.chart.options3d.beta;
+		    document.getElementById('depth-value').innerHTML = chart.options.chart.options3d.depth;
+		}
+
+		// Activate the sliders
+		document.querySelectorAll('#sliders input').forEach(input => input.addEventListener('input', e => {
+		    chart.options.chart.options3d[e.target.id] = parseFloat(e.target.value);
+		    showValues();
+		    chart.redraw(false);
+		}));
+
+		showValues();	   
+</script>

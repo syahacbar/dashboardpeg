@@ -21,7 +21,7 @@ helper('html'); ?>
           <div class="col-sm-4">
             <div class="row">
               <div class="col-sm-4 d-flex align-items-center">
-                <label for="struktural">Golongan/Ruang</label>
+                <label for="struktural">Prosedur</label>
               </div>
               <div class="col-sm-6">
                 <form method="get" action="" class="d-flex">

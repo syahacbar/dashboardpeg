@@ -1,11 +1,4 @@
 <?php
-/**
-* Admin Template Codeigniter 4
-* Author	: Agus Prawoto Hadi
-* Website	: https://jagowebdev.com
-* Year		: 2021
-*/
-
 namespace App\Controllers;
 use App\Models\DashboardModel;
 use App\Models\HomeModel;

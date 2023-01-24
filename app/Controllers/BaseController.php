@@ -34,7 +34,7 @@ class BaseController extends Controller
 	
 	public function __construct() 
 	{
-		date_default_timezone_set('Asia/Jakarta');
+		date_default_timezone_set('Asia/Jayapura');
 		$this->session = \Config\Services::session();
 		$this->request = \Config\Services::request();
 		$this->config = new App;
