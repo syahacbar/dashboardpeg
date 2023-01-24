@@ -19,6 +19,12 @@ class HomeModel extends \App\Models\BaseModel
 		return $result;
 	}
 
+	public function get_all_pegawai_by_instansi($id_instansi) {
+		$sql = 'SELECT COUNT(tp.id_pegawai) AS totalpegawaiinstansi FROM tbl_pegawai tp WHERE SHA1(tp.id_instansi)="'.$id_instansi.'"';
+		$result = $this->db->query($sql)->getRow();
+		return $result;
+	}
+
 	public function get_all_golru_by_instansi($id_instansi)
 	{
 		$sql = 'SELECT golru,COUNT(golru) AS jum_golru FROM tbl_pegawai WHERE SHA1(id_instansi)="'.$id_instansi.'" GROUP BY golru';

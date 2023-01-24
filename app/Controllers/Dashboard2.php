@@ -37,6 +37,7 @@ class Dashboard2 extends BaseController
 		$userdata = $_SESSION['user'];
 		$id_instansi = SHA1($userdata['id_instansi']);
 		$this->data['instansi'] = $this->model->get_data_by_instansi($id_instansi);
+		$this->data['pegawai'] = $this->model->get_all_pegawai_by_instansi($id_instansi);
 		$this->data['golru'] = $this->model->get_all_golru_by_instansi($id_instansi);
 		$this->data['gender'] = $this->model->get_jenkel_by_instansi($id_instansi);
 		$this->data['jenjab'] = $this->model->get_jenjab_by_instansi($id_instansi);

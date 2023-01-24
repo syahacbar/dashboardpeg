@@ -207,6 +207,7 @@
 	var chart2;
 	var chart3;
 	var chart4;
+	var total = <?=$pegawai->totalpegawaiinstansi;?>;
 	
 		// chart golru
 		chart1 = new Highcharts.Chart({
@@ -249,6 +250,9 @@
 		    series: [{
 		        data: [<?php foreach ($golru AS $gr){ echo $gr->jum_golru.","; }?>],
 		        dataLabels: {  
+		        	formatter: function () {
+		                return Math.round(100 * this.y / total) + '%';
+		            },
 		        	enabled: true, 
 		        },
 		        colorByPoint: true

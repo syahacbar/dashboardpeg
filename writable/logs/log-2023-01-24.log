@@ -128,3 +128,62 @@ CRITICAL - 2023-01-24 21:33:11 --> Undefined property: stdClass::$status
 #8 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #9 D:\xampp7\htdocs\dashboardpeg\index.php(47): CodeIgniter\CodeIgniter->run()
 #10 {main}
+CRITICAL - 2023-01-24 21:56:25 --> Trying to get property 'totpegawai' of non-object
+#0 D:\xampp7\htdocs\dashboardpeg\app\Views\themes\modern\dashboard2.php(210): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'D:\\xampp7\\htdoc...', 210, Array)
+#1 D:\xampp7\htdocs\dashboardpeg\system\View\View.php(210): include('D:\\xampp7\\htdoc...')
+#2 D:\xampp7\htdocs\dashboardpeg\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xampp7\htdocs\dashboardpeg\system\Common.php(1089): CodeIgniter\View\View->render('themes/modern/d...', Array, true)
+#4 D:\xampp7\htdocs\dashboardpeg\app\Controllers\BaseController.php(247): view('themes/modern/d...', Array)
+#5 D:\xampp7\htdocs\dashboardpeg\app\Controllers\Dashboard2.php(45): App\Controllers\BaseController->view('dashboard2.php', Array)
+#6 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(832): App\Controllers\Dashboard2->index()
+#7 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard2))
+#8 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp7\htdocs\dashboardpeg\index.php(47): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-01-24 21:59:41 --> Trying to get property 'totpegawai' of non-object
+#0 D:\xampp7\htdocs\dashboardpeg\app\Views\themes\modern\dashboard2.php(210): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'D:\\xampp7\\htdoc...', 210, Array)
+#1 D:\xampp7\htdocs\dashboardpeg\system\View\View.php(210): include('D:\\xampp7\\htdoc...')
+#2 D:\xampp7\htdocs\dashboardpeg\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xampp7\htdocs\dashboardpeg\system\Common.php(1089): CodeIgniter\View\View->render('themes/modern/d...', Array, true)
+#4 D:\xampp7\htdocs\dashboardpeg\app\Controllers\BaseController.php(247): view('themes/modern/d...', Array)
+#5 D:\xampp7\htdocs\dashboardpeg\app\Controllers\Dashboard2.php(45): App\Controllers\BaseController->view('dashboard2.php', Array)
+#6 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(832): App\Controllers\Dashboard2->index()
+#7 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard2))
+#8 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp7\htdocs\dashboardpeg\index.php(47): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-01-24 22:00:55 --> Trying to get property 'TotPegawai' of non-object
+#0 D:\xampp7\htdocs\dashboardpeg\app\Views\themes\modern\dashboard2.php(210): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'D:\\xampp7\\htdoc...', 210, Array)
+#1 D:\xampp7\htdocs\dashboardpeg\system\View\View.php(210): include('D:\\xampp7\\htdoc...')
+#2 D:\xampp7\htdocs\dashboardpeg\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xampp7\htdocs\dashboardpeg\system\Common.php(1089): CodeIgniter\View\View->render('themes/modern/d...', Array, true)
+#4 D:\xampp7\htdocs\dashboardpeg\app\Controllers\BaseController.php(247): view('themes/modern/d...', Array)
+#5 D:\xampp7\htdocs\dashboardpeg\app\Controllers\Dashboard2.php(45): App\Controllers\BaseController->view('dashboard2.php', Array)
+#6 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(832): App\Controllers\Dashboard2->index()
+#7 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard2))
+#8 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp7\htdocs\dashboardpeg\index.php(47): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-01-24 22:01:07 --> Trying to get property 'TotPegawai' of non-object
+#0 D:\xampp7\htdocs\dashboardpeg\app\Views\themes\modern\dashboard2.php(210): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'D:\\xampp7\\htdoc...', 210, Array)
+#1 D:\xampp7\htdocs\dashboardpeg\system\View\View.php(210): include('D:\\xampp7\\htdoc...')
+#2 D:\xampp7\htdocs\dashboardpeg\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xampp7\htdocs\dashboardpeg\system\Common.php(1089): CodeIgniter\View\View->render('themes/modern/d...', Array, true)
+#4 D:\xampp7\htdocs\dashboardpeg\app\Controllers\BaseController.php(247): view('themes/modern/d...', Array)
+#5 D:\xampp7\htdocs\dashboardpeg\app\Controllers\Dashboard2.php(45): App\Controllers\BaseController->view('dashboard2.php', Array)
+#6 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(832): App\Controllers\Dashboard2->index()
+#7 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard2))
+#8 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp7\htdocs\dashboardpeg\index.php(47): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-01-24 22:03:10 --> Unknown column 'ti.id_instansi' in 'where clause'
+#0 D:\xampp7\htdocs\dashboardpeg\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(tp...', 0)
+#1 D:\xampp7\htdocs\dashboardpeg\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(tp...')
+#2 D:\xampp7\htdocs\dashboardpeg\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(tp...')
+#3 D:\xampp7\htdocs\dashboardpeg\app\Models\HomeModel.php(24): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(tp...')
+#4 D:\xampp7\htdocs\dashboardpeg\app\Controllers\Dashboard2.php(40): App\Models\HomeModel->get_all_pegawai_by_instansi('77de68daecd823b...')
+#5 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(832): App\Controllers\Dashboard2->index()
+#6 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard2))
+#7 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp7\htdocs\dashboardpeg\index.php(47): CodeIgniter\CodeIgniter->run()
+#9 {main}
