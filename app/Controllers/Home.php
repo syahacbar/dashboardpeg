@@ -20,7 +20,9 @@ class Home extends BaseController
 		$this->data['instansi'] = $this->model->get_data_by_instansi($id_instansi);
 		$this->data['golru'] = $this->model->get_all_golru_by_instansi($id_instansi);
 		$this->data['gender'] = $this->model->get_jenkel_by_instansi($id_instansi);
-		$this->data['jenjab'] = $this->model->get_jenjab_by_instansi($id_instansi);
+		$this->data['jenjab1'] = $this->model->count_jenis_jabatan($id_instansi,'STR');
+		$this->data['jenjab2'] = $this->model->count_jenis_jabatan($id_instansi,'FU');
+		$this->data['jenjab3'] = $this->model->count_jenis_jabatan($id_instansi,'FT');
 
 		return view('themes/modern/detail_instansi.php', $this->data);
 	}

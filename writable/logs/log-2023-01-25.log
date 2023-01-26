@@ -84,3 +84,216 @@ CRITICAL - 2023-01-25 02:19:57 --> You must set the database table to be used wi
 #4 F:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #5 F:\xampp7\htdocs\dashboardpeg\index.php(47): CodeIgniter\CodeIgniter->run()
 #6 {main}
+CRITICAL - 2023-01-25 06:46:22 --> You must set the database table to be used with your query.
+#0 D:\xampp7\htdocs\dashboardpeg\app\Models\ImpordataModel.php(67): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 D:\xampp7\htdocs\dashboardpeg\app\Controllers\Impordata.php(41): App\Models\ImpordataModel->uploadExcel()
+#2 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(832): App\Controllers\Impordata->index()
+#3 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Impordata))
+#4 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp7\htdocs\dashboardpeg\index.php(47): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2023-01-25 06:51:13 --> You must set the database table to be used with your query.
+#0 D:\xampp7\htdocs\dashboardpeg\app\Models\ImpordataModel.php(67): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 D:\xampp7\htdocs\dashboardpeg\app\Controllers\Impordata.php(41): App\Models\ImpordataModel->uploadExcel()
+#2 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(832): App\Controllers\Impordata->index()
+#3 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Impordata))
+#4 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp7\htdocs\dashboardpeg\index.php(47): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2023-01-25 21:15:32 --> You must set the database table to be used with your query.
+#0 D:\xampp7\htdocs\dashboardpeg\app\Models\ImpordataModel.php(67): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 D:\xampp7\htdocs\dashboardpeg\app\Controllers\Impordata.php(41): App\Models\ImpordataModel->uploadExcel()
+#2 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(832): App\Controllers\Impordata->index()
+#3 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Impordata))
+#4 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp7\htdocs\dashboardpeg\index.php(47): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2023-01-25 21:39:38 --> You must set the database table to be used with your query.
+#0 D:\xampp7\htdocs\dashboardpeg\app\Models\ImpordataModel.php(67): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 D:\xampp7\htdocs\dashboardpeg\app\Controllers\Impordata.php(45): App\Models\ImpordataModel->uploadExcel()
+#2 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(832): App\Controllers\Impordata->index()
+#3 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Impordata))
+#4 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp7\htdocs\dashboardpeg\index.php(47): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2023-01-25 21:39:54 --> Duplicate entry 'wahyujatmdsfsdfiko@email.com' for key 'email'
+#0 D:\xampp7\htdocs\dashboardpeg\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ma...', 0)
+#1 D:\xampp7\htdocs\dashboardpeg\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ma...')
+#2 D:\xampp7\htdocs\dashboardpeg\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ma...')
+#3 D:\xampp7\htdocs\dashboardpeg\system\Database\BaseBuilder.php(1648): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ma...', NULL, false)
+#4 D:\xampp7\htdocs\dashboardpeg\app\Models\UploadExcelModel.php(69): CodeIgniter\Database\BaseBuilder->insertBatch(Array)
+#5 D:\xampp7\htdocs\dashboardpeg\app\Controllers\Uploadexcel.php(43): App\Models\UploadExcelModel->uploadExcel()
+#6 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(832): App\Controllers\Uploadexcel->index()
+#7 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Uploadexcel))
+#8 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp7\htdocs\dashboardpeg\index.php(47): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-01-25 21:46:38 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '`--` (`golru`, `jabatan`, `jenis` `jabatan`, `jk`, `nama`, `nip`, `no`) VALUE...' at line 1
+#0 D:\xampp7\htdocs\dashboardpeg\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `--...', 0)
+#1 D:\xampp7\htdocs\dashboardpeg\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `--...')
+#2 D:\xampp7\htdocs\dashboardpeg\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `--...')
+#3 D:\xampp7\htdocs\dashboardpeg\system\Database\BaseBuilder.php(1648): CodeIgniter\Database\BaseConnection->query('INSERT INTO `--...', NULL, false)
+#4 D:\xampp7\htdocs\dashboardpeg\app\Models\ImpordataModel.php(71): CodeIgniter\Database\BaseBuilder->insertBatch(Array)
+#5 D:\xampp7\htdocs\dashboardpeg\app\Controllers\Impordata.php(45): App\Models\ImpordataModel->uploadExcel()
+#6 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(832): App\Controllers\Impordata->index()
+#7 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Impordata))
+#8 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp7\htdocs\dashboardpeg\index.php(47): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-01-25 21:47:54 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '`jabatan`, `jk`, `nama`, `nip`, `no`) VALUES ('III/a','STRUKTURAL','STAFF','L...' at line 1
+#0 D:\xampp7\htdocs\dashboardpeg\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `tb...', 0)
+#1 D:\xampp7\htdocs\dashboardpeg\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 D:\xampp7\htdocs\dashboardpeg\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 D:\xampp7\htdocs\dashboardpeg\system\Database\BaseBuilder.php(1648): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', NULL, false)
+#4 D:\xampp7\htdocs\dashboardpeg\app\Models\ImpordataModel.php(71): CodeIgniter\Database\BaseBuilder->insertBatch(Array)
+#5 D:\xampp7\htdocs\dashboardpeg\app\Controllers\Impordata.php(45): App\Models\ImpordataModel->uploadExcel()
+#6 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(832): App\Controllers\Impordata->index()
+#7 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Impordata))
+#8 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp7\htdocs\dashboardpeg\index.php(47): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-01-25 22:00:00 --> Class 'App\Controllers\ReaderEntityFactory' not found
+#0 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(832): App\Controllers\Impordata->index()
+#1 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Impordata))
+#2 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\xampp7\htdocs\dashboardpeg\index.php(47): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2023-01-25 22:10:56 --> Call to a member function isValid() on null
+#0 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(832): App\Controllers\Impordata->testimport()
+#1 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Impordata))
+#2 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\xampp7\htdocs\dashboardpeg\index.php(47): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2023-01-25 22:11:16 --> Undefined variable: reader
+#0 D:\xampp7\htdocs\dashboardpeg\app\Controllers\Impordata.php(93): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp7\\htdoc...', 93, Array)
+#1 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(832): App\Controllers\Impordata->testimport()
+#2 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Impordata))
+#3 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp7\htdocs\dashboardpeg\index.php(47): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-01-25 22:12:23 --> Class 'Box\Spout\Reader\Common\Creator\ReaderEntityFactory' not found
+#0 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(832): App\Controllers\Impordata->testimport()
+#1 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Impordata))
+#2 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\xampp7\htdocs\dashboardpeg\index.php(47): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2023-01-25 22:12:41 --> Undefined variable: path
+#0 D:\xampp7\htdocs\dashboardpeg\app\Controllers\Impordata.php(143): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp7\\htdoc...', 143, Array)
+#1 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(832): App\Controllers\Impordata->testimport()
+#2 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Impordata))
+#3 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp7\htdocs\dashboardpeg\index.php(47): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-01-25 22:14:39 --> Undefined variable: path
+#0 D:\xampp7\htdocs\dashboardpeg\app\Controllers\Impordata.php(95): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp7\\htdoc...', 95, Array)
+#1 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(832): App\Controllers\Impordata->testimport()
+#2 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Impordata))
+#3 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp7\htdocs\dashboardpeg\index.php(47): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-01-25 22:15:19 --> Undefined variable: path
+#0 D:\xampp7\htdocs\dashboardpeg\app\Controllers\Impordata.php(99): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp7\\htdoc...', 99, Array)
+#1 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(832): App\Controllers\Impordata->testimport()
+#2 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Impordata))
+#3 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp7\htdocs\dashboardpeg\index.php(47): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-01-25 22:16:05 --> Undefined variable: path
+#0 D:\xampp7\htdocs\dashboardpeg\app\Controllers\Impordata.php(99): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp7\\htdoc...', 99, Array)
+#1 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(832): App\Controllers\Impordata->testimport()
+#2 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Impordata))
+#3 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp7\htdocs\dashboardpeg\index.php(47): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-01-25 22:26:19 --> Undefined variable: path
+#0 D:\xampp7\htdocs\dashboardpeg\app\Controllers\Impordata.php(102): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp7\\htdoc...', 102, Array)
+#1 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(832): App\Controllers\Impordata->testimport()
+#2 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Impordata))
+#3 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp7\htdocs\dashboardpeg\index.php(47): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-01-25 22:29:03 --> Undefined property: App\Controllers\Impordata::$db
+#0 D:\xampp7\htdocs\dashboardpeg\app\Controllers\Impordata.php(81): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'D:\\xampp7\\htdoc...', 81, Array)
+#1 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(832): App\Controllers\Impordata->testimport()
+#2 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Impordata))
+#3 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp7\htdocs\dashboardpeg\index.php(47): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-01-25 22:34:26 --> Undefined property: App\Controllers\Impordata::$db
+#0 D:\xampp7\htdocs\dashboardpeg\app\Controllers\Impordata.php(81): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'D:\\xampp7\\htdoc...', 81, Array)
+#1 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(832): App\Controllers\Impordata->testimport()
+#2 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Impordata))
+#3 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp7\htdocs\dashboardpeg\index.php(47): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-01-25 22:36:50 --> Undefined variable: path
+#0 D:\xampp7\htdocs\dashboardpeg\app\Models\ImpordataModel.php(122): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp7\\htdoc...', 122, Array)
+#1 D:\xampp7\htdocs\dashboardpeg\app\Controllers\Impordata.php(46): App\Models\ImpordataModel->impordatapegawai()
+#2 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(832): App\Controllers\Impordata->index()
+#3 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Impordata))
+#4 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp7\htdocs\dashboardpeg\index.php(47): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2023-01-25 22:39:11 --> unlink(D:\xampp7\tmp\php1AFB.tmp): No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(D:\\xampp...', 'D:\\xampp7\\htdoc...', 129, Array)
+#1 D:\xampp7\htdocs\dashboardpeg\app\Models\ImpordataModel.php(129): unlink('D:\\xampp7\\tmp\\p...')
+#2 D:\xampp7\htdocs\dashboardpeg\app\Controllers\Impordata.php(46): App\Models\ImpordataModel->impordatapegawai()
+#3 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(832): App\Controllers\Impordata->index()
+#4 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Impordata))
+#5 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xampp7\htdocs\dashboardpeg\index.php(47): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-01-25 22:44:28 --> Undefined index: dropdowninstansi
+#0 D:\xampp7\htdocs\dashboardpeg\app\Views\themes\modern\impordata.php(29): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\xampp7\\htdoc...', 29, Array)
+#1 D:\xampp7\htdocs\dashboardpeg\system\View\View.php(210): include('D:\\xampp7\\htdoc...')
+#2 D:\xampp7\htdocs\dashboardpeg\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xampp7\htdocs\dashboardpeg\system\Common.php(1089): CodeIgniter\View\View->render('themes/modern/i...', Array, true)
+#4 D:\xampp7\htdocs\dashboardpeg\app\Controllers\BaseController.php(247): view('themes/modern/i...', Array)
+#5 D:\xampp7\htdocs\dashboardpeg\app\Controllers\Impordata.php(52): App\Controllers\BaseController->view('impordata.php', Array)
+#6 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(832): App\Controllers\Impordata->index()
+#7 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Impordata))
+#8 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp7\htdocs\dashboardpeg\index.php(47): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-01-25 22:45:57 --> syntax error, unexpected '{'
+#0 D:\xampp7\htdocs\dashboardpeg\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 D:\xampp7\htdocs\dashboardpeg\system\Common.php(1089): CodeIgniter\View\View->render('themes/modern/i...', Array, true)
+#2 D:\xampp7\htdocs\dashboardpeg\app\Controllers\BaseController.php(247): view('themes/modern/i...', Array)
+#3 D:\xampp7\htdocs\dashboardpeg\app\Controllers\Impordata.php(52): App\Controllers\BaseController->view('impordata.php', Array)
+#4 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(832): App\Controllers\Impordata->index()
+#5 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Impordata))
+#6 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp7\htdocs\dashboardpeg\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-01-25 22:51:01 --> Undefined variable: query
+#0 D:\xampp7\htdocs\dashboardpeg\app\Models\ImpordataModel.php(133): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp7\\htdoc...', 133, Array)
+#1 D:\xampp7\htdocs\dashboardpeg\app\Controllers\Impordata.php(46): App\Models\ImpordataModel->impordatapegawai()
+#2 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(832): App\Controllers\Impordata->index()
+#3 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Impordata))
+#4 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp7\htdocs\dashboardpeg\index.php(47): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2023-01-25 23:14:21 --> Undefined offset: 9
+#0 D:\xampp7\htdocs\dashboardpeg\app\Models\ImpordataModel.php(177): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'D:\\xampp7\\htdoc...', 177, Array)
+#1 D:\xampp7\htdocs\dashboardpeg\app\Controllers\Impordata.php(53): App\Models\ImpordataModel->imporkenaikanpangkat()
+#2 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(832): App\Controllers\Impordata->index()
+#3 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Impordata))
+#4 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp7\htdocs\dashboardpeg\index.php(47): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2023-01-25 23:16:18 --> Undefined offset: 9
+#0 D:\xampp7\htdocs\dashboardpeg\app\Models\ImpordataModel.php(177): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'D:\\xampp7\\htdoc...', 177, Array)
+#1 D:\xampp7\htdocs\dashboardpeg\app\Controllers\Impordata.php(53): App\Models\ImpordataModel->imporkenaikanpangkat()
+#2 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(832): App\Controllers\Impordata->index()
+#3 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Impordata))
+#4 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp7\htdocs\dashboardpeg\index.php(47): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2023-01-25 23:17:23 --> Undefined offset: 9
+#0 D:\xampp7\htdocs\dashboardpeg\app\Models\ImpordataModel.php(177): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'D:\\xampp7\\htdoc...', 177, Array)
+#1 D:\xampp7\htdocs\dashboardpeg\app\Controllers\Impordata.php(53): App\Models\ImpordataModel->imporkenaikanpangkat()
+#2 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(832): App\Controllers\Impordata->index()
+#3 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Impordata))
+#4 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp7\htdocs\dashboardpeg\index.php(47): CodeIgniter\CodeIgniter->run()
+#6 {main}

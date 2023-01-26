@@ -48,6 +48,7 @@
 </style>
 </head>
 <body>
+	<?php helper(['format']); ?>
 	<div class="site-container">
 	<header class="shadow-sm">
 		<div class="menu-wrapper wrapper clearfix">
@@ -149,7 +150,7 @@
 					// iconUrl: '<?= base_url('gambar/' . $value->gambar)  ?>',
 					iconSize: [50, 50], // size of the icon
 				})
-			}).addTo(grupinstansi).bindPopup("<center><img align='center' src='<?= base_url('public/images/logoinstansi/' . $value->gambar) ?>' width='80px'></center><br>" + "<div><h4> <?= $value->nama_instansi; ?></h4><p>Total Pegawai: <strong><?=$value->TotPegawai?></strong></p>" +
+			}).addTo(grupinstansi).bindPopup("<center><img align='center' src='<?= base_url('public/images/logoinstansi/' . $value->gambar) ?>' width='80px'></center><br>" + "<div><h4> <?= $value->nama_instansi; ?></h4><p>Total Pegawai: <strong><?=format_ribuan($value->TotPegawai)?></strong></p>" +
 			"<?php if($value->TotPegawai != 0) {?><p><a href='<?= base_url('home/detail/' . SHA1($value->id_instansi)) ?>' class='btn btn-sm btn-outline-primary'>Detail</a></p><?php } ?>");
 		<?php } ?>
 	});

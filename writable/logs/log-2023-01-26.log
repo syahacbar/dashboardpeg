@@ -1,0 +1,425 @@
+CRITICAL - 2023-01-26 02:27:31 --> Undefined offset: 9
+#0 D:\xampp7\htdocs\dashboardpeg\app\Models\ImpordataModel.php(177): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'D:\\xampp7\\htdoc...', 177, Array)
+#1 D:\xampp7\htdocs\dashboardpeg\app\Controllers\Impordata.php(53): App\Models\ImpordataModel->imporkenaikanpangkat()
+#2 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(832): App\Controllers\Impordata->index()
+#3 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Impordata))
+#4 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp7\htdocs\dashboardpeg\index.php(47): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2023-01-26 04:08:46 --> Undefined variable: id_produk
+#0 D:\xampp7\htdocs\dashboardpeg\app\Models\ImpordataModel.php(133): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp7\\htdoc...', 133, Array)
+#1 D:\xampp7\htdocs\dashboardpeg\app\Controllers\Impordata.php(48): App\Models\ImpordataModel->impordatapegawai()
+#2 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(832): App\Controllers\Impordata->index()
+#3 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Impordata))
+#4 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp7\htdocs\dashboardpeg\index.php(47): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2023-01-26 04:10:15 --> Undefined variable: id_pegawai
+#0 D:\xampp7\htdocs\dashboardpeg\app\Models\ImpordataModel.php(133): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp7\\htdoc...', 133, Array)
+#1 D:\xampp7\htdocs\dashboardpeg\app\Controllers\Impordata.php(48): App\Models\ImpordataModel->impordatapegawai()
+#2 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(832): App\Controllers\Impordata->index()
+#3 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Impordata))
+#4 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp7\htdocs\dashboardpeg\index.php(47): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2023-01-26 04:10:42 --> Undefined variable: id_pegawai
+#0 D:\xampp7\htdocs\dashboardpeg\app\Models\ImpordataModel.php(133): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp7\\htdoc...', 133, Array)
+#1 D:\xampp7\htdocs\dashboardpeg\app\Controllers\Impordata.php(48): App\Models\ImpordataModel->impordatapegawai()
+#2 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(832): App\Controllers\Impordata->index()
+#3 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Impordata))
+#4 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp7\htdocs\dashboardpeg\index.php(47): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2023-01-26 04:11:12 --> Undefined variable: id_pegawai
+#0 D:\xampp7\htdocs\dashboardpeg\app\Models\ImpordataModel.php(133): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp7\\htdoc...', 133, Array)
+#1 D:\xampp7\htdocs\dashboardpeg\app\Controllers\Impordata.php(48): App\Models\ImpordataModel->impordatapegawai()
+#2 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(832): App\Controllers\Impordata->index()
+#3 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Impordata))
+#4 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp7\htdocs\dashboardpeg\index.php(47): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2023-01-26 04:22:28 --> Undefined variable: id_pegawai
+#0 D:\xampp7\htdocs\dashboardpeg\app\Models\ImpordataModel.php(133): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp7\\htdoc...', 133, Array)
+#1 D:\xampp7\htdocs\dashboardpeg\app\Controllers\Impordata.php(48): App\Models\ImpordataModel->impordatapegawai()
+#2 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(832): App\Controllers\Impordata->index()
+#3 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Impordata))
+#4 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp7\htdocs\dashboardpeg\index.php(47): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2023-01-26 04:48:37 --> Undefined variable: id_pegawai
+#0 D:\xampp7\htdocs\dashboardpeg\app\Models\ImpordataModel.php(160): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp7\\htdoc...', 160, Array)
+#1 D:\xampp7\htdocs\dashboardpeg\app\Controllers\Impordata.php(48): App\Models\ImpordataModel->impordatapegawai()
+#2 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(832): App\Controllers\Impordata->index()
+#3 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Impordata))
+#4 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp7\htdocs\dashboardpeg\index.php(47): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2023-01-26 04:55:13 --> Undefined variable: id_pegawai
+#0 D:\xampp7\htdocs\dashboardpeg\app\Models\ImpordataModel.php(160): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp7\\htdoc...', 160, Array)
+#1 D:\xampp7\htdocs\dashboardpeg\app\Controllers\Impordata.php(48): App\Models\ImpordataModel->impordatapegawai()
+#2 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(832): App\Controllers\Impordata->index()
+#3 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Impordata))
+#4 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp7\htdocs\dashboardpeg\index.php(47): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2023-01-26 04:55:34 --> Undefined variable: id_pegawai
+#0 D:\xampp7\htdocs\dashboardpeg\app\Models\ImpordataModel.php(160): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp7\\htdoc...', 160, Array)
+#1 D:\xampp7\htdocs\dashboardpeg\app\Controllers\Impordata.php(48): App\Models\ImpordataModel->impordatapegawai()
+#2 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(832): App\Controllers\Impordata->index()
+#3 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Impordata))
+#4 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp7\htdocs\dashboardpeg\index.php(47): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2023-01-26 04:58:38 --> Undefined offset: 8
+#0 D:\xampp7\htdocs\dashboardpeg\app\Models\ImpordataModel.php(205): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'D:\\xampp7\\htdoc...', 205, Array)
+#1 D:\xampp7\htdocs\dashboardpeg\app\Controllers\Impordata.php(53): App\Models\ImpordataModel->imporkenaikanpangkat()
+#2 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(832): App\Controllers\Impordata->index()
+#3 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Impordata))
+#4 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp7\htdocs\dashboardpeg\index.php(47): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2023-01-26 05:00:41 --> Undefined offset: 8
+#0 D:\xampp7\htdocs\dashboardpeg\app\Models\ImpordataModel.php(205): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'D:\\xampp7\\htdoc...', 205, Array)
+#1 D:\xampp7\htdocs\dashboardpeg\app\Controllers\Impordata.php(53): App\Models\ImpordataModel->imporkenaikanpangkat()
+#2 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(832): App\Controllers\Impordata->index()
+#3 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Impordata))
+#4 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp7\htdocs\dashboardpeg\index.php(47): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2023-01-26 05:02:03 --> Undefined offset: 8
+#0 D:\xampp7\htdocs\dashboardpeg\app\Models\ImpordataModel.php(205): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'D:\\xampp7\\htdoc...', 205, Array)
+#1 D:\xampp7\htdocs\dashboardpeg\app\Controllers\Impordata.php(53): App\Models\ImpordataModel->imporkenaikanpangkat()
+#2 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(832): App\Controllers\Impordata->index()
+#3 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Impordata))
+#4 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp7\htdocs\dashboardpeg\index.php(47): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2023-01-26 05:02:56 --> Undefined offset: 8
+#0 D:\xampp7\htdocs\dashboardpeg\app\Models\ImpordataModel.php(205): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'D:\\xampp7\\htdoc...', 205, Array)
+#1 D:\xampp7\htdocs\dashboardpeg\app\Controllers\Impordata.php(53): App\Models\ImpordataModel->imporkenaikanpangkat()
+#2 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(832): App\Controllers\Impordata->index()
+#3 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Impordata))
+#4 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp7\htdocs\dashboardpeg\index.php(47): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2023-01-26 05:17:21 --> Undefined offset: 8
+#0 D:\xampp7\htdocs\dashboardpeg\app\Models\ImpordataModel.php(205): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'D:\\xampp7\\htdoc...', 205, Array)
+#1 D:\xampp7\htdocs\dashboardpeg\app\Controllers\Impordata.php(53): App\Models\ImpordataModel->imporkenaikanpangkat()
+#2 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(832): App\Controllers\Impordata->index()
+#3 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Impordata))
+#4 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp7\htdocs\dashboardpeg\index.php(47): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2023-01-26 05:17:52 --> Undefined offset: 8
+#0 D:\xampp7\htdocs\dashboardpeg\app\Models\ImpordataModel.php(205): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'D:\\xampp7\\htdoc...', 205, Array)
+#1 D:\xampp7\htdocs\dashboardpeg\app\Controllers\Impordata.php(53): App\Models\ImpordataModel->imporkenaikanpangkat()
+#2 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(832): App\Controllers\Impordata->index()
+#3 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Impordata))
+#4 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp7\htdocs\dashboardpeg\index.php(47): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2023-01-26 05:18:50 --> Undefined offset: 8
+#0 D:\xampp7\htdocs\dashboardpeg\app\Models\ImpordataModel.php(205): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'D:\\xampp7\\htdoc...', 205, Array)
+#1 D:\xampp7\htdocs\dashboardpeg\app\Controllers\Impordata.php(53): App\Models\ImpordataModel->imporkenaikanpangkat()
+#2 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(832): App\Controllers\Impordata->index()
+#3 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Impordata))
+#4 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp7\htdocs\dashboardpeg\index.php(47): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2023-01-26 05:27:33 --> Undefined offset: 8
+#0 D:\xampp7\htdocs\dashboardpeg\app\Models\ImpordataModel.php(205): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'D:\\xampp7\\htdoc...', 205, Array)
+#1 D:\xampp7\htdocs\dashboardpeg\app\Controllers\Impordata.php(53): App\Models\ImpordataModel->imporkenaikanpangkat()
+#2 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(832): App\Controllers\Impordata->index()
+#3 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Impordata))
+#4 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp7\htdocs\dashboardpeg\index.php(47): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2023-01-26 05:30:03 --> Undefined variable: id_pegawai
+#0 D:\xampp7\htdocs\dashboardpeg\app\Models\ImpordataModel.php(218): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp7\\htdoc...', 218, Array)
+#1 D:\xampp7\htdocs\dashboardpeg\app\Controllers\Impordata.php(53): App\Models\ImpordataModel->imporkenaikanpangkat()
+#2 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(832): App\Controllers\Impordata->index()
+#3 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Impordata))
+#4 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp7\htdocs\dashboardpeg\index.php(47): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2023-01-26 05:30:25 --> Undefined variable: id_pegawai
+#0 D:\xampp7\htdocs\dashboardpeg\app\Models\ImpordataModel.php(218): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp7\\htdoc...', 218, Array)
+#1 D:\xampp7\htdocs\dashboardpeg\app\Controllers\Impordata.php(53): App\Models\ImpordataModel->imporkenaikanpangkat()
+#2 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(832): App\Controllers\Impordata->index()
+#3 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Impordata))
+#4 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp7\htdocs\dashboardpeg\index.php(47): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2023-01-26 05:32:52 --> Undefined offset: 8
+#0 D:\xampp7\htdocs\dashboardpeg\app\Models\ImpordataModel.php(205): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'D:\\xampp7\\htdoc...', 205, Array)
+#1 D:\xampp7\htdocs\dashboardpeg\app\Controllers\Impordata.php(53): App\Models\ImpordataModel->imporkenaikanpangkat()
+#2 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(832): App\Controllers\Impordata->index()
+#3 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Impordata))
+#4 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp7\htdocs\dashboardpeg\index.php(47): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2023-01-26 05:33:02 --> Undefined variable: id_pegawai
+#0 D:\xampp7\htdocs\dashboardpeg\app\Models\ImpordataModel.php(218): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp7\\htdoc...', 218, Array)
+#1 D:\xampp7\htdocs\dashboardpeg\app\Controllers\Impordata.php(53): App\Models\ImpordataModel->imporkenaikanpangkat()
+#2 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(832): App\Controllers\Impordata->index()
+#3 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Impordata))
+#4 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp7\htdocs\dashboardpeg\index.php(47): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2023-01-26 05:34:53 --> Undefined variable: message_source
+#0 D:\xampp7\htdocs\dashboardpeg\app\Helpers\util_helper.php(205): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp7\\htdoc...', 205, Array)
+#1 D:\xampp7\htdocs\dashboardpeg\app\Views\themes\modern\impordata.php(10): show_message(Array)
+#2 D:\xampp7\htdocs\dashboardpeg\system\View\View.php(210): include('D:\\xampp7\\htdoc...')
+#3 D:\xampp7\htdocs\dashboardpeg\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#4 D:\xampp7\htdocs\dashboardpeg\system\Common.php(1089): CodeIgniter\View\View->render('themes/modern/i...', Array, true)
+#5 D:\xampp7\htdocs\dashboardpeg\app\Controllers\BaseController.php(247): view('themes/modern/i...', Array)
+#6 D:\xampp7\htdocs\dashboardpeg\app\Controllers\Impordata.php(61): App\Controllers\BaseController->view('impordata.php', Array)
+#7 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(832): App\Controllers\Impordata->index()
+#8 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Impordata))
+#9 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp7\htdocs\dashboardpeg\index.php(47): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-01-26 05:35:18 --> Undefined variable: message_source
+#0 D:\xampp7\htdocs\dashboardpeg\app\Helpers\util_helper.php(205): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp7\\htdoc...', 205, Array)
+#1 D:\xampp7\htdocs\dashboardpeg\app\Views\themes\modern\impordata.php(10): show_message(Array)
+#2 D:\xampp7\htdocs\dashboardpeg\system\View\View.php(210): include('D:\\xampp7\\htdoc...')
+#3 D:\xampp7\htdocs\dashboardpeg\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#4 D:\xampp7\htdocs\dashboardpeg\system\Common.php(1089): CodeIgniter\View\View->render('themes/modern/i...', Array, true)
+#5 D:\xampp7\htdocs\dashboardpeg\app\Controllers\BaseController.php(247): view('themes/modern/i...', Array)
+#6 D:\xampp7\htdocs\dashboardpeg\app\Controllers\Impordata.php(61): App\Controllers\BaseController->view('impordata.php', Array)
+#7 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(832): App\Controllers\Impordata->index()
+#8 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Impordata))
+#9 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp7\htdocs\dashboardpeg\index.php(47): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-01-26 05:36:10 --> Undefined variable: message_source
+#0 D:\xampp7\htdocs\dashboardpeg\app\Helpers\util_helper.php(205): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp7\\htdoc...', 205, Array)
+#1 D:\xampp7\htdocs\dashboardpeg\app\Views\themes\modern\impordata.php(10): show_message(Array)
+#2 D:\xampp7\htdocs\dashboardpeg\system\View\View.php(210): include('D:\\xampp7\\htdoc...')
+#3 D:\xampp7\htdocs\dashboardpeg\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#4 D:\xampp7\htdocs\dashboardpeg\system\Common.php(1089): CodeIgniter\View\View->render('themes/modern/i...', Array, true)
+#5 D:\xampp7\htdocs\dashboardpeg\app\Controllers\BaseController.php(247): view('themes/modern/i...', Array)
+#6 D:\xampp7\htdocs\dashboardpeg\app\Controllers\Impordata.php(61): App\Controllers\BaseController->view('impordata.php', Array)
+#7 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(832): App\Controllers\Impordata->index()
+#8 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Impordata))
+#9 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp7\htdocs\dashboardpeg\index.php(47): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-01-26 05:51:05 --> Undefined variable: message_source
+#0 D:\xampp7\htdocs\dashboardpeg\app\Helpers\util_helper.php(205): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp7\\htdoc...', 205, Array)
+#1 D:\xampp7\htdocs\dashboardpeg\app\Views\themes\modern\impordata.php(10): show_message(Array)
+#2 D:\xampp7\htdocs\dashboardpeg\system\View\View.php(210): include('D:\\xampp7\\htdoc...')
+#3 D:\xampp7\htdocs\dashboardpeg\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#4 D:\xampp7\htdocs\dashboardpeg\system\Common.php(1089): CodeIgniter\View\View->render('themes/modern/i...', Array, true)
+#5 D:\xampp7\htdocs\dashboardpeg\app\Controllers\BaseController.php(247): view('themes/modern/i...', Array)
+#6 D:\xampp7\htdocs\dashboardpeg\app\Controllers\Impordata.php(61): App\Controllers\BaseController->view('impordata.php', Array)
+#7 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(832): App\Controllers\Impordata->index()
+#8 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Impordata))
+#9 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp7\htdocs\dashboardpeg\index.php(47): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-01-26 05:54:27 --> Undefined variable: message_source
+#0 D:\xampp7\htdocs\dashboardpeg\app\Helpers\util_helper.php(205): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp7\\htdoc...', 205, Array)
+#1 D:\xampp7\htdocs\dashboardpeg\app\Views\themes\modern\impordata.php(10): show_message(Array)
+#2 D:\xampp7\htdocs\dashboardpeg\system\View\View.php(210): include('D:\\xampp7\\htdoc...')
+#3 D:\xampp7\htdocs\dashboardpeg\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#4 D:\xampp7\htdocs\dashboardpeg\system\Common.php(1089): CodeIgniter\View\View->render('themes/modern/i...', Array, true)
+#5 D:\xampp7\htdocs\dashboardpeg\app\Controllers\BaseController.php(247): view('themes/modern/i...', Array)
+#6 D:\xampp7\htdocs\dashboardpeg\app\Controllers\Impordata.php(61): App\Controllers\BaseController->view('impordata.php', Array)
+#7 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(832): App\Controllers\Impordata->index()
+#8 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Impordata))
+#9 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp7\htdocs\dashboardpeg\index.php(47): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-01-26 05:54:52 --> Undefined variable: id_pegawai
+#0 D:\xampp7\htdocs\dashboardpeg\app\Models\ImpordataModel.php(217): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp7\\htdoc...', 217, Array)
+#1 D:\xampp7\htdocs\dashboardpeg\app\Controllers\Impordata.php(53): App\Models\ImpordataModel->imporkenaikanpangkat()
+#2 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(832): App\Controllers\Impordata->index()
+#3 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Impordata))
+#4 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp7\htdocs\dashboardpeg\index.php(47): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2023-01-26 10:53:36 --> Undefined variable: id_pegawai
+#0 D:\xampp7\htdocs\dashboardpeg\app\Models\ImpordataModel.php(160): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp7\\htdoc...', 160, Array)
+#1 D:\xampp7\htdocs\dashboardpeg\app\Controllers\Impordata.php(48): App\Models\ImpordataModel->impordatapegawai()
+#2 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(832): App\Controllers\Impordata->index()
+#3 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Impordata))
+#4 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp7\htdocs\dashboardpeg\index.php(47): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2023-01-26 10:59:34 --> Cannot use [] for reading
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-01-26 11:11:10 --> Call to undefined function format_ribuan()
+#0 D:\xampp7\htdocs\dashboardpeg\system\View\View.php(210): include()
+#1 D:\xampp7\htdocs\dashboardpeg\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 D:\xampp7\htdocs\dashboardpeg\system\Common.php(1089): CodeIgniter\View\View->render('themes/modern/h...', Array, true)
+#3 D:\xampp7\htdocs\dashboardpeg\app\Controllers\Home.php(15): view('themes/modern/h...', Array)
+#4 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(832): App\Controllers\Home->index()
+#5 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp7\htdocs\dashboardpeg\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-01-26 11:25:22 --> Undefined property: stdClass::$golru
+#0 D:\xampp7\htdocs\dashboardpeg\app\Views\themes\modern\detail_instansi.php(226): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'D:\\xampp7\\htdoc...', 226, Array)
+#1 D:\xampp7\htdocs\dashboardpeg\system\View\View.php(210): include('D:\\xampp7\\htdoc...')
+#2 D:\xampp7\htdocs\dashboardpeg\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xampp7\htdocs\dashboardpeg\system\Common.php(1089): CodeIgniter\View\View->render('themes/modern/d...', Array, true)
+#4 D:\xampp7\htdocs\dashboardpeg\app\Controllers\Home.php(25): view('themes/modern/d...', Array)
+#5 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(832): App\Controllers\Home->detail('bd307a3ec329e10...')
+#6 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp7\htdocs\dashboardpeg\index.php(47): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-26 11:38:51 --> Call to a member function countAllResults() on array
+#0 D:\xampp7\htdocs\dashboardpeg\app\Controllers\Home.php(23): App\Models\HomeModel->count_jenis_jabatan('bd307a3ec329e10...', 'struktural')
+#1 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(832): App\Controllers\Home->detail('bd307a3ec329e10...')
+#2 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp7\htdocs\dashboardpeg\index.php(47): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-01-26 11:39:10 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::countAllResults()
+#0 D:\xampp7\htdocs\dashboardpeg\app\Controllers\Home.php(23): App\Models\HomeModel->count_jenis_jabatan('bd307a3ec329e10...', 'struktural')
+#1 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(832): App\Controllers\Home->detail('bd307a3ec329e10...')
+#2 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp7\htdocs\dashboardpeg\index.php(47): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-01-26 11:39:19 --> Undefined variable: jenjab
+#0 D:\xampp7\htdocs\dashboardpeg\app\Views\themes\modern\detail_instansi.php(320): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp7\\htdoc...', 320, Array)
+#1 D:\xampp7\htdocs\dashboardpeg\system\View\View.php(210): include('D:\\xampp7\\htdoc...')
+#2 D:\xampp7\htdocs\dashboardpeg\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xampp7\htdocs\dashboardpeg\system\Common.php(1089): CodeIgniter\View\View->render('themes/modern/d...', Array, true)
+#4 D:\xampp7\htdocs\dashboardpeg\app\Controllers\Home.php(25): view('themes/modern/d...', Array)
+#5 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(832): App\Controllers\Home->detail('bd307a3ec329e10...')
+#6 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp7\htdocs\dashboardpeg\index.php(47): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-26 11:45:40 --> syntax error, unexpected '$id_instansi' (T_VARIABLE)
+#0 D:\xampp7\htdocs\dashboardpeg\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\xampp7\\htdoc...')
+#1 D:\xampp7\htdocs\dashboardpeg\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Home...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Home...')
+#3 D:\xampp7\htdocs\dashboardpeg\app\Controllers\Home.php(8): spl_autoload_call('App\\Models\\Home...')
+#4 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(809): App\Controllers\Home->__construct()
+#5 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#6 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp7\htdocs\dashboardpeg\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-01-26 11:46:01 --> syntax error, unexpected '''' (T_CONSTANT_ENCAPSED_STRING)
+#0 D:\xampp7\htdocs\dashboardpeg\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\xampp7\\htdoc...')
+#1 D:\xampp7\htdocs\dashboardpeg\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Home...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Home...')
+#3 D:\xampp7\htdocs\dashboardpeg\app\Controllers\Home.php(8): spl_autoload_call('App\\Models\\Home...')
+#4 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(809): App\Controllers\Home->__construct()
+#5 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#6 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp7\htdocs\dashboardpeg\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-01-26 11:46:54 --> syntax error, unexpected '$id_instansi' (T_VARIABLE)
+#0 D:\xampp7\htdocs\dashboardpeg\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\xampp7\\htdoc...')
+#1 D:\xampp7\htdocs\dashboardpeg\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Home...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Home...')
+#3 D:\xampp7\htdocs\dashboardpeg\app\Controllers\Home.php(8): spl_autoload_call('App\\Models\\Home...')
+#4 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(809): App\Controllers\Home->__construct()
+#5 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#6 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp7\htdocs\dashboardpeg\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-01-26 11:47:18 --> Undefined variable: jenjab
+#0 D:\xampp7\htdocs\dashboardpeg\app\Views\themes\modern\detail_instansi.php(320): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp7\\htdoc...', 320, Array)
+#1 D:\xampp7\htdocs\dashboardpeg\system\View\View.php(210): include('D:\\xampp7\\htdoc...')
+#2 D:\xampp7\htdocs\dashboardpeg\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xampp7\htdocs\dashboardpeg\system\Common.php(1089): CodeIgniter\View\View->render('themes/modern/d...', Array, true)
+#4 D:\xampp7\htdocs\dashboardpeg\app\Controllers\Home.php(25): view('themes/modern/d...', Array)
+#5 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(832): App\Controllers\Home->detail('bd307a3ec329e10...')
+#6 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp7\htdocs\dashboardpeg\index.php(47): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-26 11:47:37 --> Undefined variable: jenjab
+#0 D:\xampp7\htdocs\dashboardpeg\app\Views\themes\modern\detail_instansi.php(320): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp7\\htdoc...', 320, Array)
+#1 D:\xampp7\htdocs\dashboardpeg\system\View\View.php(210): include('D:\\xampp7\\htdoc...')
+#2 D:\xampp7\htdocs\dashboardpeg\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xampp7\htdocs\dashboardpeg\system\Common.php(1089): CodeIgniter\View\View->render('themes/modern/d...', Array, true)
+#4 D:\xampp7\htdocs\dashboardpeg\app\Controllers\Home.php(25): view('themes/modern/d...', Array)
+#5 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(832): App\Controllers\Home->detail('bd307a3ec329e10...')
+#6 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp7\htdocs\dashboardpeg\index.php(47): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-26 11:48:25 --> Object of class stdClass could not be converted to string
+#0 D:\xampp7\htdocs\dashboardpeg\system\View\View.php(210): include()
+#1 D:\xampp7\htdocs\dashboardpeg\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 D:\xampp7\htdocs\dashboardpeg\system\Common.php(1089): CodeIgniter\View\View->render('themes/modern/d...', Array, true)
+#3 D:\xampp7\htdocs\dashboardpeg\app\Controllers\Home.php(25): view('themes/modern/d...', Array)
+#4 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(832): App\Controllers\Home->detail('bd307a3ec329e10...')
+#5 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp7\htdocs\dashboardpeg\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-01-26 11:49:00 --> Object of class stdClass could not be converted to string
+#0 D:\xampp7\htdocs\dashboardpeg\system\View\View.php(210): include()
+#1 D:\xampp7\htdocs\dashboardpeg\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 D:\xampp7\htdocs\dashboardpeg\system\Common.php(1089): CodeIgniter\View\View->render('themes/modern/d...', Array, true)
+#3 D:\xampp7\htdocs\dashboardpeg\app\Controllers\Home.php(25): view('themes/modern/d...', Array)
+#4 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(832): App\Controllers\Home->detail('bd307a3ec329e10...')
+#5 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp7\htdocs\dashboardpeg\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-01-26 12:04:48 --> Undefined property: stdClass::$golru
+#0 D:\xampp7\htdocs\dashboardpeg\app\Views\themes\modern\dashboard2.php(35): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'D:\\xampp7\\htdoc...', 35, Array)
+#1 D:\xampp7\htdocs\dashboardpeg\system\View\View.php(210): include('D:\\xampp7\\htdoc...')
+#2 D:\xampp7\htdocs\dashboardpeg\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xampp7\htdocs\dashboardpeg\system\Common.php(1089): CodeIgniter\View\View->render('themes/modern/d...', Array, true)
+#4 D:\xampp7\htdocs\dashboardpeg\app\Controllers\BaseController.php(247): view('themes/modern/d...', Array)
+#5 D:\xampp7\htdocs\dashboardpeg\app\Controllers\Dashboard2.php(45): App\Controllers\BaseController->view('dashboard2.php', Array)
+#6 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(832): App\Controllers\Dashboard2->index()
+#7 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard2))
+#8 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp7\htdocs\dashboardpeg\index.php(47): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-01-26 12:06:18 --> Call to undefined function format_ribuan()
+#0 D:\xampp7\htdocs\dashboardpeg\system\View\View.php(210): include()
+#1 D:\xampp7\htdocs\dashboardpeg\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 D:\xampp7\htdocs\dashboardpeg\system\Common.php(1089): CodeIgniter\View\View->render('themes/modern/d...', Array, true)
+#3 D:\xampp7\htdocs\dashboardpeg\app\Controllers\BaseController.php(247): view('themes/modern/d...', Array)
+#4 D:\xampp7\htdocs\dashboardpeg\app\Controllers\Dashboard2.php(45): App\Controllers\BaseController->view('dashboard2.php', Array)
+#5 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(832): App\Controllers\Dashboard2->index()
+#6 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard2))
+#7 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp7\htdocs\dashboardpeg\index.php(47): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-26 12:06:52 --> Undefined variable: jenjab1
+#0 D:\xampp7\htdocs\dashboardpeg\app\Views\themes\modern\dashboard2.php(123): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp7\\htdoc...', 123, Array)
+#1 D:\xampp7\htdocs\dashboardpeg\system\View\View.php(210): include('D:\\xampp7\\htdoc...')
+#2 D:\xampp7\htdocs\dashboardpeg\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xampp7\htdocs\dashboardpeg\system\Common.php(1089): CodeIgniter\View\View->render('themes/modern/d...', Array, true)
+#4 D:\xampp7\htdocs\dashboardpeg\app\Controllers\BaseController.php(247): view('themes/modern/d...', Array)
+#5 D:\xampp7\htdocs\dashboardpeg\app\Controllers\Dashboard2.php(45): App\Controllers\BaseController->view('dashboard2.php', Array)
+#6 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(832): App\Controllers\Dashboard2->index()
+#7 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard2))
+#8 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp7\htdocs\dashboardpeg\index.php(47): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-01-26 12:07:19 --> Undefined variable: jenjab
+#0 D:\xampp7\htdocs\dashboardpeg\app\Views\themes\modern\dashboard2.php(353): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp7\\htdoc...', 353, Array)
+#1 D:\xampp7\htdocs\dashboardpeg\system\View\View.php(210): include('D:\\xampp7\\htdoc...')
+#2 D:\xampp7\htdocs\dashboardpeg\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xampp7\htdocs\dashboardpeg\system\Common.php(1089): CodeIgniter\View\View->render('themes/modern/d...', Array, true)
+#4 D:\xampp7\htdocs\dashboardpeg\app\Controllers\BaseController.php(247): view('themes/modern/d...', Array)
+#5 D:\xampp7\htdocs\dashboardpeg\app\Controllers\Dashboard2.php(47): App\Controllers\BaseController->view('dashboard2.php', Array)
+#6 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(832): App\Controllers\Dashboard2->index()
+#7 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard2))
+#8 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp7\htdocs\dashboardpeg\index.php(47): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-01-26 12:11:27 --> Undefined offset: 8
+#0 D:\xampp7\htdocs\dashboardpeg\app\Models\ImpordataModel.php(206): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'D:\\xampp7\\htdoc...', 206, Array)
+#1 D:\xampp7\htdocs\dashboardpeg\app\Controllers\Impordata.php(53): App\Models\ImpordataModel->imporkenaikanpangkat()
+#2 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(832): App\Controllers\Impordata->index()
+#3 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Impordata))
+#4 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp7\htdocs\dashboardpeg\index.php(47): CodeIgniter\CodeIgniter->run()
+#6 {main}

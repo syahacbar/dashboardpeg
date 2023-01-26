@@ -27,7 +27,7 @@ class HomeModel extends \App\Models\BaseModel
 
 	public function get_all_golru_by_instansi($id_instansi)
 	{
-		$sql = 'SELECT golru,COUNT(golru) AS jum_golru FROM tbl_pegawai WHERE SHA1(id_instansi)="'.$id_instansi.'" GROUP BY golru';
+		$sql = 'SELECT gol_akhir,COUNT(gol_akhir) AS jum_golru FROM tbl_pegawai WHERE SHA1(id_instansi)="'.$id_instansi.'" GROUP BY gol_akhir';
 		$result = $this->db->query($sql)->getResult();
 		return $result;
 	}
@@ -44,6 +44,25 @@ class HomeModel extends \App\Models\BaseModel
 	{
 		$sql = 'SELECT tp.jenis_jabatan AS jj, COUNT(tp.jenis_jabatan) AS jum_jj FROM tbl_pegawai tp WHERE SHA1(tp.id_instansi)="'.$id_instansi.'" GROUP BY tp.jenis_jabatan';
 		$result = $this->db->query($sql)->getResult();
+		return $result;
+	}
+
+	public function count_jenis_jabatan($id_instansi,$jj)
+	{
+		if($jj == 'STR')
+		{
+			$sql = 'SELECT COUNT(tp.str_namajabatan) AS jumlah FROM tbl_pegawai tp WHERE SHA1(tp.id_instansi)="'.$id_instansi.'" and tp.str_namajabatan <>""';
+		}
+		elseif ($jj == 'FU')
+		{
+			$sql = 'SELECT COUNT(tp.fung_namajabatan_fu) AS jumlah FROM tbl_pegawai tp WHERE SHA1(tp.id_instansi)="'.$id_instansi.'" and tp.fung_namajabatan_fu <>""';
+		} 
+		elseif ($jj == 'FT')
+		{
+			$sql = 'SELECT COUNT(tp.fung_namajabatan_ft) AS jumlah FROM tbl_pegawai tp WHERE SHA1(tp.id_instansi)="'.$id_instansi.'" and tp.fung_namajabatan_ft <>""';
+		}
+		
+		$result = $this->db->query($sql)->getRow();
 		return $result;
 	}
 

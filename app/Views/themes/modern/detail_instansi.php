@@ -169,6 +169,7 @@
 </style>
 </head>
 <body>
+	<?php helper(['format']); ?>
 	<div class="site-container">
 	<header class="shadow-sm">
 		<div class="menu-wrapper wrapper clearfix">
@@ -223,8 +224,8 @@
 									?>
 										<tr>
 											<td style="text-align: center;"><?php echo $no++; ?></td>
-											<td style="text-align: center;"><?php echo $gr->golru; ?></td>
-											<td style="text-align: center;"><?php echo $gr->jum_golru; ?></td>
+											<td style="text-align: center;"><?php echo $gr->gol_akhir; ?></td>
+											<td style="text-align: center;"><?php echo format_ribuan($gr->jum_golru); ?></td>
 										</tr>
 									<?php endforeach ?>
 								</tbody>
@@ -272,7 +273,7 @@
 										<tr>
 											<td style="text-align: center;"><?php echo $no++; ?></td>
 											<td><?php echo $jk->gender; ?></td>
-											<td style="text-align: center;"><?php echo $jk->jum_gender; ?></td>
+											<td style="text-align: center;"><?php echo format_ribuan($jk->jum_gender); ?></td>
 										</tr>
 									<?php endforeach ?>
 								</tbody>
@@ -314,17 +315,21 @@
 								</tr>
 								</thead>
 								<tbody>		
-									
-									<?php 	
-										$no = 1;
-										foreach ($jenjab AS $jj): 
-									?>
-										<tr>
-											<td style="text-align: center;"><?php echo $no++; ?></td>
-											<td><?php echo ucwords(strtolower($jj->jj)); ?></td>
-											<td style="text-align: center;"><?php echo $jj->jum_jj; ?></td>
-										</tr>
-									<?php endforeach ?>
+								<tr>
+									<td style="text-align: center;">1</td>									
+									<td>Struktural</td>									
+									<td style="text-align: center;"><?php echo format_ribuan($jenjab1->jumlah); ?></td>	
+								</tr>		
+								<tr>
+									<td style="text-align: center;">2</td>									
+									<td>Fungsional Tertentu</td>									
+									<td style="text-align: center;"><?php echo format_ribuan($jenjab2->jumlah); ?></td>	
+								</tr>		
+								<tr>
+									<td style="text-align: center;">3</td>									
+									<td>Fungsional Umum</td>									
+									<td style="text-align: center;"><?php echo format_ribuan($jenjab3->jumlah); ?></td>	
+								</tr>								
 								</tbody>
 								</table>
 								</div>
@@ -385,7 +390,7 @@
 		        }
 		    },
 		    xAxis: {
-		        categories: [<?php foreach ($golru AS $gr){ echo "'".$gr->golru."',"; }?>]
+		        categories: [<?php foreach ($golru AS $gr){ echo "'".$gr->gol_akhir."',"; }?>]
 		    },
 		    yAxis: {
 		        title: {
@@ -504,7 +509,10 @@
 		    series: [{
 		        type: 'pie',
 		        name: 'Jumlah',
-		        data: [<?php foreach($jenjab AS $jj){ echo "['".ucwords(strtolower($jj->jj))."',".$jj->jum_jj."],"; }?>
+		        data: [
+		        	['Struktural',<?php echo $jenjab1->jumlah?>],
+		        	['Fungsional Umum',<?php echo $jenjab2->jumlah?>],
+		        	['Fungsional Tertentu',<?php echo $jenjab3->jumlah?>],
 		        ]
 		    }]
 		});
