@@ -26,11 +26,11 @@ class KenaikanPangkatModel extends \App\Models\BaseModel
 	// 	return $result;
 	// }
 	
-	public function getMahasiswaById($id) {
-		$sql = 'SELECT * FROM tbl_kenaikanpangkat WHERE id = ?';
-		$result = $this->db->query($sql, trim($id))->getRowArray();
-		return $result;
-	}
+	// public function getMahasiswaById($id) {
+	// 	$sql = 'SELECT * FROM tbl_kenaikanpangkat WHERE id = ?';
+	// 	$result = $this->db->query($sql, trim($id))->getRowArray();
+	// 	return $result;
+	// }
 	
 	// public function saveData() {
 	// 	helper('upload_file');
@@ -111,13 +111,13 @@ class KenaikanPangkatModel extends \App\Models\BaseModel
 	// 	return $result;
 	// }
 	
-	public function countAllData($where) {
-		$sql = 'SELECT COUNT(*) AS jml FROM tbl_kenaikanpangkat' . $where;
+	public function countAllData($where,$id_instansi) {
+		$sql = 'SELECT COUNT(*) AS jml FROM tbl_kenaikanpangkat '. $where . ' AND SHA1(id_instansi) = "'.$id_instansi.'"';
 		$result = $this->db->query($sql)->getRow();
 		return $result->jml;
 	}
 	
-	public function getListData($where) {
+	public function getListData($where,$id_instansi) {
 
 		$columns = $this->request->getPost('columns');
 
@@ -125,7 +125,7 @@ class KenaikanPangkatModel extends \App\Models\BaseModel
 		$search_all = @$this->request->getPost('search')['value'];
 		if ($search_all) {
 			// Additional Search
-			$columns[]['data'] = 'tempat_lahir';
+			$columns[]['data'] = 'nama';
 			foreach ($columns as $val) {
 				
 				if (strpos($val['data'], 'ignore_search') !== false) 
@@ -148,14 +148,13 @@ class KenaikanPangkatModel extends \App\Models\BaseModel
 		}
 
 		// Query Total Filtered
-		$sql = 'SELECT COUNT(*) AS jml_data FROM tbl_kenaikanpangkat ' . $where;
+		$sql = 'SELECT COUNT(*) AS jml_data FROM tbl_kenaikanpangkat ' . $where. ' AND SHA1(id_instansi) = "'.$id_instansi.'"';
 		$total_filtered = $this->db->query($sql)->getRowArray()['jml_data'];
 		
 		// Query Data
 		$start = $this->request->getPost('start') ?: 0;
 		$length = $this->request->getPost('length') ?: 10;
-		$sql = 'SELECT * FROM tbl_kenaikanpangkat 
-				' . $where . $order . ' LIMIT ' . $start . ', ' . $length;
+		$sql = 'SELECT * FROM tbl_kenaikanpangkat ' . $where . ' AND SHA1(id_instansi) = "' . $id_instansi . '" ' . $order . ' LIMIT ' . $start . ', ' . $length;
 		$data = $this->db->query($sql)->getResultArray();
 				
 		return ['data' => $data, 'total_filtered' => $total_filtered];

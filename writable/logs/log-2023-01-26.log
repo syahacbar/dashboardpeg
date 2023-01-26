@@ -423,3 +423,69 @@ CRITICAL - 2023-01-26 12:11:27 --> Undefined offset: 8
 #4 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #5 D:\xampp7\htdocs\dashboardpeg\index.php(47): CodeIgniter\CodeIgniter->run()
 #6 {main}
+CRITICAL - 2023-01-26 13:34:41 --> Unknown column 'tempat_lahir' in 'where clause'
+#0 D:\xampp7\htdocs\dashboardpeg\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 D:\xampp7\htdocs\dashboardpeg\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 D:\xampp7\htdocs\dashboardpeg\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 D:\xampp7\htdocs\dashboardpeg\app\Models\KenaikanPangkatModel.php(152): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...')
+#4 D:\xampp7\htdocs\dashboardpeg\app\Controllers\Kenaikanpangkat.php(51): App\Models\KenaikanPangkatModel->getListData(' WHERE 1 = 1  A...')
+#5 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(832): App\Controllers\Kenaikanpangkat->getDataDT()
+#6 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kenaikanpangkat))
+#7 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp7\htdocs\dashboardpeg\index.php(47): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-26 13:34:41 --> Unknown column 'tempat_lahir' in 'where clause'
+#0 D:\xampp7\htdocs\dashboardpeg\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 D:\xampp7\htdocs\dashboardpeg\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 D:\xampp7\htdocs\dashboardpeg\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 D:\xampp7\htdocs\dashboardpeg\app\Models\KenaikanPangkatModel.php(152): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...')
+#4 D:\xampp7\htdocs\dashboardpeg\app\Controllers\Kenaikanpangkat.php(51): App\Models\KenaikanPangkatModel->getListData(' WHERE 1 = 1  A...')
+#5 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(832): App\Controllers\Kenaikanpangkat->getDataDT()
+#6 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kenaikanpangkat))
+#7 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp7\htdocs\dashboardpeg\index.php(47): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-26 13:51:36 --> Unknown column '77de68daecd823babbb58edb1c8e14d7106e83bb' in 'where clause'
+#0 D:\xampp7\htdocs\dashboardpeg\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 D:\xampp7\htdocs\dashboardpeg\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 D:\xampp7\htdocs\dashboardpeg\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 D:\xampp7\htdocs\dashboardpeg\app\Models\KenaikanPangkatModel.php(116): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...')
+#4 D:\xampp7\htdocs\dashboardpeg\app\Controllers\Kenaikanpangkat.php(50): App\Models\KenaikanPangkatModel->countAllData(' WHERE 1 = 1 ', '77de68daecd823b...')
+#5 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(832): App\Controllers\Kenaikanpangkat->getDataDT()
+#6 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kenaikanpangkat))
+#7 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp7\htdocs\dashboardpeg\index.php(47): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-26 13:52:56 --> Unknown column '77de68daecd823babbb58edb1c8e14d7106e83bb' in 'where clause'
+#0 D:\xampp7\htdocs\dashboardpeg\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 D:\xampp7\htdocs\dashboardpeg\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 D:\xampp7\htdocs\dashboardpeg\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 D:\xampp7\htdocs\dashboardpeg\app\Models\KenaikanPangkatModel.php(116): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...')
+#4 D:\xampp7\htdocs\dashboardpeg\app\Controllers\Kenaikanpangkat.php(50): App\Models\KenaikanPangkatModel->countAllData(' WHERE 1 = 1 ', '77de68daecd823b...')
+#5 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(832): App\Controllers\Kenaikanpangkat->getDataDT()
+#6 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kenaikanpangkat))
+#7 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp7\htdocs\dashboardpeg\index.php(47): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-26 13:53:30 --> Unknown column '77de68daecd823babbb58edb1c8e14d7106e83bb' in 'where clause'
+#0 D:\xampp7\htdocs\dashboardpeg\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 D:\xampp7\htdocs\dashboardpeg\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 D:\xampp7\htdocs\dashboardpeg\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 D:\xampp7\htdocs\dashboardpeg\app\Models\KenaikanPangkatModel.php(116): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...')
+#4 D:\xampp7\htdocs\dashboardpeg\app\Controllers\Kenaikanpangkat.php(50): App\Models\KenaikanPangkatModel->countAllData(' WHERE 1 = 1 ', '77de68daecd823b...')
+#5 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(832): App\Controllers\Kenaikanpangkat->getDataDT()
+#6 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kenaikanpangkat))
+#7 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp7\htdocs\dashboardpeg\index.php(47): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-26 13:53:38 --> Unknown column '77de68daecd823babbb58edb1c8e14d7106e83bb' in 'where clause'
+#0 D:\xampp7\htdocs\dashboardpeg\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 D:\xampp7\htdocs\dashboardpeg\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 D:\xampp7\htdocs\dashboardpeg\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 D:\xampp7\htdocs\dashboardpeg\app\Models\KenaikanPangkatModel.php(116): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...')
+#4 D:\xampp7\htdocs\dashboardpeg\app\Controllers\Kenaikanpangkat.php(50): App\Models\KenaikanPangkatModel->countAllData(' WHERE 1 = 1 ', '77de68daecd823b...')
+#5 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(832): App\Controllers\Kenaikanpangkat->getDataDT()
+#6 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kenaikanpangkat))
+#7 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp7\htdocs\dashboardpeg\index.php(47): CodeIgniter\CodeIgniter->run()
+#9 {main}

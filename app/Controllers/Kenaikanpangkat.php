@@ -7,7 +7,7 @@ class Kenaikanpangkat extends BaseController
 
 	public function __construct() {
 		
-		parent::__construct();
+		parent::__construct(); 
 		
 		$this->model = new KenaikanPangkatModel;	
 		$this->data['site_title'] = 'Image Upload';
@@ -43,12 +43,15 @@ class Kenaikanpangkat extends BaseController
 	public function getDataDT() {
 		
 		$this->cekHakAkses('read_data');
+
+		$userdata = $_SESSION['user'];
+		$id_instansi = SHA1($userdata['id_instansi']);
 		
-		$num_data = $this->model->countAllData( $this->whereOwn() );
+		$num_data = $this->model->countAllData($this->whereOwn(),$id_instansi);
 		$result['draw'] = $start = $this->request->getPost('draw') ?: 1;
 		$result['recordsTotal'] = $num_data;
 		
-		$query = $this->model->getListData( $this->whereOwn() );
+		$query = $this->model->getListData($this->whereOwn(),$id_instansi);
 		$result['recordsFiltered'] = $query['total_filtered'];
 				
 		helper('html');
