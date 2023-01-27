@@ -42,13 +42,13 @@ class KenaikanPangkatModel extends \App\Models\BaseModel
 		if($searchProsedur != ''){
 			if($searchProsedur == "prosedur1")
 			{
-				$where_col[] = 'pangkat = "IV/a" OR pangkat = "IV/b"';
+				$where .= ' AND (pangkat = "IV/a" OR pangkat = "IV/b")';
 			} 
 			elseif ($searchProsedur == "prosedur2")
 			{
-				$where_col[] = 'pangkat = "III/d" OR pangkat= "III/c" OR pangkat= "III/b" OR pangkat= "III/a" OR pangkat= "II/d" OR pangkat= "II/c" OR pangkat= "II/b" OR pangkat= "II/a" OR pangkat= "I/d" OR pangkat= "I/c" OR pangkat= "I/b" OR pangkat= "I/a"';
+				$where .= ' AND (pangkat = "III/d" OR pangkat= "III/c" OR pangkat= "III/b" OR pangkat= "III/a" OR pangkat= "II/d" OR pangkat= "II/c" OR pangkat= "II/b" OR pangkat= "II/a" OR pangkat= "I/d" OR pangkat= "I/c" OR pangkat= "I/b" OR pangkat= "I/a")';
 			}
-		$where .= ' AND pangkat="'.$searchProsedur.'" ';
+		// $where .= ' AND pangkat="'.$searchProsedur.'" ';
 		}
 
 		if($searchStatusKP != ''){
