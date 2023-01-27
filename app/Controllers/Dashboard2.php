@@ -31,7 +31,7 @@ class Dashboard2 extends BaseController
 		$this->addJs('https://code.highcharts.com/modules/accessibility.js');
 		$this->addJs('https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.bundle.min.js');
 	}
-
+ 
 	public function index()
 	{		
 		$userdata = $_SESSION['user'];

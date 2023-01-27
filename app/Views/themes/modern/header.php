@@ -72,13 +72,17 @@ if (@$scripts) {
 }
 
 $user = $_SESSION['user'];
-
+if($user['id_instansi'] != "0"){
+	$dashboardpage = "dashboard2";
+} else {
+	$dashboardpage = "";
+}
 ?>
 </head>
 <body>
 	<header class="nav-header shadow">
 		<div class="nav-header-logo pull-left">
-			<a class="header-logo" href="<?=$config->baseURL?>" title="">
+			<a class="header-logo" href="<?=$config->baseURL.$dashboardpage;?>" title="">
 				<img src="<?=$config->baseURL . '/public/images/' . $settingAplikasi['logo_app']?>"/>
 			</a>
 		</div>

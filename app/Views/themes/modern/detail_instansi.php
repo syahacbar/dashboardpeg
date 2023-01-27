@@ -375,6 +375,7 @@
 	var chart1;
 	var chart2;
 	var chart3;
+	var total = <?=$pegawai->totalpegawaiinstansi;?>;
 	
 		// chart golru
 		chart1 = new Highcharts.Chart({
@@ -415,9 +416,11 @@
 		    },
 		    series: [{
 		        data: [<?php foreach ($golru AS $gr){ echo $gr->jum_golru.","; }?>],
-		        dataLabels: {  
+		         dataLabels: {  
+		        	formatter: function () {
+		                return Math.round(100 * this.y / total) + '%';
+		            },
 		        	enabled: true, 
-		        	// pointFormat: '{point.percentage:.1f}%'  
 		        },
 		        colorByPoint: true
 		    }]
@@ -456,7 +459,7 @@
 		            depth: 35,
 		            dataLabels: {
 		                enabled: true,
-		                format: '{point.name}'
+		                format: '{point.name}<br>{point.percentage:.1f} %'
 		            }
 		        }
 		    },
@@ -502,7 +505,7 @@
 		            depth: 35,
 		            dataLabels: {
 		                enabled: true,
-		                format: '{point.name}'
+		                format: '{point.name}<br>{point.percentage:.1f} %'
 		            }
 		        }
 		    },

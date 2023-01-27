@@ -45,8 +45,9 @@ jQuery(document).ready(function() {
             "url": url,
             "type": "POST",
             "data": function(data){
-               data.searchStatus = $('#dd_statuspengusulan').val();
+               data.searchStatusKP = $('#dd_statuspengusulan').val();
                data.searchProsedur = $('#dd_prosedur').val();
+               data.searchJenisJabatan = $('#dd_jenisjabatan').val();
             }
         },
         "columns": column,
@@ -73,7 +74,7 @@ jQuery(document).ready(function() {
     const table3 = $('#tbl-fungsionalumum').DataTable(settings);
     const table4 = $('#tbl-fungsionaltertentu').DataTable(settings);
 
-     $('#dd_statuspengusulan,#dd_prosedur').change(function(){
+     $('#dd_jenisjabatan,#dd_statuspengusulan,#dd_prosedur').change(function(){
         table2.draw();
     });
 });

@@ -8,108 +8,8 @@ class KenaikanPangkatModel extends \App\Models\BaseModel
 	
 	public function __construct() {
 		parent::__construct();
-		// $this->fotoPath = 'public/images/foto/';
 	}
-	
-	// public function deleteData() {
-	// 	$sql = 'SELECT foto FROM tbl_kenaikanpangkat WHERE id = ?';
-	// 	$img = $this->db->query($sql, $_POST['id'])->getRowArray();
-	// 	// if ($img['foto']) {
-	// 	// 	if (file_exists($this->fotoPath . $img['foto'])) {
-	// 	// 		$unlink = unlink($this->fotoPath . $img['foto']);
-	// 	// 		if (!$unlink) {
-	// 	// 			return false;
-	// 	// 		}
-	// 	// 	}
-	// 	// }
-	// 	$result = $this->db->table('tbl_kenaikanpangkat')->delete(['id' => $_POST['id']]);
-	// 	return $result;
-	// }
-	
-	// public function getMahasiswaById($id) {
-	// 	$sql = 'SELECT * FROM tbl_kenaikanpangkat WHERE id = ?';
-	// 	$result = $this->db->query($sql, trim($id))->getRowArray();
-	// 	return $result;
-	// }
-	
-	// public function saveData() {
-	// 	helper('upload_file');
-		
-	// 	$exp = explode('-', $_POST['tgl_lahir']);
-	// 	$tgl_lahir = $exp[2].'-'.$exp[1].'-'.$exp[0];
-	// 	$data_db['nip'] = $_POST['nip'];
-	// 	$data_db['tempat_lahir'] = $_POST['tempat_lahir'];
-	// 	$data_db['tgl_lahir'] = $tgl_lahir;
-	// 	$data_db['npm'] = $_POST['npm'];
-	// 	$data_db['prodi'] = $_POST['prodi'];
-	// 	$data_db['fakultas'] = $_POST['fakultas'];
-	// 	$data_db['alamat'] = $_POST['alamat'];
-		
-	// 	$new_name = '';
-	// 	$img_db['foto'] = '';
-		
-	// 	if ($_POST['id']) {
-	// 		$sql = 'SELECT foto FROM mahasiswa WHERE id_mahasiswa = ?';
-	// 		$img_db = $this->db->query($sql, $_POST['id'])->getRowArray();
-	// 		$new_name = $img_db['foto'];
-	// 	}
-		
-	// 	if ($_FILES['foto']['name']) 
-	// 	{
-	// 		//old file
-	// 		if ($_POST['id']) {
-	// 			if ($img_db['foto']) {
-	// 				if (file_exists($this->fotoPath . $img_db['foto'])) {
-	// 					$unlink = unlink($this->fotoPath . $img_db['foto']);
-	// 					if (!$unlink) {
-	// 						$result['msg']['status'] = 'error';
-	// 						$result['msg']['content'] = 'Gagal menghapus gambar lama';
-	// 						return $result;
-	// 					}
-	// 				}
-	// 			}
-	// 		}
-			
-	// 		$new_name = upload_image($this->fotoPath, $_FILES['foto'], 300,300);
-	// 		if (!$new_name) {
-	// 			$result['msg']['status'] = 'error';
-	// 			$result['msg']['content'] = 'Error saat memperoses gambar';
-	// 			return $result;
-	// 		}
-	// 	}
-		
-	// 	$data_db['foto'] = $new_name;
-	// 	if ($_POST['id']) 
-	// 	{
-	// 		$data_db['tgl_edit'] = date('Y-m-d');
-	// 		$data_db['id_user_edit'] = $_SESSION['user']['id_user'];
-	// 		$query = $this->db->table('mahasiswa')->update($data_db, ['id_mahasiswa' => $_POST['id']]);
-	// 		if ($query) {
-	// 			$result['msg']['status'] = 'ok';
-	// 			$result['msg']['content'] = 'Data berhasil disimpan';
-	// 		} else {
-	// 			$result['msg']['status'] = 'error';
-	// 			$result['msg']['content'] = 'Data gagal disimpan';
-	// 		}
 
-	// 	} else {
-
-	// 		$data_db['tgl_input'] = date('Y-m-d');
-	// 		$data_db['id_user_input'] = $_SESSION['user']['id_user'];
-	// 		$query = $this->db->table('mahasiswa')->insert($data_db);
-	// 		$result['id_mahasiswa'] = '';
-	// 		if ($query) {
-	// 			$result['msg']['status'] = 'ok';
-	// 			$result['msg']['content'] = 'Data berhasil disimpan';
-	// 			$result['id_mahasiswa'] = $this->db->insertID();
-	// 		} else {
-	// 			$result['msg']['status'] = 'error';
-	// 			$result['msg']['content'] = 'Data gagal disimpan';
-	// 		}
-	// 	}
-		
-	// 	return $result;
-	// }
 	
 	public function countAllData($where,$id_instansi) {
 		$sql = 'SELECT COUNT(*) AS jml FROM tbl_kenaikanpangkat '. $where . ' AND SHA1(id_instansi) = "'.$id_instansi.'"';
@@ -120,27 +20,26 @@ class KenaikanPangkatModel extends \App\Models\BaseModel
 	public function getListData($where,$id_instansi) {
 
 		$columns = $this->request->getPost('columns');
+	    $searchName = @$this->request->getPost('search')['value'];
+		$searchJenisJabatan = $_POST['searchJenisJabatan'];
+	    $searchProsedur = $_POST['searchProsedur'];
+	    $searchStatusKP = $_POST['searchStatusKP'];
 
-		// Search
-		$search_all = @$this->request->getPost('search')['value'];
-		if ($search_all) {
-			// Additional Search
-			$columns[]['data'] = 'nama';
-			foreach ($columns as $val) {
-				
-				if (strpos($val['data'], 'ignore_search') !== false) 
-					continue;
-				
-				if (strpos($val['data'], 'ignore') !== false)
-					continue;
-				
-				$where_col[] = $val['data'] . ' LIKE "%' . $search_all . '%"';
-			}
-			 $where .= ' AND (' . join(' OR ', $where_col) . ') ';
+	    $search_arr = array();
+	    $searchQuery = "";
+
+	    //search
+	    if($searchName != ''){
+        $where .= ' AND (nip LIKE "%'.$searchName.'%" OR 
+         nama LIKE "%'.$searchName.'%" OR 
+         jabatan LIKE "%'.$searchName.'%" ) ';
 		}
 
-		$searchProsedur = $_POST['searchProsedur'];
-		if ($searchProsedur) {
+		if($searchJenisJabatan != ''){
+		$where .= ' AND jenis_jabatan="'.$searchJenisJabatan.'" ';
+		}
+
+		if($searchProsedur != ''){
 			if($searchProsedur == "prosedur1")
 			{
 				$where_col[] = 'pangkat = "IV/a" OR pangkat = "IV/b"';
@@ -149,51 +48,16 @@ class KenaikanPangkatModel extends \App\Models\BaseModel
 			{
 				$where_col[] = 'pangkat = "III/d" OR pangkat= "III/c" OR pangkat= "III/b" OR pangkat= "III/a" OR pangkat= "II/d" OR pangkat= "II/c" OR pangkat= "II/b" OR pangkat= "II/a" OR pangkat= "I/d" OR pangkat= "I/c" OR pangkat= "I/b" OR pangkat= "I/a"';
 			}
-			$where .= ' AND '.$where_col.' ';
+		$where .= ' AND pangkat="'.$searchProsedur.'" ';
 		}
 
-		// // Prosedur
-		// $searchProsedur = $_POST['searchProsedur'];
-		// if ($searchProsedur) {
-		// 	// Additional Search
-		// 	$columns[]['data'] = 'pangkat';
-		// 	foreach ($columns as $val) {
-				
-		// 		if (strpos($val['data'], 'ignore_search') !== false) 
-		// 			continue;
-				
-		// 		if (strpos($val['data'], 'ignore') !== false)
-		// 			continue;
-		// 		if($searchProsedur == "prosedur1")
-		// 		{
-		// 			$where_col[] = $val['data'] . ' = "IV/a" OR '.$val['data']. ' = "IV/b"';
-		// 		} 
-		// 		elseif ($searchProsedur == "prosedur2")
-		// 		{
-		// 			$where_col[] = $val['data'] . ' = "III/d" OR '.$val['data']. ' = "III/c" OR '.$val['data']. ' = "III/b" OR '.$val['data']. ' = "III/a" OR '.$val['data']. ' = "II/d" OR '.$val['data']. ' = "II/c" OR '.$val['data']. ' = "II/b" OR '.$val['data']. ' = "II/a" OR '.$val['data']. ' = "I/d" OR '.$val['data']. ' = "I/c" OR '.$val['data']. ' = "I/b" OR '.$val['data']. ' = "I/a"';
-		// 		}
-				
-		// 	}
-		// 	 $where .= ' AND (' . join(' OR ', $where_col) . ') ';
-		// }
+		if($searchStatusKP != ''){
+		$where .= ' AND status="'.$searchStatusKP.'" ';
+		}
 
-		// // Status Pengusulan
-		// $searchStatus = $_POST['searchStatus'];
-		// if ($searchStatus) {
-		// 	// Additional Search
-		// 	$columns[]['data'] = 'status';
-		// 	foreach ($columns as $val) {
-				
-		// 		if (strpos($val['data'], 'ignore_search') !== false) 
-		// 			continue;
-				
-		// 		if (strpos($val['data'], 'ignore') !== false)
-		// 			continue;
-				
-		// 		$where_col[] = $val['data'] . ' = "' . $searchStatus . '"';
-		// 	}
-		// 	 $where .= ' AND (' . join(' OR ', $where_col) . ') ';
-		// }
+		if(count($search_arr) > 0){
+		$where .= implode(" AND ",$search_arr);
+		}
 
 		
 		

@@ -1,6 +1,6 @@
 <!DOCTYPE HTML>
 <html lang="en">
-<title>Home | Dashboard Kepegawaian</title>
+<title>Home | Dashboard Kepegawaian</title> 
 <meta name="descrition" content="Home - Dashboard Kepegawaian"/>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>

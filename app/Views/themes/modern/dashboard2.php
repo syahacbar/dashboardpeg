@@ -297,7 +297,7 @@
 		            depth: 35,
 		            dataLabels: {
 		                enabled: true,
-		                format: '{point.name}'
+		                format: '{point.name}<br>{point.percentage:.1f} %'
 		            }
 		        }
 		    },
@@ -343,7 +343,7 @@
 		            depth: 35,
 		            dataLabels: {
 		                enabled: true,
-		                format: '{point.name}'
+		                format: '{point.name}<br>{point.percentage:.1f} %'
 		            }
 		        }
 		    },
@@ -391,7 +391,7 @@
 		            depth: 35,
 		            dataLabels: {
 		                enabled: true,
-		                format: '{point.name}'
+		                format: '{point.name}<br>{point.percentage:.1f} %'
 		            }
 		        }
 		    },
