@@ -56,9 +56,53 @@ jQuery(document).ready(function() {
                 $row = $(this.node());
             
             });
-        }
+        },
+        dom: 'lBfrtip',
+        "buttons":[
+                {"extend":"copy"
+                    ,"text":"<i class='far fa-copy'></i> Copy"
+                    ,"className":"btn-light me-1"
+                },
+                {"extend":"excel"
+                    , "title":"Data Mahasisa"
+                    , "text":"<i class='far fa-file-excel'></i> Excel"
+                    , "exportOptions": {
+                      columns: [2, 3, 4, 5, 6, 7],
+                      modifier: {selected: null}
+                    }
+                    , "className":"btn-light me-1"
+                },
+                {"extend":"pdf"
+                    ,"title":"Data Mahasisa"
+                    ,"text":"<i class='far fa-file-pdf'></i> PDF"
+                    , "exportOptions": {
+                      columns: [2, 3, 4, 5, 6, 7],
+                      modifier: {selected: null}
+                    }
+                    ,"className":"btn-light me-1"
+                },
+                {"extend":"csv"
+                    ,"title":"Data Mahasisa"
+                    ,"text":"<i class='far fa-file-alt'></i> CSV"
+                    , "exportOptions": {
+                      columns: [2, 3, 4, 5, 6, 7],
+                      modifier: {selected: null}
+                    }
+                    ,"className":"btn-light me-1"
+                },
+                {"extend":"print"
+                    ,"title":"Data Mahasisa"
+                    ,"text":"<i class='fas fa-print'></i> Print"
+                    , "exportOptions": {
+                      columns: [2, 3, 4, 5, 6, 7],
+                      modifier: {selected: null}
+                    }
+                    ,"className":"btn-light"
+                }
+            ]
     }
 
+    
    
 
     let $add_setting = $('#dataTables-setting');
@@ -77,4 +121,8 @@ jQuery(document).ready(function() {
      $('#dd_jenisjabatan,#dd_statuspengusulan,#dd_prosedur').change(function(){
         table2.draw();
     });
+
+     // var tablex = $('#data-tables').DataTable(settings_kp);
+    table2.buttons().container().appendTo('#data-tables_wrapper .col-md-6:eq(0)');
+        
 });
