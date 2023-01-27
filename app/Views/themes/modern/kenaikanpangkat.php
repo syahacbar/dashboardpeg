@@ -8,10 +8,10 @@ helper('html'); ?>
 
   <div class="card-body">
     <div class="row">
-      <div class="col-sm-4">
+      <div class="col-sm-6">
         <div class="row">
           <div class="col-sm-4 d-flex align-items-center">
-            <label for="dd_jenisjabatan">Jenis Jabatan</label>
+            <label for="dd_jenisjabatan">Prosedur Kenaikan Pangkat</label>
           </div>
           <div class="col-sm-6">
               <select id="dd_jenisjabatan" name="dd_jenisjabatan" class="form-select">
@@ -23,9 +23,9 @@ helper('html'); ?>
           </div>
         </div>
       </div>
-      <div class="col-sm-4">
+      <div class="col-sm-3">
         <div class="row">
-          <div class="col-sm-4 d-flex align-items-center">
+          <div class="col-sm-3 d-flex align-items-center">
             <label for="dd_prosedur">Prosedur</label>
           </div>
           <div class="col-sm-6">
@@ -37,9 +37,9 @@ helper('html'); ?>
           </div>
         </div>
       </div>
-      <div class="col-sm-4">
+      <div class="col-sm-3">
         <div class="row">
-          <div class="col-sm-4 d-flex align-items-center">
+          <div class="col-sm-6 d-flex align-items-center">
             <label for="dd_statuspengusulan">Status Pengusulan</label>
           </div>
           <div class="col-sm-6">
