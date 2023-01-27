@@ -37,6 +37,29 @@ jQuery(document).ready(function() {
         }
     }
 
+    const settings_kp = {
+        "processing": true,
+        "serverSide": true,
+        "scrollX": true,
+        "ajax": {
+            "url": url,
+            "type": "POST",
+            "data": function(data){
+               data.searchStatus = $('#dd_statuspengusulan').val();
+               data.searchProsedur = $('#dd_prosedur').val();
+            }
+        },
+        "columns": column,
+        "initComplete": function(settings, json) {
+            table.rows().every(function(rowIdx, tableLoop, rowLoop) {
+                $row = $(this.node());
+            
+            });
+        }
+    }
+
+   
+
     let $add_setting = $('#dataTables-setting');
     if ($add_setting.length > 0) {
         add_setting = $.parseJSON($('#dataTables-setting').html());
@@ -46,7 +69,11 @@ jQuery(document).ready(function() {
     }
 
     const table = $('#table-result').DataTable(settings);
-    const table2 = $('#tbl-struktural').DataTable(settings);
+    const table2 = $('#tbl-struktural-kp').DataTable(settings_kp);
     const table3 = $('#tbl-fungsionalumum').DataTable(settings);
     const table4 = $('#tbl-fungsionaltertentu').DataTable(settings);
+
+     $('#dd_statuspengusulan,#dd_prosedur').change(function(){
+        table2.draw();
+    });
 });

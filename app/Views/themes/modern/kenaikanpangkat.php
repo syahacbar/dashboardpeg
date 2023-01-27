@@ -22,13 +22,13 @@ helper('html'); ?>
           <div class="col-sm-4">
             <div class="row">
               <div class="col-sm-4 d-flex align-items-center">
-                <label for="golonganruangstruktural">Prosedur</label>
+                <label for="dd_prosedur">Prosedur</label>
               </div>
               <div class="col-sm-6">
-                  <select id="golonganruangstruktural" onchange="" name="golonganruangstruktural" class="form-select">
+                  <select id="dd_prosedur" name="dd_prosedur" class="form-select">
                     <option value="">-- Pilih --</option>
-                    <option value="IV/a">V/a - IV/b</option>
-                    <option value="III/d">III/d ke bawah</option>
+                    <option value="prosedur1">V/a - IV/b</option>
+                    <option value="prosedur2">III/d ke bawah</option>
                   </select>
               </div>
             </div>
@@ -36,10 +36,10 @@ helper('html'); ?>
           <div class="col-sm-4">
             <div class="row">
               <div class="col-sm-4 d-flex align-items-center">
-                <label for="struktural">Status Pengusulan</label>
+                <label for="dd_statuspengusulan">Status Pengusulan</label>
               </div>
               <div class="col-sm-6">
-                  <select name="struktural" class="form-select">
+                  <select id="dd_statuspengusulan" name="dd_statuspengusulan" class="form-select">
                     <option value="">-- Pilih --</option>
                     <option value="ACC">ACC</option>
                     <option value="BTL">BTL</option>
@@ -84,7 +84,7 @@ helper('html'); ?>
 
             ?>
 
-            <table id="tbl-struktural" class="table display table-striped table-bordered table-hover tbl-struktural" style="width:100%">
+            <table id="tbl-struktural-kp" class="table display table-striped table-bordered table-hover tbl-struktural" style="width:100%">
               <thead>
                 <tr>
                   <?= $th ?>
@@ -126,24 +126,3 @@ helper('html'); ?>
 
   </div>
 </div>
-
-
-<script>
-  $(document).ready(function() {
-    // $('#table-result').DataTable();
-
-    // $("#filterTable").dataTable({
-    //     "searching": true
-    // });
-
-    // function filterData() {
-    //   $('#table-result').DataTable().search(
-    //     $('#golonganruangstruktural').val()
-    //   ).draw();
-    // }
-    $('#golonganruangstruktural').on('change', function() {
-      alert('tes');
-    });
-
-  });
-</script>

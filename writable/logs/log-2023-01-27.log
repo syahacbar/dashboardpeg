@@ -1,0 +1,34 @@
+CRITICAL - 2023-01-27 03:49:08 --> Array to string conversion
+#0 D:\xampp7\htdocs\dashboardpeg\app\Models\KenaikanPangkatModel.php(152): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'D:\\xampp7\\htdoc...', 152, Array)
+#1 D:\xampp7\htdocs\dashboardpeg\app\Controllers\Kenaikanpangkat.php(54): App\Models\KenaikanPangkatModel->getListData(' WHERE 1 = 1 ', '77de68daecd823b...')
+#2 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(832): App\Controllers\Kenaikanpangkat->getDataDT()
+#3 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kenaikanpangkat))
+#4 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp7\htdocs\dashboardpeg\index.php(47): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2023-01-27 03:49:38 --> syntax error, unexpected '.'
+#0 D:\xampp7\htdocs\dashboardpeg\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\xampp7\\htdoc...')
+#1 D:\xampp7\htdocs\dashboardpeg\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Kena...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Kena...')
+#3 D:\xampp7\htdocs\dashboardpeg\app\Controllers\Kenaikanpangkat.php(12): spl_autoload_call('App\\Models\\Kena...')
+#4 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(809): App\Controllers\Kenaikanpangkat->__construct()
+#5 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#6 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp7\htdocs\dashboardpeg\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-01-27 03:50:00 --> Array to string conversion
+#0 D:\xampp7\htdocs\dashboardpeg\app\Models\KenaikanPangkatModel.php(152): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'D:\\xampp7\\htdoc...', 152, Array)
+#1 D:\xampp7\htdocs\dashboardpeg\app\Controllers\Kenaikanpangkat.php(54): App\Models\KenaikanPangkatModel->getListData(' WHERE 1 = 1 ', '77de68daecd823b...')
+#2 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(832): App\Controllers\Kenaikanpangkat->getDataDT()
+#3 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kenaikanpangkat))
+#4 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp7\htdocs\dashboardpeg\index.php(47): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2023-01-27 03:51:10 --> Array to string conversion
+#0 D:\xampp7\htdocs\dashboardpeg\app\Models\KenaikanPangkatModel.php(152): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'D:\\xampp7\\htdoc...', 152, Array)
+#1 D:\xampp7\htdocs\dashboardpeg\app\Controllers\Kenaikanpangkat.php(54): App\Models\KenaikanPangkatModel->getListData(' WHERE 1 = 1 ', '77de68daecd823b...')
+#2 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(832): App\Controllers\Kenaikanpangkat->getDataDT()
+#3 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kenaikanpangkat))
+#4 D:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp7\htdocs\dashboardpeg\index.php(47): CodeIgniter\CodeIgniter->run()
+#6 {main}

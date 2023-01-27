@@ -138,6 +138,64 @@ class KenaikanPangkatModel extends \App\Models\BaseModel
 			}
 			 $where .= ' AND (' . join(' OR ', $where_col) . ') ';
 		}
+
+		$searchProsedur = $_POST['searchProsedur'];
+		if ($searchProsedur) {
+			if($searchProsedur == "prosedur1")
+			{
+				$where_col[] = 'pangkat = "IV/a" OR pangkat = "IV/b"';
+			} 
+			elseif ($searchProsedur == "prosedur2")
+			{
+				$where_col[] = 'pangkat = "III/d" OR pangkat= "III/c" OR pangkat= "III/b" OR pangkat= "III/a" OR pangkat= "II/d" OR pangkat= "II/c" OR pangkat= "II/b" OR pangkat= "II/a" OR pangkat= "I/d" OR pangkat= "I/c" OR pangkat= "I/b" OR pangkat= "I/a"';
+			}
+			$where .= ' AND '.$where_col.' ';
+		}
+
+		// // Prosedur
+		// $searchProsedur = $_POST['searchProsedur'];
+		// if ($searchProsedur) {
+		// 	// Additional Search
+		// 	$columns[]['data'] = 'pangkat';
+		// 	foreach ($columns as $val) {
+				
+		// 		if (strpos($val['data'], 'ignore_search') !== false) 
+		// 			continue;
+				
+		// 		if (strpos($val['data'], 'ignore') !== false)
+		// 			continue;
+		// 		if($searchProsedur == "prosedur1")
+		// 		{
+		// 			$where_col[] = $val['data'] . ' = "IV/a" OR '.$val['data']. ' = "IV/b"';
+		// 		} 
+		// 		elseif ($searchProsedur == "prosedur2")
+		// 		{
+		// 			$where_col[] = $val['data'] . ' = "III/d" OR '.$val['data']. ' = "III/c" OR '.$val['data']. ' = "III/b" OR '.$val['data']. ' = "III/a" OR '.$val['data']. ' = "II/d" OR '.$val['data']. ' = "II/c" OR '.$val['data']. ' = "II/b" OR '.$val['data']. ' = "II/a" OR '.$val['data']. ' = "I/d" OR '.$val['data']. ' = "I/c" OR '.$val['data']. ' = "I/b" OR '.$val['data']. ' = "I/a"';
+		// 		}
+				
+		// 	}
+		// 	 $where .= ' AND (' . join(' OR ', $where_col) . ') ';
+		// }
+
+		// // Status Pengusulan
+		// $searchStatus = $_POST['searchStatus'];
+		// if ($searchStatus) {
+		// 	// Additional Search
+		// 	$columns[]['data'] = 'status';
+		// 	foreach ($columns as $val) {
+				
+		// 		if (strpos($val['data'], 'ignore_search') !== false) 
+		// 			continue;
+				
+		// 		if (strpos($val['data'], 'ignore') !== false)
+		// 			continue;
+				
+		// 		$where_col[] = $val['data'] . ' = "' . $searchStatus . '"';
+		// 	}
+		// 	 $where .= ' AND (' . join(' OR ', $where_col) . ') ';
+		// }
+
+		
 		
 		// Order		
 		$order_data = $this->request->getPost('order');
