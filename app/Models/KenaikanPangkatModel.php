@@ -36,7 +36,7 @@ class KenaikanPangkatModel extends \App\Models\BaseModel
 		}
 
 		if($searchJenisJabatan != ''){
-		$where .= ' AND jenis_jabatan="'.$searchJenisJabatan.'" ';
+		$where .= ' AND prosedur="'.$searchJenisJabatan.'" ';
 		}
 
 		if($searchProsedur != ''){

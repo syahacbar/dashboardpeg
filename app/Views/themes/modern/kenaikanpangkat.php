@@ -15,10 +15,11 @@ helper('html'); ?>
           </div>
           <div class="col-sm-6">
               <select id="dd_jenisjabatan" name="dd_jenisjabatan" class="form-select">
-                <option value="">-- SEMUA JENIS JABATAN --</option>
-                <option value="STRUKTURAL">STRUKTURAL</option>
-                <option value="FUNGSIONAL TERTENTU">FUNGSIONAL TERTENTU</option>
-                <option value="FUNGSIONAL UMUM">FUNGSIONAL UMUM</option>
+                <option value="">-- SEMUA --</option>
+                <option value="PILIHAN (STRUKTURAL)">PILIHAN (STRUKTURAL)</option>
+                <option value="REGULER">REGULER</option>
+                <option value="KPLB">KPLB</option>
+                <option value="PILIHAN (FUNGSIONAL TERTENTU)">PILIHAN (FUNGSIONAL TERTENTU)</option>
               </select>
           </div>
         </div>
@@ -30,7 +31,7 @@ helper('html'); ?>
           </div>
           <div class="col-sm-6">
               <select id="dd_prosedur" name="dd_prosedur" class="form-select">
-                <option value="">-- SEMUA PROSEDUR --</option>
+                <option value="">-- SEMUA --</option>
                 <option value="prosedur1">V/a - IV/b</option>
                 <option value="prosedur2">III/d ke bawah</option>
               </select>
@@ -44,7 +45,7 @@ helper('html'); ?>
           </div>
           <div class="col-sm-6">
               <select id="dd_statuspengusulan" name="dd_statuspengusulan" class="form-select">
-                <option value="">-- SEMUA STATUS --</option>
+                <option value="">-- SEMUA --</option>
                 <option value="ACC">ACC</option>
                 <option value="BTL">BTL</option>
                 <option value="TMS">TMS</option>
