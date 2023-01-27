@@ -5,8 +5,8 @@
 		<div class="footer-copyright">
 			<div class="wrapper">
 				<?php 
-					$footer = str_replace('{{YEAR}}', date('Y'), $settingAplikasi['footer_app']);
-					echo html_entity_decode($footer);
+					// $footer = str_replace('{{YEAR}}', date('Y'), $settingAplikasi['footer_app']);
+					echo "Copyright 2023";
 				?>
 			</div>
 		</div>
