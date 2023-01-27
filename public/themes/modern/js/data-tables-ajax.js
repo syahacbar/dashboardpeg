@@ -64,7 +64,7 @@ jQuery(document).ready(function() {
                     ,"className":"btn-light me-1"
                 },
                 {"extend":"excel"
-                    , "title":"Data Mahasisa"
+                    , "title":"Data Kenaikan Pangkat"
                     , "text":"<i class='far fa-file-excel'></i> Excel"
                     , "exportOptions": {
                       columns: [2, 3, 4, 5, 6, 7],
@@ -73,7 +73,7 @@ jQuery(document).ready(function() {
                     , "className":"btn-light me-1"
                 },
                 {"extend":"pdf"
-                    ,"title":"Data Mahasisa"
+                    ,"title":"Data Kenaikan Pangkat"
                     ,"text":"<i class='far fa-file-pdf'></i> PDF"
                     , "exportOptions": {
                       columns: [2, 3, 4, 5, 6, 7],
@@ -82,7 +82,7 @@ jQuery(document).ready(function() {
                     ,"className":"btn-light me-1"
                 },
                 {"extend":"csv"
-                    ,"title":"Data Mahasisa"
+                    ,"title":"Data Kenaikan Pangkat"
                     ,"text":"<i class='far fa-file-alt'></i> CSV"
                     , "exportOptions": {
                       columns: [2, 3, 4, 5, 6, 7],
@@ -91,7 +91,7 @@ jQuery(document).ready(function() {
                     ,"className":"btn-light me-1"
                 },
                 {"extend":"print"
-                    ,"title":"Data Mahasisa"
+                    ,"title":"Data Kenaikan Pangkat"
                     ,"text":"<i class='fas fa-print'></i> Print"
                     , "exportOptions": {
                       columns: [2, 3, 4, 5, 6, 7],
