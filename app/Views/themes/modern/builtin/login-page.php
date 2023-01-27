@@ -81,8 +81,8 @@ if (!empty($js)) {
 		</div>
 		<div class="copyright">
 			<?php
-				$footer_login = $settingWeb->footer_login ? str_replace('{{YEAR}}', date('Y'), $settingWeb->footer_login) : '';
-				echo html_entity_decode($footer_login);
+				// $footer_login = $settingWeb->footer_login ? str_replace('{{YEAR}}', date('Y'), $settingWeb->footer_login) : '';
+				// echo html_entity_decode($footer_login);
 			?>
 		</div>
 	</div><!-- login container -->
