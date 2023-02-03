@@ -88,40 +88,24 @@ helper('html'); ?>
 
         <table id="tbl-struktural-kp" class="table display table-striped table-bordered table-hover tbl-struktural" style="width:100%">
           <thead>
-            <tr>
-              <th>NO</th>
-              <th>NIP</th>
-              <th>GOL/RUANG</th>
-              <th>JABATAN</th>
-              <th>JENIS JABATAN</th>
-              <th>PROSEDUR KP</th>
-              <th>STATUS USULAN KP</th>
-              <th>KETERANGAN</th>
-            </tr>
-          </thead>
-          <tbody>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tbody>
-          <tfoot>
-            <tr>
-              <th>NO</th>
-              <th>NIP</th>
-              <th>GOL/RUANG</th>
-              <th>JABATAN</th>
-              <th>JENIS JABATAN</th>
-              <th>PROSEDUR KP</th>
-              <th>STATUS USULAN KP</th>
-              <th>KETERANGAN</th>
-            </tr>
-          </tfoot>
-        </table>
+      <tr>
+        <?=$th?>
+      </tr>
+    </thead>
+    <tfoot>
+      <tr>
+        <?=$th?>
+      </tr>
+    </tfoot>
+    </table>
+    <?php
+      foreach ($column as $key => $val) {
+        $column_dt[] = ['data' => $key];
+      }
+    ?>
+    <span id="dataTables-column" style="display:none"><?=json_encode($column_dt)?></span>
+    <span id="dataTables-setting" style="display:none"><?=json_encode($settings)?></span>
+    <span id="dataTables-url" style="display:none"><?=current_url() . '/getDataDT'?></span>
       </div>
     </div>
   </div>
