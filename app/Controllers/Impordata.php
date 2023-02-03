@@ -15,17 +15,18 @@ class Impordata extends BaseController
         $this->model = new ImpordataModel;
 
         $this->data['title'] = 'Upload Excel';
-       $this->data['tabel'] = ['tbl_pegawai' => ['file_excel' => ['url' => $this->config->baseURL . 'public/files/form_data_pegawai.xlsx'
-                                                            , 'display' => 'form_data_pegawai.xlsx'
-                                                          ]
-                                          , 'display' => 'Tabel Pegawai'
-                                        ],
-                            'tbl_kenaikanpangkat' => ['file_excel' => ['url' => $this->config->baseURL . 'public/files/form_kenaikan_pangkat.xlsx'
-                                                                    , 'display' => 'Format Data form_kenaikan_pangkat.xlsx'
-                                                                  ]
-                                                    , 'display' => 'Tabel Usulan Kenaikan Pangkat'
-                                                ]
-                        ];
+        $this->data['tabel'] = [
+            'tbl_pegawai' => [
+                'file_excel' => [
+                    'url' => $this->config->baseURL . 'public/files/form_data_pegawai.xlsx', 'display' => 'form_data_pegawai.xlsx'
+                ], 'display' => 'Tabel Pegawai'
+            ],
+            'tbl_kenaikanpangkat' => [
+                'file_excel' => [
+                    'url' => $this->config->baseURL . 'public/files/form_kenaikan_pangkat.xlsx', 'display' => 'Format Data form_kenaikan_pangkat.xlsx'
+                ], 'display' => 'Tabel Usulan Kenaikan Pangkat'
+            ]
+        ];
 
         foreach ($this->data['tabel'] as $key => $val) {
             $this->data['tabel_options'][$key] = $val['display'];
@@ -43,16 +44,13 @@ class Impordata extends BaseController
                 $data['msg']['status'] = 'error';
                 $data['msg']['content'] = $form_errors;
             } else {
-                if($_POST['nama_tabel'] == 'tbl_pegawai')
-                {
+                if ($_POST['nama_tabel'] == 'tbl_pegawai') {
                     $this->data['message'] = $this->model->impordatapegawai();
-                } 
-                
-                if($_POST['nama_tabel'] == 'tbl_kenaikanpangkat')
-                {
+                }
+
+                if ($_POST['nama_tabel'] == 'tbl_kenaikanpangkat') {
                     $this->data['message'] = $this->model->imporkenaikanpangkat();
                 }
-                
             }
         }
 
@@ -62,7 +60,7 @@ class Impordata extends BaseController
     }
 
     function validateForm()
-    { 
+    {
 
         $form_errors = [];
 
@@ -79,6 +77,4 @@ class Impordata extends BaseController
 
         return $form_errors;
     }
-
-    
 }
