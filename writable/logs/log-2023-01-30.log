@@ -1,0 +1,9 @@
+CRITICAL - 2023-01-30 02:38:50 --> Invalid file: themes/modern/home1.php
+#0 F:\xampp7\htdocs\dashboardpeg\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('themes/modern/h...')
+#1 F:\xampp7\htdocs\dashboardpeg\system\Common.php(1089): CodeIgniter\View\View->render('themes/modern/h...', Array, true)
+#2 F:\xampp7\htdocs\dashboardpeg\app\Controllers\Home.php(19): view('themes/modern/h...', Array)
+#3 F:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(832): App\Controllers\Home->index()
+#4 F:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 F:\xampp7\htdocs\dashboardpeg\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 F:\xampp7\htdocs\dashboardpeg\index.php(47): CodeIgniter\CodeIgniter->run()
+#7 {main}
