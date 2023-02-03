@@ -55,20 +55,21 @@ class Kenaikanpangkat extends BaseController
 		$query = $this->model->getListData($this->whereOwn(),$id_instansi);
 		$result['recordsFiltered'] = $query['total_filtered'];
 				
-		helper('html');
+		helper(['html','format']);
 		
 		$no = $this->request->getPost('start') + 1 ?: 1;
 		foreach ($query['data'] as $key => &$val) 
 		{
 			
 			$val['ignore_search_urut'] = $no;
-			$val['ignore_search_action'] = btn_action([
-									'edit' => ['url' => $this->config->baseURL . $this->currentModule['nama_module'] . '/edit?id='. $val['id']]
-								, 'delete' => ['url' => ''
-												, 'id' =>  $val['id']
-												, 'delete-title' => 'Hapus data mahasiswa: <strong>'.$val['nama'].'</strong> ?'
-											]
-							]);
+			$val['pangkatx'] = format_golru($val['pangkat']);
+			// $val['ignore_search_action'] = btn_action([
+			// 						'edit' => ['url' => $this->config->baseURL . $this->currentModule['nama_module'] . '/edit?id='. $val['id']]
+			// 					, 'delete' => ['url' => ''
+			// 									, 'id' =>  $val['id']
+			// 									, 'delete-title' => 'Hapus data : <strong>'.$val['nama'].'</strong> ?'
+			// 								]
+			// 				]);
 			$no++;
 		}
 					

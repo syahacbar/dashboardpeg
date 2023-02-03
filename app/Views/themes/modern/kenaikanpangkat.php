@@ -1,6 +1,6 @@
 <?php
-helper('html'); ?>
-
+helper(['html','format']); 
+?>
 <div class="card">
   <div class="card-header">
    <h5 class="card-title"><?=$current_module['judul_module']?></h5>
@@ -64,7 +64,7 @@ helper('html'); ?>
           'ignore_search_urut' => 'NO',
           'nama' => 'NAMA',
           'nip' => 'NIP',
-          'pangkat' => 'GOL/RUANG',
+          'pangkatx' => 'GOL/RUANG',
           'jabatan' => 'JABATAN',
           'jenis_jabatan' => 'JENIS JABATAN',
           'prosedur' => 'PROSEDUR KP',

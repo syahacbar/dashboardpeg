@@ -394,13 +394,7 @@
 		    chart: {
 		        renderTo: 'graph-golru',
 		        type: 'column',
-		        options3d: {
-		            enabled: true,
-		            alpha: 15,
-		            beta: 15,
-		            depth: 50,
-		            viewDistance: 25
-		        }
+		        
 		    },
 		    xAxis: {
 		        categories: [<?php foreach ($golru AS $gr){ echo "'".format_golru($gr->gol_akhir)."',"; }?>]
