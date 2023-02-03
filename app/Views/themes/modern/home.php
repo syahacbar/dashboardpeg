@@ -76,13 +76,13 @@
 	</header>
 	<div class="page-container">
 		
-		<div id="map" style="width: 100%; height: 750px;"></div>
+		<div id="map" style="width: 100%; height: 850px;"></div>
 
 	</div>
 	<footer>
 		<div class="footer-menu-container">
 			<div class="wrapper clearfix">
-				<div class="nav-left">Copyright &copy; 2023 <a title="Manokwari Web" href="https://manokwariweb.com">ManokwariWeb</a>
+				<div class="nav-left">Copyright &copy; 2023 
 				</div>
 				<nav class="nav-right nav-footer">
 					<ul class=footer-menu>

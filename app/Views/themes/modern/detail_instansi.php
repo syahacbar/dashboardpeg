@@ -212,9 +212,9 @@
 								<table class="table table-striped table-bordered table-hover mytables">
 								<thead>
 								<tr>
-									<th width="20px">No.</th>
-									<th>Golongan/Ruang</th>
-									<th>Jumlah</th>
+									<th style="text-align: center;" width="20px">NO.</th>
+									<th style="text-align: center;">GOLONGAN/RUANG</th>
+									<th style="text-align: center;">JUMLAH</th>
 								</tr>
 								</thead>
 								<tbody>
@@ -224,11 +224,15 @@
 									?>
 										<tr>
 											<td style="text-align: center;"><?php echo $no++; ?></td>
-											<td style="text-align: center;"><?php echo $gr->gol_akhir; ?></td>
+											<td style="text-align: center;"><?php echo format_golru($gr->gol_akhir); ?></td>
 											<td style="text-align: center;"><?php echo format_ribuan($gr->jum_golru); ?></td>
 										</tr>
 									<?php endforeach ?>
 								</tbody>
+								<tfoot>
+									<th style="text-align: center;" colspan="2">Total</th>
+									<th style="text-align: center;"><?php echo format_ribuan($totalpegawai->totalpegawai); ?></th>
+								</tfoot>
 								</table>
 								</div>
 						</div>
@@ -259,9 +263,9 @@
 								<table class="table table-striped table-bordered table-hover mytables">
 								<thead>
 								<tr>
-									<th>No.</th>
-									<th>Jenis Kelamin</th>
-									<th>Jumlah</th>
+									<th style="text-align: center;">NO.</th>
+									<th style="text-align: center;">JENIS KELAMIN</th>
+									<th style="text-align: center;">JUMLAH</th>
 								</tr>
 								</thead>
 								<tbody>		
@@ -277,6 +281,10 @@
 										</tr>
 									<?php endforeach ?>
 								</tbody>
+								<tfoot>
+									<th style="text-align: center;" colspan="2">Total</th>
+									<th style="text-align: center;"><?php echo format_ribuan($totalpegawai->totalpegawai); ?></th>
+								</tfoot>
 								</table>
 								</div>
 						</div>
@@ -309,9 +317,9 @@
 								<table class="table table-striped table-bordered table-hover mytables">
 								<thead>
 								<tr>
-									<th>No.</th>
-									<th>Jenis Jabatan</th>
-									<th>Jumlah</th>
+									<th style="text-align: center;">NO.</th>
+									<th style="text-align: center;">JENIS JABATAN</th>
+									<th style="text-align: center;">JUMLAH</th>
 								</tr>
 								</thead>
 								<tbody>		
@@ -331,6 +339,10 @@
 									<td style="text-align: center;"><?php echo format_ribuan($jenjab3->jumlah); ?></td>	
 								</tr>								
 								</tbody>
+								<tfoot>
+									<th style="text-align: center;" colspan="2">Total</th>
+									<th style="text-align: center;"><?php echo format_ribuan($totalpegawai->totalpegawai); ?></th>
+								</tfoot>
 								</table>
 								</div>
 						</div>
@@ -352,7 +364,7 @@
 	<footer>
 		<div class="footer-menu-container">
 			<div class="wrapper clearfix">
-				<div class="nav-left">Copyright &copy; 2023 <a title="Manokwari Web" href="https://manokwariweb.com">ManokwariWeb</a>
+				<div class="nav-left">Copyright &copy; 2023
 				</div>
 				<nav class="nav-right nav-footer">
 					<ul class=footer-menu>
@@ -360,7 +372,7 @@
 							<a class="depth-0" href="<?=$config->baseURL?>">Home</a>
 						</li>
 						<li class="menu">
-							<a class="depth-0" href="tremofuser">Term of Use</a>
+							<a class="depth-0" href="<?=$config->baseURL?>login">Login</a>
 						</li>
 					</ul>
 				</nav>
@@ -382,16 +394,10 @@
 		    chart: {
 		        renderTo: 'graph-golru',
 		        type: 'column',
-		        options3d: {
-		            enabled: true,
-		            alpha: 15,
-		            beta: 15,
-		            depth: 50,
-		            viewDistance: 25
-		        }
+		        
 		    },
 		    xAxis: {
-		        categories: [<?php foreach ($golru AS $gr){ echo "'".$gr->gol_akhir."',"; }?>]
+		        categories: [<?php foreach ($golru AS $gr){ echo "'".format_golru($gr->gol_akhir)."',"; }?>]
 		    },
 		    yAxis: {
 		        title: {

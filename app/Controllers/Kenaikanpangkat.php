@@ -31,20 +31,13 @@ class Kenaikanpangkat extends BaseController
 	public function index()
 	{
 		$this->cekHakAkses('read_data');
-		
+		$userdata = $_SESSION['user'];
+		$id_instansi = SHA1($userdata['id_instansi']);
+
 		$data = $this->data;
-		// if (!empty($_POST['delete'])) 
-		// {
-		// 	$this->cekHakAkses('delete_data', 'tbl_kenaikanpangkat');
-			
-		// 	$result = $this->model->deleteData();
-		// 	// $result = true;
-		// 	if ($result) {
-		// 		$data['msg'] = ['status' => 'ok', 'message' => 'Data Mahasiswa berhasil dihapus'];
-		// 	} else {
-		// 		$data['msg'] = ['status' => 'error', 'message' => 'Data Mahasiswa gagal dihapus'];
-		// 	}
-		// }
+
+		$data['prosedurkp'] = $this->model->get_prosedurkp($id_instansi);
+		$data['statuskp'] = $this->model->get_statuskp($id_instansi);
 		$this->view('kenaikanpangkat.php', $data);
 	}
 
@@ -62,29 +55,21 @@ class Kenaikanpangkat extends BaseController
 		$query = $this->model->getListData($this->whereOwn(),$id_instansi);
 		$result['recordsFiltered'] = $query['total_filtered'];
 				
-		helper('html');
+		helper(['html','format']);
 		
 		$no = $this->request->getPost('start') + 1 ?: 1;
 		foreach ($query['data'] as $key => &$val) 
 		{
-			$image = 'noimage.png';
-			// if ($val['foto']) {
-			// 	if (file_exists('public/images/foto/' . $val['foto'])) {
-			// 		$image = $val['foto'];
-			// 	}
-			// }
-			
-			// $val['ignore_search_foto'] = '<div class="list-foto"><img src="'. $this->config->baseURL.'public/images/foto/' . $image . '"/></div>';
-			// $val['tgl_lahir'] = $val['tempat_lahir'] . ', '. format_tanggal($val['tgl_lahir']);
 			
 			$val['ignore_search_urut'] = $no;
-			$val['ignore_search_action'] = btn_action([
-									'edit' => ['url' => $this->config->baseURL . $this->currentModule['nama_module'] . '/edit?id='. $val['id']]
-								, 'delete' => ['url' => ''
-												, 'id' =>  $val['id']
-												, 'delete-title' => 'Hapus data mahasiswa: <strong>'.$val['nama'].'</strong> ?'
-											]
-							]);
+			$val['pangkatx'] = format_golru($val['pangkat']);
+			// $val['ignore_search_action'] = btn_action([
+			// 						'edit' => ['url' => $this->config->baseURL . $this->currentModule['nama_module'] . '/edit?id='. $val['id']]
+			// 					, 'delete' => ['url' => ''
+			// 									, 'id' =>  $val['id']
+			// 									, 'delete-title' => 'Hapus data : <strong>'.$val['nama'].'</strong> ?'
+			// 								]
+			// 				]);
 			$no++;
 		}
 					
