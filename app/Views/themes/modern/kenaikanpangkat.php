@@ -16,10 +16,10 @@ helper('html'); ?>
           <div class="col-sm-6">
               <select id="dd_jenisjabatan" name="dd_jenisjabatan" class="form-select">
                 <option value="">-- SEMUA --</option>
-                <option value="PILIHAN (STRUKTURAL)">PILIHAN (STRUKTURAL)</option>
-                <option value="REGULER">REGULER</option>
-                <option value="KPLB">KPLB</option>
-                <option value="PILIHAN (FUNGSIONAL TERTENTU)">PILIHAN (FUNGSIONAL TERTENTU)</option>
+                <?php foreach($prosedurkp AS $pros) : ?>
+                  <option value="<?php echo $pros->prosedur;?>"><?php echo $pros->prosedur;?></option>
+                <?php endforeach; ?>
+                
               </select>
           </div>
         </div>
@@ -46,10 +46,9 @@ helper('html'); ?>
           <div class="col-sm-6">
               <select id="dd_statuspengusulan" name="dd_statuspengusulan" class="form-select">
                 <option value="">-- SEMUA --</option>
-                <option value="ACC">ACC</option>
-                <option value="BTL">BTL</option>
-                <option value="TMS">TMS</option>
-                <option value="Proses Validasi">Proses Validasi</option>
+                <?php foreach($statuskp AS $stat) : ?>
+                  <option value="<?php echo $stat->status;?>"><?php echo $stat->status;?></option>
+                <?php endforeach; ?>
               </select>
           </div>
         </div>
@@ -62,16 +61,15 @@ helper('html'); ?>
         }
 
         $column = [
-          'ignore_search_urut' => 'No',
-          'nama' => 'Nama',
+          'ignore_search_urut' => 'NO',
+          'nama' => 'NAMA',
           'nip' => 'NIP',
-          'pangkat' => 'Golongan/Ruang',
-          'jabatan' => 'Jabatan',
-          'jenis_jabatan' => 'Jenis Jabatan',
-          'prosedur' => 'Prosedur Kenaikan Pangkat',
-          'status' => 'Status',
-          'alasan' => 'Alasan',
-          // 'ignore_search_action' => 'Action'
+          'pangkat' => 'GOL/RUANG',
+          'jabatan' => 'JABATAN',
+          'jenis_jabatan' => 'JENIS JABATAN',
+          'prosedur' => 'PROSEDUR KP',
+          'status' => 'STATUS USULAN KP',
+          'alasan' => 'KETERANGAN',
 
         ];
 
@@ -91,23 +89,39 @@ helper('html'); ?>
         <table id="tbl-struktural-kp" class="table display table-striped table-bordered table-hover tbl-struktural" style="width:100%">
           <thead>
             <tr>
-              <?= $th ?>
+              <th>NO</th>
+              <th>NIP</th>
+              <th>GOL/RUANG</th>
+              <th>JABATAN</th>
+              <th>JENIS JABATAN</th>
+              <th>PROSEDUR KP</th>
+              <th>STATUS USULAN KP</th>
+              <th>KETERANGAN</th>
             </tr>
           </thead>
+          <tbody>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tbody>
           <tfoot>
             <tr>
-              <?= $th ?>
+              <th>NO</th>
+              <th>NIP</th>
+              <th>GOL/RUANG</th>
+              <th>JABATAN</th>
+              <th>JENIS JABATAN</th>
+              <th>PROSEDUR KP</th>
+              <th>STATUS USULAN KP</th>
+              <th>KETERANGAN</th>
             </tr>
           </tfoot>
         </table>
-        <?php
-        foreach ($column as $key => $val) {
-          $column_dt[] = ['data' => $key];
-        }
-        ?>
-        <span id="dataTables-column" style="display:none"><?= json_encode($column_dt) ?></span>
-        <span id="dataTables-setting" style="display:none"><?= json_encode($settings) ?></span>
-        <span id="dataTables-url" style="display:none"><?= current_url() . '/getDataDT' ?></span>
       </div>
     </div>
   </div>

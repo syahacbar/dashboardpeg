@@ -44,6 +44,12 @@ class Dashboard2 extends BaseController
 		$this->data['jenjab2'] = $this->model->count_jenis_jabatan($id_instansi,'FU');
 		$this->data['jenjab3'] = $this->model->count_jenis_jabatan($id_instansi,'FT');
 		$this->data['usulankp'] = $this->model->get_usulankp_by_instansi($id_instansi);
+		$this->data['totalpegawai'] = $this->model->count_pegawai_by_instansi($id_instansi);
+		$this->data['totalukp'] = $this->model->count_all_usulankp_by_instansi($id_instansi);
+		$this->data['totalukpTMS'] = $this->model->count_usulankp_by_instansi($id_instansi,'TMS');
+		$this->data['totalukpBTS'] = $this->model->count_usulankp_by_instansi($id_instansi,'BTS');
+		$this->data['totalukpMS'] = $this->model->count_usulankp_by_instansi($id_instansi,'MS');
+		$this->data['totalukpDalamProses'] = $this->model->count_usulankp_by_instansi($id_instansi,'DALAM PROSES VALIDASI');
 		$this->view('dashboard2.php', $this->data);
 	}
 }

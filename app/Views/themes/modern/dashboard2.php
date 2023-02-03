@@ -19,12 +19,12 @@
 					<div style="overflow: auto">
 						<table class="table table-striped table-bordered table-hover mytables">
 							<thead>
-							<tr>
-								<th width="20px">No.</th>
-								<th>Golongan/Ruang</th>
-								<th>Jumlah</th>
-							</tr>
-							</thead>
+								<tr>
+									<th style="text-align: center;" width="20px">NO.</th>
+									<th style="text-align: center;">GOLONGAN/RUANG</th>
+									<th style="text-align: center;">JUMLAH</th>
+								</tr>
+								</thead>
 							<tbody>
 								<?php 	
 									$no = 1;
@@ -32,11 +32,15 @@
 								?>
 									<tr>
 										<td style="text-align: center;"><?php echo $no++; ?></td>
-										<td style="text-align: center;"><?php echo $gr->gol_akhir; ?></td>
+										<td style="text-align: center;"><?php echo format_golru($gr->gol_akhir); ?></td>
 										<td style="text-align: center;"><?php echo $gr->jum_golru; ?></td>
 									</tr>
 								<?php endforeach ?>
 							</tbody>
+								<tfoot>
+									<th style="text-align: center;" colspan="2">Total</th>
+									<th style="text-align: center;"><?php echo format_ribuan($totalpegawai->totalpegawai); ?></th>
+								</tfoot>
 						</table>
 					</div>
 				</div>
@@ -64,11 +68,11 @@
 					<div style="overflow: auto">
 						<table class="table table-striped table-bordered table-hover mytables">
 							<thead>
-							<tr>
-								<th width="20px">No.</th>
-								<th>Jenis Kelamin</th>
-								<th>Jumlah</th>
-							</tr>
+								<tr>
+									<th style="text-align: center;">NO.</th>
+									<th style="text-align: center;">JENIS KELAMIN</th>
+									<th style="text-align: center;">JUMLAH</th>
+								</tr>
 							</thead>
 							<tbody>
 								<?php 	
@@ -82,6 +86,10 @@
 										</tr>
 									<?php endforeach ?>
 							</tbody>
+								<tfoot>
+									<th style="text-align: center;" colspan="2">Total</th>
+									<th style="text-align: center;"><?php echo format_ribuan($totalpegawai->totalpegawai); ?></th>
+								</tfoot>
 						</table>
 					</div>
 				</div>
@@ -110,12 +118,12 @@
 					<div style="overflow: auto">
 						<table class="table table-striped table-bordered table-hover mytables">
 							<thead>
-							<tr>
-								<th width="20px">No.</th>
-								<th>Jenis Jabatan</th>
-								<th>Jumlah</th>
-							</tr>
-							</thead>
+								<tr>
+									<th style="text-align: center;">NO.</th>
+									<th style="text-align: center;">JENIS JABATAN</th>
+									<th style="text-align: center;">JUMLAH</th>
+								</tr>
+								</thead>
 							<tbody>		
 								<tr>
 									<td style="text-align: center;">1</td>									
@@ -133,6 +141,10 @@
 									<td style="text-align: center;"><?php echo format_ribuan($jenjab3->jumlah); ?></td>	
 								</tr>								
 								</tbody>
+								<tfoot>
+									<th style="text-align: center;" colspan="2">Total</th>
+									<th style="text-align: center;"><?php echo format_ribuan($totalpegawai->totalpegawai); ?></th>
+								</tfoot>
 						</table>
 					</div>
 				</div>
@@ -162,23 +174,42 @@
 						<table class="table table-striped table-bordered table-hover mytables">
 							<thead>
 							<tr>
-								<th width="20px">No.</th>
-								<th>Status</th>
-								<th>Jumlah</th>
+								<th style="text-align: center;" width="20px">NO.</th>
+								<th style="text-align: center;">STATUS</th>
+								<th style="text-align: center;">JUMLAH</th>
 							</tr>
 							</thead>
 							<tbody>
-								<?php 	
-										$no = 1;
-										foreach ($usulankp AS $ukp): 
-									?>
-										<tr>
-											<td style="text-align: center;"><?php echo $no++; ?></td>
-											<td><?php echo $ukp->status; ?></td>
-											<td style="text-align: center;"><?php echo $ukp->jum_ukp; ?></td>
-										</tr>
-									<?php endforeach ?>
+							<tr>
+								<td colspan="2">Sudah Proses Validasi</td>
+								<?php $totalukpSudahProses = $totalukpTMS->countstatus + $totalukpBTS->countstatus + $totalukpMS->countstatus; ?>
+								<td style="text-align: center;"><?php echo $totalukpSudahProses; ?></td>
+							</tr>
+							<tr>
+								<td>-</td>
+								<td>TMS</td>
+								<td style="text-align: center;"><?php echo $totalukpTMS->countstatus; ?></td>
+							</tr>
+							<tr>
+								<td>-</td>
+								<td>BMS</td>
+								<td style="text-align: center;"><?php echo $totalukpBTS->countstatus; ?></td>
+							</tr>
+							<tr>
+								<td>-</td>
+								<td>MS</td>
+								<td style="text-align: center;"><?php echo $totalukpMS->countstatus; ?></td>
+							</tr>
+							<tr>
+								<td colspan="2">Dalam Proses Validasi</td>
+								<td style="text-align: center;"><?php echo $totalukpDalamProses->countstatus; ?></td>
+							</tr>
+
 							</tbody>
+								<tfoot>
+									<th style="text-align: center;" colspan="2">Total</th>
+									<th style="text-align: center;"><?php echo format_ribuan($totalukp->jum_ukp); ?></th>
+								</tfoot>
 						</table>
 					</div>
 				</div>
@@ -229,7 +260,7 @@
 		        }
 		    },
 		    xAxis: {
-		        categories: [<?php foreach ($golru AS $gr){ echo "'".$gr->gol_akhir."',"; }?>]
+		        categories: [<?php foreach ($golru AS $gr){ echo "'".format_golru($gr->gol_akhir)."',"; }?>]
 		    },
 		    yAxis: {
 		        title: {

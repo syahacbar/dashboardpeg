@@ -24,6 +24,7 @@ class Home extends BaseController
 		$this->data['jenjab2'] = $this->model->count_jenis_jabatan($id_instansi,'FU');
 		$this->data['jenjab3'] = $this->model->count_jenis_jabatan($id_instansi,'FT');
 		$this->data['pegawai'] = $this->model->get_all_pegawai_by_instansi($id_instansi);
+		$this->data['totalpegawai'] = $this->model->count_pegawai_by_instansi($id_instansi);
 
 		return view('themes/modern/detail_instansi.php', $this->data);
 	}

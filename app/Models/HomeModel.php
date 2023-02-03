@@ -39,6 +39,13 @@ class HomeModel extends \App\Models\BaseModel
 		return $result;
 	}
 
+	public function count_pegawai_by_instansi($id_instansi)
+	{
+		$sql = 'SELECT COUNT(id_pegawai) AS totalpegawai FROM tbl_pegawai WHERE SHA(id_instansi)="'.$id_instansi.'"';
+		$result = $this->db->query($sql)->getRow();
+		return $result;
+	}
+
 
 	public function get_jenjab_by_instansi($id_instansi)
 	{
@@ -70,6 +77,20 @@ class HomeModel extends \App\Models\BaseModel
 	{
 		$sql = 'SELECT tkp.status, COUNT(tkp.status) AS jum_ukp FROM tbl_kenaikanpangkat tkp WHERE SHA1(tkp.id_instansi)="'.$id_instansi.'" GROUP BY tkp.status';
 		$result = $this->db->query($sql)->getResult();
+		return $result;
+	}
+
+	public function count_all_usulankp_by_instansi($id_instansi)
+	{
+		$sql = 'SELECT COUNT(tkp.status) AS jum_ukp FROM tbl_kenaikanpangkat tkp WHERE SHA1(tkp.id_instansi)="'.$id_instansi.'"';
+		$result = $this->db->query($sql)->getRow();
+		return $result;
+	}
+
+	public function count_usulankp_by_instansi($id_instansi,$status)
+	{
+		$sql = 'SELECT COUNT(tkp.status) AS countstatus FROM tbl_kenaikanpangkat tkp WHERE SHA1(tkp.id_instansi)="'.$id_instansi.'" AND tkp.status="'.$status.'"';
+		$result = $this->db->query($sql)->getRow();
 		return $result;
 	}
 	

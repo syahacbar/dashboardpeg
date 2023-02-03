@@ -10,6 +10,17 @@ class KenaikanPangkatModel extends \App\Models\BaseModel
 		parent::__construct();
 	}
 
+	public function get_prosedurkp($id_instansi) {
+		$sql = 'SELECT DISTINCT prosedur FROM tbl_kenaikanpangkat WHERE SHA1(id_instansi) = "'.$id_instansi.'"';
+		$result = $this->db->query($sql)->getResult();
+		return $result;
+	}
+
+	public function get_statuskp($id_instansi) {
+		$sql = 'SELECT DISTINCT status FROM tbl_kenaikanpangkat WHERE SHA1(id_instansi) = "'.$id_instansi.'"';
+		$result = $this->db->query($sql)->getResult();
+		return $result;
+	}
 	
 	public function countAllData($where,$id_instansi) {
 		$sql = 'SELECT COUNT(*) AS jml FROM tbl_kenaikanpangkat '. $where . ' AND SHA1(id_instansi) = "'.$id_instansi.'"';
