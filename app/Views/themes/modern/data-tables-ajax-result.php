@@ -32,6 +32,7 @@
 				$settings['columnDefs'][] = ["targets" => $index, "orderable" => false];
 			}
 			$index++;
+			// $settings['columnDefs'][] = ["targets" => $index, "orderable" => false];
 		}
 		
 		?>
