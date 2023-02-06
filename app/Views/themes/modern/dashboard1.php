@@ -6,7 +6,7 @@
 				<div class="card-body card-stats">
 					<div class="description">
 						<h5 class="card-title h4">52000</h5>
-						<p class="card-text">Jumlah Pegawai Struktural</p>
+						<p class="card-text">Jumlah Usulan Kenaikan Pangkat</p>
 
 					</div>
 					<div class="icon bg-warning-light">
@@ -150,6 +150,10 @@
 									</tr>
 								<?php endforeach ?>
 							</tbody>
+							<tfoot>
+								<th colspan="2">Total</th>
+								<th>123123</th>
+							</tfoot>
 						</table>
 					</div>
 				</div>

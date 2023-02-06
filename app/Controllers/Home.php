@@ -16,6 +16,13 @@ class Home extends BaseController
 	{
 		$instansi = $this->model->get_all_data_by_instansi();
 		$this->data['instansi'] = $instansi;
+		return view('themes/modern/home.php', $this->data);
+	}
+
+	public function newhome()
+	{
+		$instansi = $this->model->get_all_data_by_instansi();
+		$this->data['instansi'] = $instansi;
 		return view('themes/modern/home1.php', $this->data);
 	}
 
