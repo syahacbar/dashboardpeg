@@ -219,7 +219,7 @@
 								</tr>		
 								<tr>
 									<td style="text-align: center;">2</td>									
-									<td>Fungsional Tertentu</td>									
+									<td>Fungsional</td>									
 									<td style="text-align: center;"><?php echo format_ribuan($jenjab2->jumlah); ?></td>	
 								</tr>		
 								<tr>
@@ -465,7 +465,7 @@
 		        data: [
 		        	['Struktural',<?php echo $jenjab1->jumlah?>],
 		        	['Fungsional Umum',<?php echo $jenjab2->jumlah?>],
-		        	['Fungsional Tertentu',<?php echo $jenjab3->jumlah?>],
+		        	['Fungsional',<?php echo $jenjab3->jumlah?>],
 		        ]
 		    }]
 		});

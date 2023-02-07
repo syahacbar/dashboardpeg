@@ -319,7 +319,7 @@
 			data: [
 				['Struktural', <?php echo $count_str->jumlah;?>],
 				['Fungsional Umum', <?php echo $count_fu->jumlah;?>],
-				['Fungsional Tertentu', <?php echo $count_ft->jumlah;?>]
+				['Fungsional', <?php echo $count_ft->jumlah;?>]
 			]
 		}]
 	});
