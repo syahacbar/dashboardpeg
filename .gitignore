@@ -16,3 +16,8 @@ application/logs/*
 !application/logs/index.html
 !application/logs/.htaccess
 /vendor/
+admin-template-codeigniter-4.sql
+*.json
+*.log
+writable/debugbar/debugbar_1675425463.json
+*.json

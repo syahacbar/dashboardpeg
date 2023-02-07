@@ -17,7 +17,7 @@ class ImpordataModel extends \App\Models\BaseModel
         helper(['upload_file', 'format']);
         $path = ROOTPATH . 'public/tmp/';
         
-        
+        $this->db->transStart();
         $file = $this->request->getFile('file_excel');
         if (! $file->isValid())
         {
@@ -84,6 +84,19 @@ class ImpordataModel extends \App\Models\BaseModel
         }
         $reader->close();
         unlink ($path . $filename);
+
+
+        $userdata = $_SESSION['user'];
+        $user_id = $userdata['id_user'];
+
+        $data_history_import['nama_file'] = $filename;
+        $data_history_import['waktu_upload'] = $waktu_update;
+        $data_history_import['user_id'] = $user_id;
+
+        $this->db->table('tbl_history_import')->insert($data_history_import);
+        $id_history_import = $this->db->insertID();
+
+        $this->db->transComplete();
 
         $result = ['status' => '', 'content'];
         if ($id_pegawai) {
