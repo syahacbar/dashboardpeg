@@ -5,8 +5,8 @@
 			<div class="card text-bg-primary shadow">
 				<div class="card-body card-stats">
 					<div class="description">
-						<h5 class="card-title h4">52000</h5>
-						<p class="card-text">Jumlah Usulan Kenaikan Pangkat</p>
+						<h5 class="card-title h4"><?php echo $count_usulan_kp_by_status_MS->jumlah_status;?></h5>
+						<p class="card-text">Jumlah Usulan KP MS</p>
 
 					</div>
 					<div class="icon bg-warning-light">
@@ -27,8 +27,8 @@
 			<div class="card text-white bg-success shadow">
 				<div class="card-body card-stats">
 					<div class="description">
-						<h5 class="card-title">1000</h5>
-						<p class="card-text">Jumlah Pegawai Fungsional Umum</p>
+						<h5 class="card-title h4"><?php echo $count_usulan_kp_by_status_BTS->jumlah_status;?></h5>
+						<p class="card-text">Jumlah Usulan KP BTS</p>
 					</div>
 					<div class="icon">
 						<i class="material-icons">group</i>
@@ -48,8 +48,8 @@
 			<div class="card text-white bg-warning shadow">
 				<div class="card-body card-stats">
 					<div class="description">
-						<h5 class="card-title">10000</h5>
-						<p class="card-text">Jumlah Pegawai Fungsional Tertentu</p>
+						<h5 class="card-title h4"><?php echo $count_usulan_kp_by_status_DPV->jumlah_status;?></h5>
+						<p class="card-text">Jumlah Usulan KP Dalam Proses Validasi</p>
 					</div>
 					<div class="icon">
 						<!-- <i class="fas fa-money-bill-wave"></i> -->
@@ -70,8 +70,8 @@
 			<div class="card text-white bg-danger shadow">
 				<div class="card-body card-stats">
 					<div class="description">
-						<h5 class="card-title">20000</h5>
-						<p class="card-text">Total Pengajuan KP</p>
+						<h5 class="card-title h4"><?php echo $count_usulan_kp_by_status_TMS->jumlah_status;?></h5>
+						<p class="card-text">Jumlah Usulan KP TMS</p>
 					</div>
 					<div class="icon">
 						<i class="material-icons">group</i>
@@ -152,7 +152,7 @@
 							</tbody>
 							<tfoot>
 								<th colspan="2">Total</th>
-								<th>123123</th>
+								<th><?php echo format_ribuan($count_pegawai_all->totalpegawai);?></th>
 							</tfoot>
 						</table>
 					</div>

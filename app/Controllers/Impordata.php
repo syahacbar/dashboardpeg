@@ -51,10 +51,11 @@ class Impordata extends BaseController
                 if ($_POST['nama_tabel'] == 'tbl_kenaikanpangkat') {
                     $this->data['message'] = $this->model->imporkenaikanpangkat();
                 }
-            }
+            } 
         }
 
         $this->data['dropdowninstansi'] = $this->model->get_all_instansi();
+        $this->data['get_history_import'] = $this->model->get_history_import();
 
         $this->view('impordata.php', $this->data);
     }

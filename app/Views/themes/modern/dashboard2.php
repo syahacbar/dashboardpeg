@@ -6,7 +6,94 @@
 	// 	show_message($message);
 	// }
 	?>
-	
+	<div class="row">
+		<div class="col-lg-3 col-sm-6 col-xs-12 mb-4">
+			<div class="card text-bg-primary shadow">
+				<div class="card-body card-stats">
+					<div class="description">
+						<h5 class="card-title h4"><?php echo $count_usulan_kp_by_status_MS->jumlah_status;?></h5>
+						<p class="card-text">Jumlah Usulan KP MS</p>
+
+					</div>
+					<div class="icon bg-warning-light">
+						<i class="material-icons">group</i>
+					</div>
+				</div>
+				<div class="card-footer">
+					<div class="card-footer-left">
+						<div class="icon me-2">
+						</div>
+					</div>
+					<div class="card-footer-right">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-3 col-sm-6 col-xs-12 mb-4">
+			<div class="card text-white bg-success shadow">
+				<div class="card-body card-stats">
+					<div class="description">
+						<h5 class="card-title h4"><?php echo $count_usulan_kp_by_status_BTS->jumlah_status;?></h5>
+						<p class="card-text">Jumlah Usulan KP BTS</p>
+					</div>
+					<div class="icon">
+						<i class="material-icons">group</i>
+					</div>
+				</div>
+				<div class="card-footer">
+					<div class="card-footer-left">
+						<div class="icon me-2">
+						</div>
+					</div>
+					<div class="card-footer-right">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-3 col-sm-6 col-xs-12 mb-4">
+			<div class="card text-white bg-warning shadow">
+				<div class="card-body card-stats">
+					<div class="description">
+						<h5 class="card-title h4"><?php echo $count_usulan_kp_by_status_DPV->jumlah_status;?></h5>
+						<p class="card-text">Jumlah Usulan KP Dalam Proses Validasi</p>
+					</div>
+					<div class="icon">
+						<!-- <i class="fas fa-money-bill-wave"></i> -->
+						<i class="material-icons">group</i>
+					</div>
+				</div>
+				<div class="card-footer">
+					<div class="card-footer-left">
+						<div class="icon me-2">
+						</div>
+					</div>
+					<div class="card-footer-right">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-3 col-sm-6 col-xs-12 mb-4">
+			<div class="card text-white bg-danger shadow">
+				<div class="card-body card-stats">
+					<div class="description">
+						<h5 class="card-title h4"><?php echo $count_usulan_kp_by_status_TMS->jumlah_status;?></h5>
+						<p class="card-text">Jumlah Usulan KP TMS</p>
+					</div>
+					<div class="icon">
+						<i class="material-icons">group</i>
+					</div>
+				</div>
+				<div class="card-footer">
+					<div class="card-footer-left">
+						<div class="icon me-2">
+						</div>
+					</div>
+					<div class="card-footer-right">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 	<div class="row">
 		<div class="col-12 col-md-12 col-lg-12 col-xl-4 mb-4">
 			<div class="card">

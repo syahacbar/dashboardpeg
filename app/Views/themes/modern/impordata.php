@@ -76,36 +76,28 @@
                                 <tr>
                                     <th width="20px">No.</th>
                                     <th>Nama File</th>
-                                    <th width="150px">Tanggal Upload</th>
+                                    <th>Tanggal Upload</th>
                                     <th>User</th>
-                                    <th width="200px">Aksi</th>
+                                    <th>Aksi</th>
                                 </tr>
                             </thead>
                             <tbody>
+                                <?php
+                                $no = 1;
+                                foreach($get_history_import AS $hi) : ?>
                                 <tr>
-                                    <td class="text-center">1.</td>
-                                    <td>Kenaikan Pangkat Gelombang I</td>
-                                    <td class="text-center">20022200</td>
-                                    <td class="text-center">Sukses</td>
+                                    <td class="text-center"><?php echo $no++;?></td>
+                                    <td><?php echo $hi->nama_file;?></td>
+                                    <td><?php echo $hi->waktu_upload;?></td>
+                                    <td><?php echo $hi->nama;?></td>
                                     <td>
                                         <div class="form-switch">
-                                            <input type="checkbox" data-onstyle="primary" data-on="Enable" data-off="Disable" data-size="small" checked data-toggle="toggle">
                                             <button name="button" class="btn btn-success btn-sm">Unduh</button>
                                         </div>
                                     </td>
                                 </tr>
-                                <tr>
-                                    <td class="text-center">2.</td>
-                                    <td>Kenaikan Pangkat Gelombang I</td>
-                                    <td class="text-center">20022200</td>
-                                    <td class="text-center">Sukses</td>
-                                    <td>
-                                        <div class="form-switch">
-                                            <input type="checkbox" data-onstyle="primary" data-on="Enable" data-off="Disable" data-size="small" checked data-toggle="toggle">
-                                            <button name="button" class="btn btn-success btn-sm">Unduh</button>
-                                        </div>
-                                    </td>
-                                </tr>
+                                <?php endforeach; ?>
+                                
                             </tbody>
                         </table>
                     </div>

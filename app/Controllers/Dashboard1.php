@@ -34,6 +34,11 @@ class Dashboard1 extends BaseController
 		$this->data['count_ft'] = $this->model->count_jenis_jabatan('FT');
 		$this->data['count_kedudukan_hukum'] = $this->model->count_kedudukan_hukum();
 		$this->data['count_usulan_kp'] = $this->model->count_usulan_kp();
+		$this->data['count_usulan_kp_by_status_BTS'] = $this->model->count_usulan_kp_by_status('BTS');
+		$this->data['count_usulan_kp_by_status_MS'] = $this->model->count_usulan_kp_by_status('MS');
+		$this->data['count_usulan_kp_by_status_TMS'] = $this->model->count_usulan_kp_by_status('TMS');
+		$this->data['count_usulan_kp_by_status_DPV'] = $this->model->count_usulan_kp_by_status('DALAM PROSES VALIDASI');
+		$this->data['count_pegawai_all'] = $this->model->count_pegawai_all();
 		$this->view('dashboard1.php', $this->data);
 	}
 

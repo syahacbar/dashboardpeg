@@ -47,4 +47,19 @@ class DashboardModel extends \App\Models\BaseModel
 		$result = $this->db->query($sql)->getResult();
 		return $result;
 	}
+
+	public function count_usulan_kp_by_status($status)
+	{
+		$sql = 'SELECT COUNT(tk.status) AS jumlah_status FROM tbl_kenaikanpangkat tk WHERE tk.status="'.$status.'"';
+		$result = $this->db->query($sql)->getRow();
+		return $result;
+	}
+
+	public function count_pegawai_all()
+	{
+		$sql = 'SELECT COUNT(id_pegawai) AS totalpegawai FROM tbl_pegawai';
+		$result = $this->db->query($sql)->getRow();
+		return $result;
+	}
+
 }
