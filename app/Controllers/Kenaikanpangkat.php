@@ -38,6 +38,7 @@ class Kenaikanpangkat extends BaseController
 
 		$data['prosedurkp'] = $this->model->get_prosedurkp($id_instansi);
 		$data['statuskp'] = $this->model->get_statuskp($id_instansi);
+		$data['satuankerja'] = $this->model->get_satuankerja($id_instansi);
 		$this->view('kenaikanpangkat.php', $data);
 	}
 
@@ -63,7 +64,6 @@ class Kenaikanpangkat extends BaseController
 			
 			$val['ignore_search_urut'] = $no;
 			$val['pangkatx'] = format_golru($val['pangkat']);
-			$val['instansi'] = 'Dinas ABC';
 			// $val['ignore_search_action'] = btn_action([
 			// 						'edit' => ['url' => $this->config->baseURL . $this->currentModule['nama_module'] . '/edit?id='. $val['id']]
 			// 					, 'delete' => ['url' => ''

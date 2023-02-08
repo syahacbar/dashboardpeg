@@ -21,6 +21,12 @@ class KenaikanPangkatModel extends \App\Models\BaseModel
 		$result = $this->db->query($sql)->getResult();
 		return $result;
 	}
+
+	public function get_satuankerja($id_instansi) {
+		$sql = 'SELECT DISTINCT unit_kerja FROM tbl_kenaikanpangkat WHERE SHA1(id_instansi) = "'.$id_instansi.'"';
+		$result = $this->db->query($sql)->getResult();
+		return $result;
+	}
 	
 	public function countAllData($where,$id_instansi) {
 		$sql = 'SELECT COUNT(*) AS jml FROM tbl_kenaikanpangkat '. $where . ' AND SHA1(id_instansi) = "'.$id_instansi.'"';
@@ -35,6 +41,7 @@ class KenaikanPangkatModel extends \App\Models\BaseModel
 		$searchJenisJabatan = $_POST['searchJenisJabatan'];
 	    $searchProsedur = $_POST['searchProsedur'];
 	    $searchStatusKP = $_POST['searchStatusKP'];
+	    $searchSatuanKerja = $_POST['searchSatuanKerja'];
 
 	    $search_arr = array();
 	    $searchQuery = "";
@@ -64,6 +71,10 @@ class KenaikanPangkatModel extends \App\Models\BaseModel
 
 		if($searchStatusKP != ''){
 		$where .= ' AND status="'.$searchStatusKP.'" ';
+		}
+
+		if($searchSatuanKerja != ''){
+		$where .= ' AND unit_kerja="'.$searchSatuanKerja.'" ';
 		}
 
 		if(count($search_arr) > 0){

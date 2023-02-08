@@ -48,6 +48,7 @@ jQuery(document).ready(function() {
                data.searchStatusKP = $('#dd_statuspengusulan').val();
                data.searchProsedur = $('#dd_prosedur').val();
                data.searchJenisJabatan = $('#dd_jenisjabatan').val();
+               data.searchSatuanKerja = $('#dd_satuankerja').val();
             }
         },
         "columns": column,
@@ -57,7 +58,11 @@ jQuery(document).ready(function() {
             
             });
         },
-        dom: 'lBfrtip',
+
+        
+        // dom: '<"float-left"B><"float-right"f>rt<"row"<"col-sm-4"l><"col-sm-4"i><"col-sm-4"p>>',
+        // dom: 'lBfrtip',
+        // dom: '<"top"i>rt<"bottom"flp><"clear">',
         "buttons":[
                 {"extend":"copy"
                     ,"text":"<i class='far fa-copy'></i> Copy"
@@ -99,7 +104,7 @@ jQuery(document).ready(function() {
                     }
                     ,"className":"btn-light"
                 }
-            ]
+            ],
     }
 
     
@@ -118,7 +123,7 @@ jQuery(document).ready(function() {
     const table3 = $('#tbl-fungsionalumum').DataTable(settings);
     const table4 = $('#tbl-fungsionaltertentu').DataTable(settings);
 
-     $('#dd_jenisjabatan,#dd_statuspengusulan,#dd_prosedur').change(function(){
+     $('#dd_jenisjabatan,#dd_statuspengusulan,#dd_prosedur,#dd_satuankerja').change(function(){
         table2.draw();
     });
 

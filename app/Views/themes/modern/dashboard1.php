@@ -6,7 +6,7 @@
 				<div class="card-body card-stats">
 					<div class="description">
 						<h5 class="card-title h4"><?php echo $count_usulan_kp_by_status_MS->jumlah_status;?></h5>
-						<p class="card-text">Jumlah Usulan KP MS</p>
+						<p class="card-text">Usulan KP MS</p>
 
 					</div>
 					<div class="icon bg-warning-light">
@@ -28,7 +28,7 @@
 				<div class="card-body card-stats">
 					<div class="description">
 						<h5 class="card-title h4"><?php echo $count_usulan_kp_by_status_BTS->jumlah_status;?></h5>
-						<p class="card-text">Jumlah Usulan KP BTS</p>
+						<p class="card-text">Usulan KP BTS</p>
 					</div>
 					<div class="icon">
 						<i class="material-icons">group</i>
@@ -49,7 +49,7 @@
 				<div class="card-body card-stats">
 					<div class="description">
 						<h5 class="card-title h4"><?php echo $count_usulan_kp_by_status_DPV->jumlah_status;?></h5>
-						<p class="card-text">Jumlah Usulan KP Dalam Proses Validasi</p>
+						<p class="card-text">Usulan KP Dalam Proses Validasi</p>
 					</div>
 					<div class="icon">
 						<!-- <i class="fas fa-money-bill-wave"></i> -->
@@ -71,7 +71,7 @@
 				<div class="card-body card-stats">
 					<div class="description">
 						<h5 class="card-title h4"><?php echo $count_usulan_kp_by_status_TMS->jumlah_status;?></h5>
-						<p class="card-text">Jumlah Usulan KP TMS</p>
+						<p class="card-text">Usulan KP TMS</p>
 					</div>
 					<div class="icon">
 						<i class="material-icons">group</i>
