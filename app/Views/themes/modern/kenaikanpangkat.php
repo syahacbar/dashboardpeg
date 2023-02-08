@@ -32,7 +32,7 @@ helper(['html','format']);
           <div class="col-sm-6">
               <select id="dd_prosedur" name="dd_prosedur" class="form-select">
                 <option value="">-- SEMUA --</option>
-                <option value="prosedur1">V/a - IV/b</option>
+                <option value="prosedur1">IV/a - IV/b</option>
                 <option value="prosedur2">III/d ke bawah</option>
               </select>
           </div>
@@ -70,6 +70,7 @@ helper(['html','format']);
           'prosedur' => 'PROSEDUR KP',
           'status' => 'STATUS USULAN KP',
           'alasan' => 'KETERANGAN',
+          'instansi' => 'INSTANSI'
 
         ];
 

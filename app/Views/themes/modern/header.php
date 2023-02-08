@@ -82,7 +82,7 @@ if (@$scripts) {
 <body>
 	<header class="nav-header shadow">
 		<div class="nav-header-logo pull-left">
-			<a class="header-logo" href="<?=$config->baseURL;?>" title="">
+			<a class="header-logo" title="">
 				<img src="<?=$config->baseURL . '/public/images/' . $settingAplikasi['logo_app']?>"/>
 			</a>
 		</div>

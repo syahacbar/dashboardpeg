@@ -205,18 +205,18 @@
 	            }
 	        }
 	    },
-	    legend: {
-	        layout: 'vertical',
-	        align: 'right',
-	        verticalAlign: 'top',
-	        x: -40,
-	        y: 80,
-	        floating: true,
-	        borderWidth: 1,
-	        backgroundColor:
-	            Highcharts.defaultOptions.legend.backgroundColor || '#FFFFFF',
-	        shadow: true
-	    },
+	    // legend: {
+	    //     layout: 'vertical',
+	    //     align: 'right',
+	    //     verticalAlign: 'top',
+	    //     x: -40,
+	    //     y: 80,
+	    //     floating: true,
+	    //     borderWidth: 1,
+	    //     backgroundColor:
+	    //         Highcharts.defaultOptions.legend.backgroundColor || '#FFFFFF',
+	    //     shadow: true
+	    // },
 	    credits: {
 	        enabled: false
 	    },
