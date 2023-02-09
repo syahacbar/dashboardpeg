@@ -64,7 +64,8 @@ class BaseController extends Controller
 										, $this->config->baseURL . '/public/assets/vendors/flatpickr/flatpickr.js'
 										, $this->config->baseURL . '/public/themes/modern/assets/js/site.js?r='.time()
 										, $this->config->baseURL . '/public/assets/vendors/bootstrap/js/bootstrap.js'
-								);
+										, 'https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/js/bootstrap4-toggle.min.js'
+									);
 		$this->data['styles'] = array(
 									$this->config->baseURL . '/public/assets/vendors/bootstrap/css/bootstrap.css'
 									, $this->config->baseURL . '/public/themes/modern/assets/css/site.css?r='.time()

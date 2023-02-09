@@ -120,7 +120,8 @@ class User extends \App\Controllers\BaseController
 		
 		$this->setData();
 		$data = $this->data;
-		$data['title'] = 'Tambah ' . $this->currentModule['judul_module'];
+		// $data['title'] = 'Tambah User' . $this->currentModule['judul_module'];
+		$data['title'] = 'Tambah User';
 		
 		$error = false;
 		if ($this->request->getPost('submit'))

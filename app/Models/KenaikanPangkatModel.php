@@ -98,7 +98,14 @@ class KenaikanPangkatModel extends \App\Models\BaseModel
 		// Query Data
 		$start = $this->request->getPost('start') ?: 0;
 		$length = $this->request->getPost('length') ?: 10;
-		$sql = 'SELECT *, LCASE(pangkat) AS pangkatkecil FROM tbl_kenaikanpangkat ' . $where . ' AND SHA1(id_instansi) = "' . $id_instansi . '" ' . $order . ' LIMIT ' . $start . ', ' . $length;
+		if($length=="-1")
+		{
+			$sql = 'SELECT *, LCASE(pangkat) AS pangkatkecil FROM tbl_kenaikanpangkat ' . $where . ' AND SHA1(id_instansi) = "' . $id_instansi . '" ' . $order;
+		}
+		else
+		{
+			$sql = 'SELECT *, LCASE(pangkat) AS pangkatkecil FROM tbl_kenaikanpangkat ' . $where . ' AND SHA1(id_instansi) = "' . $id_instansi . '" ' . $order . ' LIMIT ' . $start . ', ' . $length;
+		}
 		$data = $this->db->query($sql)->getResultArray();
 				
 		return ['data' => $data, 'total_filtered' => $total_filtered];
