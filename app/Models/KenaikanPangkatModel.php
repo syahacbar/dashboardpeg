@@ -23,7 +23,7 @@ class KenaikanPangkatModel extends \App\Models\BaseModel
 	}
 
 	public function get_satuankerja($id_instansi) {
-		$sql = 'SELECT DISTINCT unit_kerja FROM tbl_kenaikanpangkat WHERE SHA1(id_instansi) = "'.$id_instansi.'"';
+		$sql = 'SELECT DISTINCT satuan_kerja FROM tbl_kenaikanpangkat WHERE SHA1(id_instansi) = "'.$id_instansi.'"';
 		$result = $this->db->query($sql)->getResult();
 		return $result;
 	}
@@ -74,7 +74,7 @@ class KenaikanPangkatModel extends \App\Models\BaseModel
 		}
 
 		if($searchSatuanKerja != ''){
-		$where .= ' AND unit_kerja="'.$searchSatuanKerja.'" ';
+		$where .= ' AND satuan_kerja="'.$searchSatuanKerja.'" ';
 		}
 
 		if(count($search_arr) > 0){

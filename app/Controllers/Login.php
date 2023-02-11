@@ -3,7 +3,7 @@ namespace App\Controllers;
 use App\Models\Builtin\LoginModel;
 use \Config\App;
 use App\Libraries\Auth;
-
+ 
 class Login extends \App\Controllers\BaseController
 {
 	protected $model = '';

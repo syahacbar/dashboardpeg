@@ -45,7 +45,7 @@ helper(['html','format']);
           <select id="dd_satuankerja" name="dd_satuankerja" class="form-select">
             <option value="">-- SEMUA --</option>
             <?php foreach($satuankerja AS $satker) : ?>
-              <option value="<?php echo $satker->unit_kerja;?>"><?php echo $satker->unit_kerja;?></option>
+              <option value="<?php echo $satker->satuan_kerja;?>"><?php echo $satker->satuan_kerja;?></option>
             <?php endforeach; ?>
             
           </select>
@@ -63,7 +63,7 @@ helper(['html','format']);
           'nama' => 'NAMA',
           'nip' => 'NIP',
           'pangkatx' => 'GOL/RUANG',
-          'unit_kerja' => 'UNIT KERJA',
+          'satuan_kerja' => 'SATUAN KERJA',
           'jabatan' => 'JABATAN',
           'jenis_jabatan' => 'JENIS JABATAN',
           'prosedur' => 'PROSEDUR KP',

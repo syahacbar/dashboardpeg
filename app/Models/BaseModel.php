@@ -61,10 +61,11 @@ class BaseModel extends \CodeIgniter\Model
 			$id_user = $this->user['id_user'];
 		}
 		
-		$query = $this->db->query('SELECT * FROM user WHERE id_user = ?', [$id_user]);
+		$query = $this->db->query('SELECT * FROM user LEFT JOIN tbl_instansi USING(id_user)  WHERE id_user = ?', [$id_user]);
 		$user = $query->getRowArray();
 		
 		$query = $this->db->query('SELECT * FROM user_role LEFT JOIN role USING(id_role) WHERE id_user = ?', [$id_user]);
+		// $query = $this->db->query('SELECT * FROM user_role LEFT JOIN role USING(id_role) WHERE id_user = ?', [$id_user]);
 		$result = $query->getResultArray();
 		foreach ($result as $val) {
 			$user['role'][$val['id_role']] = $val;

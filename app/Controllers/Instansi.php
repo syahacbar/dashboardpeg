@@ -1,15 +1,15 @@
 <?php
 namespace App\Controllers; 
-use App\Models\KenaikanPangkatModel;
+use App\Models\InstansiModel;
 
-class Kenaikanpangkat extends BaseController
+class Instansi extends BaseController
 {
 
 	public function __construct() {
 		
 		parent::__construct(); 
 		
-		$this->model = new KenaikanPangkatModel;	
+		$this->model = new InstansiModel;	
 		$this->data['site_title'] = 'Image Upload';
 		
 		$this->addJs ( $this->config->baseURL . 'public/vendors/bootstrap-datepicker/js/bootstrap-datepicker.js' );
@@ -31,40 +31,31 @@ class Kenaikanpangkat extends BaseController
 	public function index()
 	{
 		$this->cekHakAkses('read_data');
-		// $userdata = $_SESSION['user'];
-
-		
-		$id_instansi = SHA1($this->session->get('user')['id_instansi']);
 
 		$data = $this->data;
+		// $data['instansi'] = $this->model->get_all_data();
 
-		$data['prosedurkp'] = $this->model->get_prosedurkp($id_instansi);
-		$data['statuskp'] = $this->model->get_statuskp($id_instansi);
-		$data['satuankerja'] = $this->model->get_satuankerja($id_instansi);
-		$this->view('kenaikanpangkat.php', $data);
+		$this->view('instansi.php', $data);
 	}
 
 	public function getDataDT() {
 		
 		$this->cekHakAkses('read_data');
-
-		$id_instansi = SHA1($this->session->get('user')['id_instansi']);
 		
-		$num_data = $this->model->countAllData($this->whereOwn(),$id_instansi);
+		$num_data = $this->model->countAllData($this->whereOwn());
 		$result['draw'] = $start = $this->request->getPost('draw') ?: 1;
 		$result['recordsTotal'] = $num_data;
 		
-		$query = $this->model->getListData($this->whereOwn(),$id_instansi);
+		$query = $this->model->getListData($this->whereOwn());
 		$result['recordsFiltered'] = $query['total_filtered'];
 				
 		helper(['html','format']);
 		
 		$no = $this->request->getPost('start') + 1 ?: 1;
 		foreach ($query['data'] as $key => &$val) 
-		{
-			
+		{			
 			$val['ignore_search_urut'] = $no;
-			$val['pangkatx'] = format_golru($val['pangkat']);
+			$val['gambar_instansi'] = '<img align="center" src="'.$this->config->baseURL.'public/images/logoinstansi/'.$val['gambar'].'">';
 			$no++;
 		}
 					

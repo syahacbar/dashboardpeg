@@ -67,35 +67,35 @@
                 <h5 class="card-title">Riwayat Impor Data</h5>
             </div>
             <div class="card-body">
-                    <div class="table-responsive">
-                        <table id="example" style="width:100%" class="table table-striped table-bordered dt-body-center">
-                            <thead>
-                                <tr>
-                                    <th width="20px">No.</th>
-                                    <th>Nama File</th>
-                                    <th>Tanggal Upload</th>
-                                    <th>User</th>
-                                    <th>Aksi</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <?php
-                                $no = 1;
-                                foreach($get_history_import AS $hi) : ?>
-                                <tr>
-                                    <td class="text-center"><?php echo $no++;?></td>
-                                    <td><a href="<?= $config->baseURL ?>public/tmp/<?php echo $hi->nama_file;?>"><?php echo $hi->nama_file;?></a></td>
-                                    <td><?php echo $hi->waktu_upload;?></td>
-                                    <td><?php echo $hi->nama;?></td>
-                                    <td>
-                                        <input type="checkbox" data-toggle="toggle" data-on="Enabled" data-off="Disabled">
-                                    </td>
-                                </tr>
-                                <?php endforeach; ?>
-                                
-                            </tbody>
-                        </table>
-                    </div>
+                <div class="table-responsive">
+                    <table id="example" style="width:100%" class="table table-striped table-bordered dt-body-center">
+                        <thead>
+                            <tr>
+                                <th width="20px">No.</th>
+                                <th>Nama File</th>
+                                <th>Tanggal Upload</th>
+                                <th>User</th>
+                                <th>Aksi</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <?php
+                            $no = 1;
+                            foreach($get_history_import AS $hi) : ?>
+                            <tr>
+                                <td class="text-center"><?php echo $no++;?></td>
+                                <td><a href="<?= $config->baseURL ?>public/tmp/<?php echo $hi->nama_file;?>"><?php echo $hi->nama_file;?></a></td>
+                                <td><?php echo $hi->waktu_upload;?></td>
+                                <td><?php echo $hi->nama;?></td>
+                                <td>
+                                    <input type="checkbox" data-toggle="toggle" data-on="Enabled" data-off="Disabled">
+                                </td>
+                            </tr>
+                            <?php endforeach; ?>
+                            
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
     </div>
