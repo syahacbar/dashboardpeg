@@ -72,7 +72,7 @@
                                     <th>Nama File</th>
                                     <th>Tanggal Upload</th>
                                     <th>User</th>
-                                    <th>Aksi</th>
+                                    <!-- <th>Aksi</th> -->
                                 </tr>
                             </thead>
                             <tbody>
@@ -84,8 +84,8 @@
                                     <td><a href="<?php echo $config->baseURL ?>public/files/uploads/impordata/<?php echo $hi->nama_file;?>"><?php echo $hi->nama_file;?></a></td>
                                     <td><?php echo $hi->waktu_upload;?></td>
                                     <td><?php echo $hi->nama;?></td>
-                                    <td>
-                                    </td>
+                                    <!-- <td>
+                                    </td> -->
                                 </tr>
                                 <?php endforeach; ?>
                                 
