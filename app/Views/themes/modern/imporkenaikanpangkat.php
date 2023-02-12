@@ -88,11 +88,8 @@
                                 <td><?php echo $hi->waktu_upload;?></td>
                                 <td><?php echo $hi->nama;?></td>
                                 <td>
-                                    <?php if($hi->aktif == 1) { ?>
-                                    <input class="form-control impordata-toogle" type="checkbox" data-toggle="toggle" data-on="Enabled" data-off="Disabled" value="<?php echo $hi->id; ?>" checked="checked">
-                                    <?php } else { ?>
-                                    <input class="form-control impordata-toogle" type="checkbox" data-toggle="toggle" data-on="Enabled" data-off="Disabled" value="<?php echo $hi->id; ?>">
-                                    <?php } ?>
+                                    <input class="form-control impordata-toogle" type="checkbox" data-toggle="toggle" data-on="Enabled" data-off="Disabled" value="<?php echo $hi->id; ?>" <?php echo ($hi->aktif == 1) ? 'checked="checked"' : '';?>>
+                                  
 
                                 </td>
                             </tr>
@@ -108,8 +105,15 @@
 
 <script>
 $('.impordata-toogle').change(function() {
-    var mode = $(this).prop('checked');
+    
     var id = $(this).val();
+    if ($(this).prop('checked')) {
+        var mode = '1';
+    }
+    else
+    {
+        var mode = '0';
+    }
     $.ajax({
       type:'POST',
       dataType:'JSON',

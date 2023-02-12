@@ -37,7 +37,7 @@ class KenaikanPangkatModel extends \App\Models\BaseModel
 	public function get_active_data($id_instansi)
 	{
 		$sql = 'SELECT * FROM tbl_history_import WHERE aktif="1" AND SHA1(id_instansi) = "'.$id_instansi.'"';
-		$result = $this->db->query($sql)->getRowArray()['waktu_upload'];
+		$result = $this->db->query($sql)->getResult();
 		return $result;
 	}
 	
@@ -51,7 +51,7 @@ class KenaikanPangkatModel extends \App\Models\BaseModel
 	    $searchSatuanKerja = $_POST['searchSatuanKerja'];
 
 	    $search_arr = array();
-	    $searchQuery = "";
+	    // $searchQuery = "";
 
 	    //search
 	    if($searchName != ''){
@@ -73,7 +73,6 @@ class KenaikanPangkatModel extends \App\Models\BaseModel
 			{
 				$where .= ' AND (pangkat = "III/d" OR pangkat= "III/c" OR pangkat= "III/b" OR pangkat= "III/a" OR pangkat= "II/d" OR pangkat= "II/c" OR pangkat= "II/b" OR pangkat= "II/a" OR pangkat= "I/d" OR pangkat= "I/c" OR pangkat= "I/b" OR pangkat= "I/a")';
 			}
-		// $where .= ' AND pangkat="'.$searchProsedur.'" ';
 		}
 
 		if($searchStatusKP != ''){
@@ -84,9 +83,26 @@ class KenaikanPangkatModel extends \App\Models\BaseModel
 		$where .= ' AND satuan_kerja="'.$searchSatuanKerja.'" ';
 		}
 
-		if(count($search_arr) > 0){
-		$where .= implode(" AND ",$search_arr);
+		$waktu_update = $this->get_active_data($id_instansi);
+		if($waktu_update != NULL)
+		{
+			$where .= ' AND ';
+			$wu_arr = array();
+			$urut = 1;
+			foreach($waktu_update AS $wu)
+			{
+				$wu_arr[$urut] = 'waktu_update="'.$wu->waktu_upload.'"';
+				$urut++;
+			}
+			$where .= implode(" OR ",$wu_arr);
 		}
+
+
+		// if(count($search_arr) > 0){
+		// $where .= implode(" AND ",$search_arr);
+		// }
+
+		// print_r($where);
 
 		
 		
@@ -99,7 +115,7 @@ class KenaikanPangkatModel extends \App\Models\BaseModel
 		}
 		$waktu_update = $this->get_active_data($id_instansi);
 		// Query Total Filtered
-		$sql = 'SELECT COUNT(*) AS jml_data FROM tbl_kenaikanpangkat ' . $where. ' AND SHA1(id_instansi) = "'.$id_instansi.'" AND waktu_update="'.$waktu_update.'"';
+		$sql = 'SELECT COUNT(*) AS jml_data FROM tbl_kenaikanpangkat ' . $where. ' AND SHA1(id_instansi) = "'.$id_instansi.'"';
 		$total_filtered = $this->db->query($sql)->getRowArray()['jml_data'];
 		
 		// Query Data
@@ -107,11 +123,11 @@ class KenaikanPangkatModel extends \App\Models\BaseModel
 		$length = $this->request->getPost('length') ?: 10;
 		if($length=="-1")
 		{
-			$sql = 'SELECT *, LCASE(pangkat) AS pangkatkecil FROM tbl_kenaikanpangkat ' . $where . ' AND SHA1(id_instansi) = "' . $id_instansi . '" AND waktu_update="'.$waktu_update.'" ' . $order;
+			$sql = 'SELECT *, LCASE(pangkat) AS pangkatkecil FROM tbl_kenaikanpangkat ' . $where . ' AND SHA1(id_instansi) = "' . $id_instansi . '" ' . $order;
 		}
 		else
 		{
-			$sql = 'SELECT *, LCASE(pangkat) AS pangkatkecil FROM tbl_kenaikanpangkat ' . $where . ' AND SHA1(id_instansi) = "' . $id_instansi . '" AND waktu_update="'.$waktu_update.'"' . $order . ' LIMIT ' . $start . ', ' . $length;
+			$sql = 'SELECT *, LCASE(pangkat) AS pangkatkecil FROM tbl_kenaikanpangkat ' . $where . ' AND SHA1(id_instansi) = "' . $id_instansi . '" ' . $order . ' LIMIT ' . $start . ', ' . $length;
 		}
 		$data = $this->db->query($sql)->getResultArray();
 				

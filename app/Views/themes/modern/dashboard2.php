@@ -11,7 +11,7 @@
 			<div class="card text-bg-primary shadow">
 				<div class="card-body card-stats">
 					<div class="description">
-						<h5 class="card-title h4"><?php echo $count_usulan_kp_by_status_MS->jumlah_status;?></h5>
+						<h5 class="card-title h4"><?php echo $totalukpMS->countstatus; ?></h5>
 						<p class="card-text">Usulan KP MS</p>
 
 					</div>
@@ -33,7 +33,7 @@
 			<div class="card text-white bg-success shadow">
 				<div class="card-body card-stats">
 					<div class="description">
-						<h5 class="card-title h4"><?php echo $count_usulan_kp_by_status_BTS->jumlah_status;?></h5>
+						<h5 class="card-title h4"><?php echo $totalukpBTS->countstatus;?></h5>
 						<p class="card-text">Usulan KP BTS</p>
 					</div>
 					<div class="icon">
@@ -54,7 +54,7 @@
 			<div class="card text-white bg-warning shadow">
 				<div class="card-body card-stats">
 					<div class="description">
-						<h5 class="card-title h4"><?php echo $count_usulan_kp_by_status_DPV->jumlah_status;?></h5>
+						<h5 class="card-title h4"><?php echo $totalukpDalamProses->countstatus;?></h5>
 						<p class="card-text">Usulan KP Dalam Proses Validasi</p>
 					</div>
 					<div class="icon">
@@ -76,7 +76,7 @@
 			<div class="card text-white bg-danger shadow">
 				<div class="card-body card-stats">
 					<div class="description">
-						<h5 class="card-title h4"><?php echo $count_usulan_kp_by_status_TMS->jumlah_status;?></h5>
+						<h5 class="card-title h4"><?php echo $totalukpTMS->countstatus;?></h5>
 						<p class="card-text">Usulan KP TMS</p>
 					</div>
 					<div class="icon">
@@ -279,7 +279,7 @@
 							</tr>
 							<tr>
 								<td>-</td>
-								<td>BMS</td>
+								<td>BTS</td>
 								<td style="text-align: center;"><?php echo $totalukpBTS->countstatus; ?></td>
 							</tr>
 							<tr>

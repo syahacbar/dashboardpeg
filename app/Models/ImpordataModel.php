@@ -204,15 +204,8 @@ class ImpordataModel extends \App\Models\BaseModel
     public function update_status_histoty()
     {
         $id_history_import = $_POST['id'];
-        if($_POST['mode'] == TRUE)
-        {
-            $data_update['aktif'] = 1;
-        } 
-        else 
-        {
-            $data_update['aktif'] = 0;
-        }
-        
+        $data_update['aktif'] = $_POST['mode'];
+
         $builder = $this->db->table('tbl_history_import');
        
         $builder->update($data_update, ['id' => $id_history_import]);
