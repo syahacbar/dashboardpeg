@@ -33,7 +33,7 @@ class ImpordataModel extends \App\Models\BaseModel
         $reader->open($path . $filename);
 
         $builder = $this->db->table('tbl_pegawai');
-        $waktu_update = date("Y-m-d H:s");
+        $waktu_update = date("Y-m-d H:i:s");
         $total_row = 0;
 
         foreach ($reader->getSheetIterator() as $sheet) 
@@ -85,13 +85,14 @@ class ImpordataModel extends \App\Models\BaseModel
             }
         }
         $reader->close();
-        unlink ($path . $filename);
+        // unlink ($path . $filename);
 
 
         $userdata = $_SESSION['user'];
         $user_id = $userdata['id_user'];
 
         $data_history_import['nama_file'] = $filename;
+        $data_history_import['id_instansi'] = $_POST['dropdowninstansi'];
         $data_history_import['waktu_upload'] = $waktu_update;
         $data_history_import['user_id'] = $user_id;
         $data_history_import['tabel'] = 'tbl_pegawai';
@@ -134,7 +135,7 @@ class ImpordataModel extends \App\Models\BaseModel
         $reader->open($path . $filename);
 
         $builder = $this->db->table('tbl_kenaikanpangkat');
-        $waktu_update = date("Y-m-d H:s");
+        $waktu_update = date("Y-m-d H:i:s");
         $total_row = 0;
 
         foreach ($reader->getSheetIterator() as $sheet) 
@@ -162,13 +163,14 @@ class ImpordataModel extends \App\Models\BaseModel
         }
 
         $reader->close();
-        unlink ($path . $filename);
+        // unlink ($path . $filename);
 
         //insert ke history
         $userdata = $_SESSION['user'];
         $user_id = $userdata['id_user'];
 
         $data_history_import['nama_file'] = $filename;
+        $data_history_import['id_instansi'] = $_POST['dropdowninstansi'];
         $data_history_import['waktu_upload'] = $waktu_update;
         $data_history_import['user_id'] = $user_id;
         $data_history_import['tabel'] = 'tbl_kenaikanpangkat';
@@ -194,9 +196,28 @@ class ImpordataModel extends \App\Models\BaseModel
     }
     
     public function get_history_import($tabel) {
-        $sql = 'SELECT * FROM tbl_history_import hi JOIN user u ON u.id_user=hi.user_id WHERE hi.tabel="'.$tabel.'" ORDER BY waktu_upload ASC';
+        $sql = 'SELECT * FROM tbl_history_import hi JOIN user u ON u.id_user=hi.user_id LEFT JOIN tbl_instansi USING(id_instansi) WHERE hi.tabel="'.$tabel.'" ORDER BY waktu_upload DESC';
         $result = $this->db->query($sql)->getResult();
         return $result;
+    }
+
+    public function update_status_histoty()
+    {
+        $id_history_import = $_POST['id'];
+        if($_POST['mode'] == TRUE)
+        {
+            $data_update['aktif'] = 1;
+        } 
+        else 
+        {
+            $data_update['aktif'] = 0;
+        }
+        
+        $builder = $this->db->table('tbl_history_import');
+       
+        $builder->update($data_update, ['id' => $id_history_import]);
+        
+        return TRUE;
     }
 
 }

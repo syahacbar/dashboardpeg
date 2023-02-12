@@ -33,6 +33,13 @@ class KenaikanPangkatModel extends \App\Models\BaseModel
 		$result = $this->db->query($sql)->getRow();
 		return $result->jml;
 	}
+
+	public function get_active_data($id_instansi)
+	{
+		$sql = 'SELECT * FROM tbl_history_import WHERE aktif="1" AND SHA1(id_instansi) = "'.$id_instansi.'"';
+		$result = $this->db->query($sql)->getRowArray()['waktu_upload'];
+		return $result;
+	}
 	
 	public function getListData($where,$id_instansi) {
 
@@ -90,9 +97,9 @@ class KenaikanPangkatModel extends \App\Models\BaseModel
 			$order_by = $columns[$order_data[0]['column']]['data'] . ' ' . strtoupper($order_data[0]['dir']);
 			$order = ' ORDER BY ' . $order_by;
 		}
-
+		$waktu_update = $this->get_active_data($id_instansi);
 		// Query Total Filtered
-		$sql = 'SELECT COUNT(*) AS jml_data FROM tbl_kenaikanpangkat ' . $where. ' AND SHA1(id_instansi) = "'.$id_instansi.'"';
+		$sql = 'SELECT COUNT(*) AS jml_data FROM tbl_kenaikanpangkat ' . $where. ' AND SHA1(id_instansi) = "'.$id_instansi.'" AND waktu_update="'.$waktu_update.'"';
 		$total_filtered = $this->db->query($sql)->getRowArray()['jml_data'];
 		
 		// Query Data
@@ -100,11 +107,11 @@ class KenaikanPangkatModel extends \App\Models\BaseModel
 		$length = $this->request->getPost('length') ?: 10;
 		if($length=="-1")
 		{
-			$sql = 'SELECT *, LCASE(pangkat) AS pangkatkecil FROM tbl_kenaikanpangkat ' . $where . ' AND SHA1(id_instansi) = "' . $id_instansi . '" ' . $order;
+			$sql = 'SELECT *, LCASE(pangkat) AS pangkatkecil FROM tbl_kenaikanpangkat ' . $where . ' AND SHA1(id_instansi) = "' . $id_instansi . '" AND waktu_update="'.$waktu_update.'" ' . $order;
 		}
 		else
 		{
-			$sql = 'SELECT *, LCASE(pangkat) AS pangkatkecil FROM tbl_kenaikanpangkat ' . $where . ' AND SHA1(id_instansi) = "' . $id_instansi . '" ' . $order . ' LIMIT ' . $start . ', ' . $length;
+			$sql = 'SELECT *, LCASE(pangkat) AS pangkatkecil FROM tbl_kenaikanpangkat ' . $where . ' AND SHA1(id_instansi) = "' . $id_instansi . '" AND waktu_update="'.$waktu_update.'"' . $order . ' LIMIT ' . $start . ', ' . $length;
 		}
 		$data = $this->db->query($sql)->getResultArray();
 				

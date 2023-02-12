@@ -1,9 +1,9 @@
  <?php
-        helper(['html', 'format']);
-        if (!empty($message)) {
-            show_message($message);
-        }
-        ?>
+    helper(['html', 'format']);
+    if (!empty($message)) {
+        show_message($message);
+    }
+?>
 <div class="row">
     <div class="col-12 col-md-12 col-lg-12 col-xl-4 mb-4">
         <div class="card">

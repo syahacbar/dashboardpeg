@@ -81,7 +81,7 @@
                                 foreach($get_history_import AS $hi) : ?>
                                 <tr>
                                     <td class="text-center"><?php echo $no++;?></td>
-                                    <td><a href="<?php echo $config->baseURL ?>public/tmp/<?php echo $hi->nama_file;?>"><?php echo $hi->nama_file;?></a></td>
+                                    <td><a href="<?php echo $config->baseURL ?>public/files/uploads/impordata/<?php echo $hi->nama_file;?>"><?php echo $hi->nama_file;?></a></td>
                                     <td><?php echo $hi->waktu_upload;?></td>
                                     <td><?php echo $hi->nama;?></td>
                                     <td>

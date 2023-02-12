@@ -13,11 +13,8 @@ class Impordatapegawai extends BaseController
     {
         parent::__construct();
         $this->model = new ImpordataModel;
-
         $this->data['title'] = 'Upload Excel';
-       
-
-        $this->addJs($this->config->baseURL . 'public/themes/modern/js/uploadexcel.js');
+        // $this->addJs($this->config->baseURL . 'public/themes/modern/js/uploadexcel.js');
     }
 
     public function index()

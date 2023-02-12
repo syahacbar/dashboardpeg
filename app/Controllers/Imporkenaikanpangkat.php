@@ -13,12 +13,10 @@ class Imporkenaikanpangkat extends BaseController
     {
         parent::__construct();
         $this->model = new ImpordataModel;
-
         $this->data['title'] = 'Upload Excel';
-       
         $this->addStyle('https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css');
         $this->addJs('https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js');
-        $this->addJs($this->config->baseURL . 'public/themes/modern/js/uploadexcel.js');
+        // $this->addJs($this->config->baseURL . 'public/themes/modern/js/uploadexcel.js');
     }
 
     public function index()
@@ -37,6 +35,11 @@ class Imporkenaikanpangkat extends BaseController
         $this->data['get_history_import'] = $this->model->get_history_import('tbl_kenaikanpangkat');
 
         $this->view('imporkenaikanpangkat.php', $this->data);
+    }
+
+    public function statusaktif()
+    {
+        $this->model->update_status_histoty();
     }
 
     function validateForm()

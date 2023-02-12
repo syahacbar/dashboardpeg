@@ -1,12 +1,10 @@
 <link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/css/bootstrap4-toggle.min.css" rel="stylesheet">
-
-
  <?php
-        helper(['html', 'format']);
-        if (!empty($message)) {
-            show_message($message);
-        }
-        ?>
+    helper(['html', 'format']);
+    if (!empty($message)) {
+        show_message($message);
+    }
+?>
 <div class="row">
     <div class="col-12 col-md-12 col-lg-12 col-xl-4 mb-4">
         <div class="card">
@@ -73,6 +71,7 @@
                             <tr>
                                 <th width="20px">No.</th>
                                 <th>Nama File</th>
+                                <th>Instansi</th>
                                 <th>Tanggal Upload</th>
                                 <th>User</th>
                                 <th>Aksi</th>
@@ -84,11 +83,17 @@
                             foreach($get_history_import AS $hi) : ?>
                             <tr>
                                 <td class="text-center"><?php echo $no++;?></td>
-                                <td><a href="<?= $config->baseURL ?>public/tmp/<?php echo $hi->nama_file;?>"><?php echo $hi->nama_file;?></a></td>
+                                <td><a href="<?= $config->baseURL ?>public/files/uploads/impordata/<?php echo $hi->nama_file;?>"><?php echo $hi->nama_file;?></a></td>
+                                <td><?php echo $hi->nama_instansi;?></td>
                                 <td><?php echo $hi->waktu_upload;?></td>
                                 <td><?php echo $hi->nama;?></td>
                                 <td>
-                                    <input type="checkbox" data-toggle="toggle" data-on="Enabled" data-off="Disabled">
+                                    <?php if($hi->aktif == 1) { ?>
+                                    <input class="form-control impordata-toogle" type="checkbox" data-toggle="toggle" data-on="Enabled" data-off="Disabled" value="<?php echo $hi->id; ?>" checked="checked">
+                                    <?php } else { ?>
+                                    <input class="form-control impordata-toogle" type="checkbox" data-toggle="toggle" data-on="Enabled" data-off="Disabled" value="<?php echo $hi->id; ?>">
+                                    <?php } ?>
+
                                 </td>
                             </tr>
                             <?php endforeach; ?>
@@ -100,3 +105,23 @@
         </div>
     </div>
 </div>
+
+<script>
+$('.impordata-toogle').change(function() {
+    var mode = $(this).prop('checked');
+    var id = $(this).val();
+    $.ajax({
+      type:'POST',
+      dataType:'JSON',
+      url:'<?php echo base_url() ?>/imporkenaikanpangkat/statusaktif',
+      data:{mode:mode,id:id},
+      success:function(data)
+      {
+        var data=eval(data);
+        response_result=data.response_result;
+        success=data.success;
+
+      }
+    });
+});
+</script>
