@@ -12,7 +12,7 @@ class InstansiModel extends \App\Models\BaseModel
 		$result = $this->db->query($sql)->getRow();
 		return $result->jml;
 	}
-	
+	 
 	public function getListData($where) {
 
 		$columns = $this->request->getPost('columns');
@@ -61,5 +61,23 @@ class InstansiModel extends \App\Models\BaseModel
 		$data = $this->db->query($sql)->getResultArray();
 				
 		return ['data' => $data, 'total_filtered' => $total_filtered];
+	}
+
+	public function getInstansi($id) {
+		$sql = 'SELECT * FROM tbl_instansi WHERE SHA1(id_instansi) = ?';
+		$result = $this->db->query($sql, trim($id))->getResultArray();
+		return $result;
+	}
+
+	public function getUser() {
+		$sql = 'SELECT u.id_user, u.username FROM user u LEFT JOIN user_role ur USING (id_user) LEFT JOIN role r USING (id_role) WHERE r.nama_role="Operator Instansi"';
+		$result = $this->db->query($sql)->getResultArray();
+		return $result;
+	}
+
+	public function getUserInstansi($id) {
+		$sql = 'SELECT id_user FROM tbl_instansi_user WHERE SHA1(id_instansi) = ?';
+		$result = $this->db->query($sql, trim($id))->getResultArray();
+		return $result;
 	}
 }

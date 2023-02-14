@@ -4,8 +4,8 @@ helper(['html','format']);
 <div class="card">`
 <div class="card-body">
   <div class="table-responsive">
-    <!-- <a href="<?php //echo current_url()?>/add" class="btn btn-success btn-xs"><i class="fa fa-plus pe-1"></i> Tambah Data</a> -->
-    <!-- <hr/> -->
+    <a href="<?php echo current_url()?>/add" class="btn btn-success btn-xs"><i class="fa fa-plus pe-1"></i> Tambah Data</a>
+    <hr/>
 <?php
         if (!empty($msg)) {
           show_alert($msg);
@@ -16,8 +16,9 @@ helper(['html','format']);
           'nama_instansi' => 'NAMA INSTANSI',
           'latitude' => 'LATITUDE',
           'longitude' => 'LONGITUDE',
-          'gambar_instansi' => 'GAMBAR',
+          'gambar_instansi' => 'GAMBAR', 
           'username' => 'USER ID',
+          'ignore_search_action' => 'Action'
         ];
 
         $settings['order'] = [2, 'asc'];
