@@ -213,4 +213,81 @@ class ImpordataModel extends \App\Models\BaseModel
         return TRUE;
     }
 
+    public function imporpindahinstansi()
+    {
+        $path = ROOTPATH . 'public/files/uploads/impordata/';
+        
+        
+        $file = $this->request->getFile('file_excel');
+
+
+        if (! $file->isValid())
+        {
+            throw new RuntimeException($file->getErrorString().'('.$file->getError().')');
+        }
+
+        
+                
+        require_once 'app/ThirdParty/Spout/src/Spout/Autoloader/autoload.php';
+        
+        $filename = upload_file($path, $_FILES['file_excel']);
+        $reader = ReaderEntityFactory::createReaderFromFile($path . $filename);
+        $reader->open($path . $filename);
+
+        $builder = $this->db->table('tbl_pindah_instansi');
+        $waktu_update = date("Y-m-d H:i:s");
+        $total_row = 0;
+
+        foreach ($reader->getSheetIterator() as $sheet) 
+        {
+            foreach ($sheet->getRowIterator() as $num_row => $row) 
+            {
+                $cells = $row->getCells();        
+                if ($num_row > 1) {
+                    $data_db['nomor_surat'] = $cells[1]->getValue();
+                    $data_db['tgl_surat'] = $cells[2]->getValue();
+                    $data_db['nama'] = strtoupper($cells[3]->getValue());
+                    $data_db['nip'] = $cells[4]->getValue();
+                    $data_db['instansi_asal'] = strtoupper($cells[5]->getValue());
+                    $data_db['instansi_penerima'] = strtoupper($cells[6]->getValue());
+                    $data_db['status'] = strtoupper($cells[7]->getValue());
+                    $data_db['no_sk_pertek'] = strtoupper($cells[8]->getValue());
+                    $data_db['tgl_sk_pertek'] = $cells[9]->getValue();
+                    $data_db['ket_masalah'] = strtoupper($cells[10]->getValue());
+                    $data_db['waktu_update'] = $waktu_update;
+                    $data_db['id_instansi'] = $_POST['dropdowninstansi'];
+                    $builder->insert($data_db);
+                    $id_pegawai = $this->db->insertID();   
+                    $total_row ++;
+                }                
+            }
+        }
+
+        $reader->close();
+        // unlink ($path . $filename);
+
+        //insert ke history
+        $userdata = $_SESSION['user'];
+        $user_id = $userdata['id_user'];
+
+        $data_history_import['nama_file'] = $filename;
+        $data_history_import['id_instansi'] = $_POST['dropdowninstansi'];
+        $data_history_import['waktu_upload'] = $waktu_update;
+        $data_history_import['user_id'] = $user_id;
+        $data_history_import['tabel'] = 'tbl_pindah_instansi';
+        $data_history_import['aktif'] = '0';
+
+        $this->db->table('tbl_history_import')->insert($data_history_import);
+        $id_history_import = $this->db->insertID();
+
+        $result = ['status' => '', 'content'];
+        if ($id_pegawai) {
+            $result['status'] = 'ok';
+            $result['content'] = 'Data berhasil di masukkan ke dalam tabel <strong> Kenaikan Pangkat </strong> sebanyak ' . format_ribuan($total_row-1) . ' baris';
+        }
+        
+        return $result;
+
+    }
+
 }

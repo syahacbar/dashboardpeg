@@ -1,15 +1,15 @@
 <?php
 namespace App\Controllers; 
-use App\Models\KenaikanPangkatModel;
+use App\Models\PindahInstansiModel;
 
-class Kenaikanpangkat extends BaseController
+class Pindahinstansi extends BaseController
 {
 
 	public function __construct() {
 		
 		parent::__construct(); 
 		
-		$this->model = new KenaikanPangkatModel;	
+		$this->model = new PindahInstansiModel;	
 		$this->data['site_title'] = 'Image Upload';
 		
 		$this->addJs ( $this->config->baseURL . 'public/vendors/bootstrap-datepicker/js/bootstrap-datepicker.js' );
@@ -36,10 +36,9 @@ class Kenaikanpangkat extends BaseController
 
 		$data = $this->data;
 
-		$data['prosedurkp'] = $this->model->get_prosedurkp($id_instansi);
-		$data['statuskp'] = $this->model->get_statuskp($id_instansi);
-		$data['satuankerja'] = $this->model->get_satuankerja($id_instansi);
-		$this->view('kenaikanpangkat.php', $data);
+		$data['instansiasal'] = $this->model->get_instansi_asal($id_instansi);
+		$data['instansipenerima'] = $this->model->get_instansi_penerima($id_instansi);
+		$this->view('pindahinstansi.php', $data);
 	}
 
 	public function getDataDT() {
@@ -62,7 +61,6 @@ class Kenaikanpangkat extends BaseController
 		{
 			
 			$val['ignore_search_urut'] = $no;
-			$val['pangkatx'] = format_golru($val['pangkat']);
 			$no++;
 		}
 					

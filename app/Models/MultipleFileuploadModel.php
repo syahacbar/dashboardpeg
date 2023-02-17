@@ -54,7 +54,7 @@ class MultipleFileuploadModel extends \App\Models\BaseModel
 	}
 	
 	
-	public function getAkta($id) {
+	public function getAkta($id) { 
 		$sql = 'SELECT * FROM akta WHERE id_akta = ?';
 		$result = $this->db->query($sql, trim($id))->getResultArray();
 		return $result;

@@ -86,8 +86,10 @@ class HomeModel extends \App\Models\BaseModel
 				$urut++;
 			}
 			$wherewaktuupload = implode(",",$wu_arr);
+			$sql = 'SELECT tkp.status, COUNT(tkp.status) AS jum_ukp FROM tbl_kenaikanpangkat tkp WHERE SHA1(tkp.id_instansi)="'.$id_instansi.'" AND waktu_update IN ("'.$wherewaktuupload.'") GROUP BY tkp.status';
+		} else {
+			$sql = 'SELECT tkp.status, COUNT(tkp.status) AS jum_ukp FROM tbl_kenaikanpangkat tkp WHERE SHA1(tkp.id_instansi)="'.$id_instansi.'" GROUP BY tkp.status';
 		}
-		$sql = 'SELECT tkp.status, COUNT(tkp.status) AS jum_ukp FROM tbl_kenaikanpangkat tkp WHERE SHA1(tkp.id_instansi)="'.$id_instansi.'" AND waktu_update IN ("'.$wherewaktuupload.'") GROUP BY tkp.status';
 		$result = $this->db->query($sql)->getResult();
 		return $result;
 	}
@@ -105,9 +107,14 @@ class HomeModel extends \App\Models\BaseModel
 				$urut++;
 			}
 			$wherewaktuupload = implode(",",$wu_arr);
+			$sql = 'SELECT COUNT(tkp.status) AS jum_ukp FROM tbl_kenaikanpangkat tkp WHERE SHA1(tkp.id_instansi)="'.$id_instansi.'" AND waktu_update IN ("'.$wherewaktuupload.'")';
+		}
+		else
+		{
+			$sql = 'SELECT COUNT(tkp.status) AS jum_ukp FROM tbl_kenaikanpangkat tkp WHERE SHA1(tkp.id_instansi)="'.$id_instansi.'"';
 		}
 
-		$sql = 'SELECT COUNT(tkp.status) AS jum_ukp FROM tbl_kenaikanpangkat tkp WHERE SHA1(tkp.id_instansi)="'.$id_instansi.'" AND waktu_update IN ("'.$wherewaktuupload.'")';
+		
 		$result = $this->db->query($sql)->getRow();
 		return $result;
 	}
@@ -125,9 +132,14 @@ class HomeModel extends \App\Models\BaseModel
 				$urut++;
 			}
 			$wherewaktuupload = implode(",",$wu_arr);
+			$sql = 'SELECT COUNT(tkp.status) AS countstatus FROM tbl_kenaikanpangkat tkp WHERE SHA1(tkp.id_instansi)="'.$id_instansi.'" AND tkp.status="'.$status.'" AND waktu_update IN ("'.$wherewaktuupload.'")';
+		}
+		else
+		{
+			$sql = 'SELECT COUNT(tkp.status) AS countstatus FROM tbl_kenaikanpangkat tkp WHERE SHA1(tkp.id_instansi)="'.$id_instansi.'" AND tkp.status="'.$status.'"';
 		}
 
-		$sql = 'SELECT COUNT(tkp.status) AS countstatus FROM tbl_kenaikanpangkat tkp WHERE SHA1(tkp.id_instansi)="'.$id_instansi.'" AND tkp.status="'.$status.'" AND waktu_update IN ("'.$wherewaktuupload.'")';
+		
 		$result = $this->db->query($sql)->getRow();
 		return $result;
 
@@ -154,7 +166,7 @@ class HomeModel extends \App\Models\BaseModel
 
 	public function get_active_data($id_instansi)
 	{
-		$sql = 'SELECT * FROM tbl_history_import WHERE aktif="1" AND SHA1(id_instansi) = "'.$id_instansi.'"';
+		$sql = 'SELECT * FROM tbl_history_import WHERE aktif="0" AND SHA1(id_instansi) = "'.$id_instansi.'"';
 		$result = $this->db->query($sql)->getResult();
 		return $result;
 	}

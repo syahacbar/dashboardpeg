@@ -9,7 +9,7 @@
     <div class="col-12 col-md-12 col-lg-12 col-xl-4 mb-4">
         <div class="card">
             <div class="card-header">
-                <h5 class="card-title">Impor Data Usulan Kenaikan Pangkat</h5>
+                <h5 class="card-title">Impor Data Pindah Instansi</h5>
             </div>
             <div class="card-body">
                 <form method="post" action="" class="form-horizontal" enctype="multipart/form-data">
@@ -42,7 +42,7 @@
                                 <input type="file" class="file" name="file_excel">
                                 <?php if (!empty($form_errors['file_excel'])) echo '<small class="alert alert-danger">' . $form_errors['file_excel'] . '</small>' ?>
                                 <small class="small" style="display:block">Ekstensi file harus .xlsx</small>
-                                <div class="mt-1">Contoh file: <a title="Contoh Format Data Usulan Kenaikan Pangkat" href="<?= $config->baseURL ?>public/files/format_kenaikan_pangkat.xlsx">Format Data Kenaikan Pangkat</a></div>
+                                <div class="mt-1">Contoh file: <a title="Contoh Format Data Usulan Pindah Instansi" href="<?= $config->baseURL ?>public/files/format_pindah_instansi.xlsx">Format Data Pindah Instansi</a></div>
                                 <div class="upload-img-thumb"><span class="img-prop"></span></div>
                             </div>
                         </div>

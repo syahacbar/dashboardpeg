@@ -20,7 +20,7 @@
 			'url' => $config->baseURL . $current_module['nama_module'],
 			'icon' => 'fa fa-arrow-circle-left',
 			'label' => $current_module['judul_module']
-		]);
+		]); 
 		?>
 		<hr/>
 		<form method="post" action="" id="form-container" enctype="multipart/form-data">

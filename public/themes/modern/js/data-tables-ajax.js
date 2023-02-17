@@ -74,7 +74,7 @@ jQuery(document).ready(function() {
                     , "title":"Data Kenaikan Pangkat"
                     , "text":"<i class='far fa-file-excel'></i> Excel"
                     , "exportOptions": {
-                      columns: [1,2, 3, 4, 5, 6, 7],
+                      columns: [0,1,2, 3, 4, 5, 6, 7],
                       modifier: {selected: null}
                     }
                     , "className":"btn-light me-1"
@@ -83,7 +83,7 @@ jQuery(document).ready(function() {
                     ,"title":"Data Kenaikan Pangkat"
                     ,"text":"<i class='far fa-file-pdf'></i> PDF"
                     , "exportOptions": {
-                      columns: [1,2, 3, 4, 5, 6, 7],
+                      columns: [0,1,2, 3, 4, 5, 6, 7],
                       modifier: {selected: null}
                     }
                     ,"className":"btn-light me-1"
@@ -92,7 +92,7 @@ jQuery(document).ready(function() {
                     ,"title":"Data Kenaikan Pangkat"
                     ,"text":"<i class='far fa-file-alt'></i> CSV"
                     , "exportOptions": {
-                      columns: [1,2, 3, 4, 5, 6, 7],
+                      columns: [0,1,2, 3, 4, 5, 6, 7],
                       modifier: {selected: null}
                     }
                     ,"className":"btn-light me-1"
@@ -101,7 +101,78 @@ jQuery(document).ready(function() {
                     ,"title":"Data Kenaikan Pangkat"
                     ,"text":"<i class='fas fa-print'></i> Print"
                     , "exportOptions": {
-                      columns: [1,2, 3, 4, 5, 6, 7],
+                      columns: [0,1,2, 3, 4, 5, 6, 7],
+                      modifier: {selected: null}
+                    }
+                    ,"className":"btn-light"
+                },
+                'pageLength',
+            ],
+    }
+
+    const settings_pindahinstansi = {
+        "processing": true,
+        "serverSide": true,
+        "scrollX": true,
+        "ajax": {
+            "url": url,
+            "type": "POST",
+            "data": function(data){
+               data.searchInstansiAsal = $('#dd_instansiasal').val();
+               data.searchInstansiPenerima = $('#dd_instansipenerima').val();
+            }
+        },
+        "columns": column,
+        "initComplete": function(settings, json) {
+            table.rows().every(function(rowIdx, tableLoop, rowLoop) {
+                $row = $(this.node());
+            
+            });
+        },
+        "lengthMenu": [[10, 25, 50, -1], [10, 25, 50, "All"]],
+        // dom: '<"float-left"B><"float-right"f>rt<"row"<"col-sm-4"l><"col-sm-4"i><"col-sm-4"p>>',
+        // dom: 'lBfrtip',
+        // dom: '<"top"i>rt<"bottom"flp><"clear">',
+        dom: '<"top"Bf>rt<"bottom"lip><"clear">',
+
+
+        "buttons":[
+                {"extend":"copy"
+                    ,"text":"<i class='far fa-copy'></i> Copy"
+                    ,"className":"btn-light me-1"
+                },
+                {"extend":"excel"
+                    , "title":"Data Pindah Instansi"
+                    , "text":"<i class='far fa-file-excel'></i> Excel"
+                    , "exportOptions": {
+                      columns: [0,1,2,3,4,5,6,7,8,9,10],
+                      modifier: {selected: null}
+                    }
+                    , "className":"btn-light me-1"
+                },
+                {"extend":"pdf"
+                    ,"title":"Data Pindah Instansi"
+                    ,"text":"<i class='far fa-file-pdf'></i> PDF"
+                    , "exportOptions": {
+                      columns: [0,1,2,3,4,5,6,7,8,9,10],
+                      modifier: {selected: null}
+                    }
+                    ,"className":"btn-light me-1"
+                },
+                {"extend":"csv"
+                    ,"title":"Data Pindah Instansi"
+                    ,"text":"<i class='far fa-file-alt'></i> CSV"
+                    , "exportOptions": {
+                      columns: [0,1,2,3,4,5,6,7,8,9,10],
+                      modifier: {selected: null}
+                    }
+                    ,"className":"btn-light me-1"
+                },
+                {"extend":"print"
+                    ,"title":"Data Pindah Instansi"
+                    ,"text":"<i class='fas fa-print'></i> Print"
+                    , "exportOptions": {
+                      columns: [0,1,2,3,4,5,6,7,8,9,10],
                       modifier: {selected: null}
                     }
                     ,"className":"btn-light"
@@ -125,15 +196,19 @@ jQuery(document).ready(function() {
     const table2 = $('#tbl-struktural-kp').DataTable(settings_kp);
     const table3 = $('#tbl-fungsionalumum').DataTable(settings);
     const table4 = $('#tbl-fungsionaltertentu').DataTable(settings);
+    const table5 = $('#tbl-pindahinstansi').DataTable(settings_pindahinstansi);
 
-    // table2.buttons().container()
-    //         .appendTo( '#data-tables_wrapper .col-md-6:eq(0)' );
 
-     $('#dd_jenisjabatan,#dd_statuspengusulan,#dd_prosedur,#dd_satuankerja').change(function(){
+    $('#dd_jenisjabatan,#dd_statuspengusulan,#dd_prosedur,#dd_satuankerja').change(function(){
         table2.draw();
     });
 
-     // var tablex = $('#data-tables').DataTable(settings_kp);
     table2.buttons().container().appendTo('#data-tables_wrapper .col-md-6:eq(0)');
+    
+
+    $('#dd_instansiasal,#dd_instansipenerima').change(function(){
+        table5.draw();
+    });
+    table5.buttons().container().appendTo('#data-tables_wrapper .col-md-6:eq(0)');
         
 });

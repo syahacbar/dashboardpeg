@@ -16,7 +16,9 @@ class Instansi extends BaseController
 		$this->addStyle ( $this->config->baseURL . 'public/vendors/jquery.select2/css/select2.min.css' );
 		$this->addStyle ( $this->config->baseURL . 'public/vendors/jquery.select2/bootstrap-5-theme/select2-bootstrap-5-theme.min.css' );
 		
+		$this->addJs ( $this->config->baseURL . 'public/themes/modern/js/options-dinamis.js' );
 		$this->addJs ( $this->config->baseURL . 'public/vendors/bootstrap-datepicker/js/bootstrap-datepicker.js' );
+		
 		$this->addJs ( $this->config->baseURL . 'public/themes/modern/js/date-picker.js');
 		$this->addJs ( $this->config->baseURL . 'public/themes/modern/js/image-upload.js');
 		$this->addJs ( $this->config->baseURL . 'public/themes/modern/js/data-tables-ajax.js');
@@ -35,9 +37,19 @@ class Instansi extends BaseController
 	public function index()
 	{
 		$this->cekHakAkses('read_data');
+		if ($this->request->getPost('delete')) 
+		{
+			// $this->cekHakAkses('delete_data', 'user', 'id_user');
+			
+			$result = $this->model->deleteInstansi();
+			if ($result) {
+				$data['message'] = ['status' => 'ok', 'message' => 'Data Instansi berhasil dihapus'];
+			} else {
+				$data['message'] = ['status' => 'warning', 'message' => 'Tidak ada data yang dihapus'];
+			}
+		}
 
 		$data = $this->data;
-		// $data['instansi'] = $this->model->get_all_data();
 
 		$this->view('instansi.php', $data);
 	}
@@ -64,7 +76,7 @@ class Instansi extends BaseController
 			$val['ignore_search_action'] = btn_action([
 				'edit' => ['url' => $this->config->baseURL . $this->currentModule['nama_module'] . '/edit?id='. SHA1($val['id_instansi'])],
 				'delete' => ['url' => '', 
-							 'id' =>  SHA1($val['id_instansi']),
+							 'id' =>  $val['id_instansi'],
 							 'delete-title' => 'Hapus data Instansi: <strong>'.$val['nama_instansi'].'</strong> ?']
 			]);
 		}
@@ -121,7 +133,7 @@ class Instansi extends BaseController
 				$this->errorDataNotFound();
 				return;
 			}
-			$data = array_merge ($data, $data_akta);
+			$data = array_merge ($data, $data_instansi);
 			
 		}
 		
@@ -183,7 +195,7 @@ class Instansi extends BaseController
 			}
 			
 			$data = array_merge ($data, $data_instansi);
-			$data['id_instansi'] = $_GET['id'];
+			// $data['id_instansi'] = $_GET['id'];
 		}
 		
 		$data_options = $this->setDataOptions();
@@ -196,7 +208,7 @@ class Instansi extends BaseController
 
 	private function setDataOptions() 
 	{
-		$result = $this->model->getUser();
+		$result = $this->model->getUserforInstansi();
 		$userx = [];
 		foreach($result as $val) {
 			$userx[$val['id_user']] = $val['username'];

@@ -36,7 +36,7 @@ class KenaikanPangkatModel extends \App\Models\BaseModel
 
 	public function get_active_data($id_instansi)
 	{
-		$sql = 'SELECT * FROM tbl_history_import WHERE aktif="1" AND SHA1(id_instansi) = "'.$id_instansi.'"';
+		$sql = 'SELECT * FROM tbl_history_import WHERE aktif="1" AND tabel="tbl_kenaikanpangkat" AND SHA1(id_instansi) = "'.$id_instansi.'"';
 		$result = $this->db->query($sql)->getResult();
 		return $result;
 	}
