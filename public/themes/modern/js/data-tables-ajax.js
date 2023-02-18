@@ -59,9 +59,6 @@ jQuery(document).ready(function() {
             });
         },
         "lengthMenu": [[10, 25, 50, -1], [10, 25, 50, "All"]],
-        // dom: '<"float-left"B><"float-right"f>rt<"row"<"col-sm-4"l><"col-sm-4"i><"col-sm-4"p>>',
-        // dom: 'lBfrtip',
-        // dom: '<"top"i>rt<"bottom"flp><"clear">',
         dom: '<"top"Bf>rt<"bottom"lip><"clear">',
 
 
@@ -130,9 +127,6 @@ jQuery(document).ready(function() {
             });
         },
         "lengthMenu": [[10, 25, 50, -1], [10, 25, 50, "All"]],
-        // dom: '<"float-left"B><"float-right"f>rt<"row"<"col-sm-4"l><"col-sm-4"i><"col-sm-4"p>>',
-        // dom: 'lBfrtip',
-        // dom: '<"top"i>rt<"bottom"flp><"clear">',
         dom: '<"top"Bf>rt<"bottom"lip><"clear">',
 
 
@@ -181,6 +175,76 @@ jQuery(document).ready(function() {
             ],
     }
 
+    const settings_pensiun = {
+        "processing": true,
+        "serverSide": true,
+        "scrollX": true,
+        "ajax": {
+            "url": url,
+            "type": "POST",
+            "data": function(data){
+               data.searchSatuanKerja = $('#dd_satuankerja').val();
+               data.searchJenisJabatan = $('#dd_jenisjabatan').val();
+               data.searchJenisUsulanPensiun = $('#dd_jenisusulanpensiun').val();
+               data.searchStatusUsulan = $('#dd_statususulan').val();
+            }
+        },
+        "columns": column,
+        "initComplete": function(settings, json) {
+            table.rows().every(function(rowIdx, tableLoop, rowLoop) {
+                $row = $(this.node());
+            
+            });
+        },
+        "lengthMenu": [[10, 25, 50, -1], [10, 25, 50, "All"]],
+        dom: '<"top"Bf>rt<"bottom"lip><"clear">',
+
+
+        "buttons":[
+                {"extend":"copy"
+                    ,"text":"<i class='far fa-copy'></i> Copy"
+                    ,"className":"btn-light me-1"
+                },
+                {"extend":"excel"
+                    , "title":"Data Usulan Pensiun"
+                    , "text":"<i class='far fa-file-excel'></i> Excel"
+                    , "exportOptions": {
+                      columns: [0,1,2,3,4,5,6,7,8,9,10,11],
+                      modifier: {selected: null}
+                    }
+                    , "className":"btn-light me-1"
+                },
+                {"extend":"pdf"
+                    ,"title":"Data Usulan Pensiun"
+                    ,"text":"<i class='far fa-file-pdf'></i> PDF"
+                    , "exportOptions": {
+                      columns: [0,1,2,3,4,5,6,7,8,9,10,11],
+                      modifier: {selected: null}
+                    }
+                    ,"className":"btn-light me-1"
+                },
+                {"extend":"csv"
+                    ,"title":"Data Usulan Pensiun"
+                    ,"text":"<i class='far fa-file-alt'></i> CSV"
+                    , "exportOptions": {
+                      columns: [0,1,2,3,4,5,6,7,8,9,10,11],
+                      modifier: {selected: null}
+                    }
+                    ,"className":"btn-light me-1"
+                },
+                {"extend":"print"
+                    ,"title":"Data Usulan Pensiun"
+                    ,"text":"<i class='fas fa-print'></i> Print"
+                    , "exportOptions": {
+                      columns: [0,1,2,3,4,5,6,7,8,9,10,11],
+                      modifier: {selected: null}
+                    }
+                    ,"className":"btn-light"
+                },
+                'pageLength',
+            ],
+    }
+
     
    
 
@@ -197,6 +261,7 @@ jQuery(document).ready(function() {
     const table3 = $('#tbl-fungsionalumum').DataTable(settings);
     const table4 = $('#tbl-fungsionaltertentu').DataTable(settings);
     const table5 = $('#tbl-pindahinstansi').DataTable(settings_pindahinstansi);
+    const table6 = $('#tbl-pensiun').DataTable(settings_pensiun);
 
 
     $('#dd_jenisjabatan,#dd_statuspengusulan,#dd_prosedur,#dd_satuankerja').change(function(){
@@ -210,5 +275,10 @@ jQuery(document).ready(function() {
         table5.draw();
     });
     table5.buttons().container().appendTo('#data-tables_wrapper .col-md-6:eq(0)');
+
+    $('#dd_satuankerja,#dd_jenisjabatan,#dd_jenisusulanpensiun,#dd_statususulan').change(function(){
+        table6.draw();
+    });
+    table6.buttons().container().appendTo('#data-tables_wrapper .col-md-6:eq(0)');
         
 });

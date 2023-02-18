@@ -283,11 +283,90 @@ class ImpordataModel extends \App\Models\BaseModel
         $result = ['status' => '', 'content'];
         if ($id_pegawai) {
             $result['status'] = 'ok';
-            $result['content'] = 'Data berhasil di masukkan ke dalam tabel <strong> Kenaikan Pangkat </strong> sebanyak ' . format_ribuan($total_row-1) . ' baris';
+            $result['content'] = 'Data berhasil di masukkan ke dalam tabel <strong> Pindah Instansi </strong> sebanyak ' . format_ribuan($total_row-1) . ' baris';
         }
         
         return $result;
 
     }
+
+     public function imporpensiun()
+    {
+        $path = ROOTPATH . 'public/files/uploads/impordata/';
+        
+        
+        $file = $this->request->getFile('file_excel');
+
+
+        if (! $file->isValid())
+        {
+            throw new RuntimeException($file->getErrorString().'('.$file->getError().')');
+        }
+
+        
+                
+        require_once 'app/ThirdParty/Spout/src/Spout/Autoloader/autoload.php';
+        
+        $filename = upload_file($path, $_FILES['file_excel']);
+        $reader = ReaderEntityFactory::createReaderFromFile($path . $filename);
+        $reader->open($path . $filename);
+
+        $builder = $this->db->table('tbl_pensiun');
+        $waktu_update = date("Y-m-d H:i:s");
+        $total_row = 0;
+
+        foreach ($reader->getSheetIterator() as $sheet) 
+        {
+            foreach ($sheet->getRowIterator() as $num_row => $row) 
+            {
+                $cells = $row->getCells();        
+                if ($num_row > 1) {
+                    $data_db['nama'] = strtoupper($cells[1]->getValue());
+                    $data_db['nip'] = $cells[2]->getValue();
+                    $data_db['instansi'] = strtoupper($cells[3]->getValue());
+                    $data_db['jabatan'] = strtoupper($cells[4]->getValue());
+                    $data_db['jenis_jabatan'] = strtoupper($cells[5]->getValue());
+                    $data_db['jenis_usulan_pensiun'] = strtoupper($cells[6]->getValue());
+                    $data_db['tmt_pensiun'] = $cells[7]->getValue();
+                    $data_db['tgl_terima_usulan'] = $cells[8]->getValue();
+                    $data_db['tgl_penetapan'] = $cells[9]->getValue();
+                    $data_db['status_usulan'] = $cells[10]->getValue();
+                    $data_db['keterangan'] = strtoupper($cells[11]->getValue());
+                    $data_db['waktu_update'] = $waktu_update;
+                    $data_db['id_instansi'] = $_POST['dropdowninstansi'];
+                    $builder->insert($data_db);
+                    $id_pegawai = $this->db->insertID();   
+                    $total_row ++;
+                }                
+            }
+        }
+
+        $reader->close();
+        // unlink ($path . $filename);
+
+        //insert ke history
+        $userdata = $_SESSION['user'];
+        $user_id = $userdata['id_user'];
+
+        $data_history_import['nama_file'] = $filename;
+        $data_history_import['id_instansi'] = $_POST['dropdowninstansi'];
+        $data_history_import['waktu_upload'] = $waktu_update;
+        $data_history_import['user_id'] = $user_id;
+        $data_history_import['tabel'] = 'tbl_pensiun';
+        $data_history_import['aktif'] = '0';
+
+        $this->db->table('tbl_history_import')->insert($data_history_import);
+        $id_history_import = $this->db->insertID();
+
+        $result = ['status' => '', 'content'];
+        if ($id_pegawai) {
+            $result['status'] = 'ok';
+            $result['content'] = 'Data berhasil di masukkan ke dalam tabel <strong> Pensiun </strong> sebanyak ' . format_ribuan($total_row-1) . ' baris';
+        }
+        
+        return $result;
+
+    }
+
 
 }

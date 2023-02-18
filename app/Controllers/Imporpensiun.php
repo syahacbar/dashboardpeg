@@ -27,14 +27,14 @@ class Imporpensiun extends BaseController
                 $data['msg']['status'] = 'error';
                 $data['msg']['content'] = $form_errors;
             } else {
-                $this->data['message'] = $this->model->imporkenaikanpangkat();
+                $this->data['message'] = $this->model->imporpensiun();
             } 
         }
 
         $this->data['dropdowninstansi'] = $this->model->get_all_instansi();
-        $this->data['get_history_import'] = $this->model->get_history_import('tbl_kenaikanpangkat');
+        $this->data['get_history_import'] = $this->model->get_history_import('tbl_pensiun');
 
-        $this->view('imporkenaikanpangkat.php', $this->data);
+        $this->view('imporpensiun.php', $this->data);
     }
 
     public function statusaktif()
